@@ -25,7 +25,7 @@
 <title>Gaelic Pulse — The Intelligence Platform for Gaelic Games</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
     --navy:#0B1F3A; --green:#2F8F5C; --gold:#C8A23B;
@@ -276,10 +276,59 @@
   .door.soon .title{margin-top:0;font-size:14px}
   .door.soon .cup{margin-top:0;font-size:10.5px}
 
+  /* ---------- Signup band ---------- */
+  .signup{
+    background:var(--navy);color:var(--cream);
+    margin-top:72px;padding:64px 0 60px;
+    border-top:1px solid rgba(247,246,242,.08);
+  }
+  .signup .wrap{max-width:840px;margin:0 auto;padding:0 clamp(22px,6vw,40px);text-align:center}
+  .signup .eyebrow{
+    font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+    font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--gold);margin-bottom:14px;font-weight:500;
+  }
+  .signup h2{
+    font-family:'Fraunces',Georgia,serif;font-weight:500;font-style:italic;
+    font-size:clamp(28px,4vw,40px);line-height:1.15;letter-spacing:-.01em;
+    color:var(--cream);margin-bottom:10px;
+  }
+  .signup .lede{
+    font-size:15px;line-height:1.55;color:rgba(247,246,242,.72);
+    max-width:520px;margin:0 auto 28px;
+  }
+  .signup form{
+    display:flex;gap:8px;max-width:480px;margin:0 auto;flex-wrap:wrap;
+  }
+  .signup input[type=email]{
+    flex:1 1 240px;min-width:0;
+    font-family:'Archivo',system-ui,sans-serif;font-size:15px;
+    padding:14px 16px;border:1px solid rgba(247,246,242,.22);
+    background:rgba(247,246,242,.04);color:var(--cream);
+    border-radius:2px;outline:none;transition:border-color .15s,background .15s;
+  }
+  .signup input[type=email]::placeholder{color:rgba(247,246,242,.42)}
+  .signup input[type=email]:focus{border-color:var(--gold);background:rgba(247,246,242,.08)}
+  .signup button{
+    font-family:'Archivo',system-ui,sans-serif;font-size:14px;font-weight:600;
+    letter-spacing:.02em;
+    padding:14px 22px;border:none;cursor:pointer;
+    background:var(--gold);color:var(--navy);border-radius:2px;
+    transition:background .15s,transform .05s;
+  }
+  .signup button:hover{background:#d8b14a}
+  .signup button:active{transform:translateY(1px)}
+  .signup .fine{
+    font-size:11px;letter-spacing:.04em;color:rgba(247,246,242,.46);
+    margin-top:14px;
+  }
+  /* honeypot - never shown */
+  .signup .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+
   /* ---------- Footer ---------- */
   footer{max-width:1120px;margin:0 auto;padding:26px clamp(22px,6vw,40px) 54px;
     display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
-    border-top:1px solid var(--line);margin-top:30px}
+    border-top:1px solid var(--line);margin-top:0}
   .f-mantra{font-size:12px;letter-spacing:.04em;color:var(--muted);font-weight:500}
   .f-mantra b{color:var(--ink);font-weight:600}
   .f-right{font-size:11px;color:var(--muted);font-weight:500;letter-spacing:.04em}
@@ -509,6 +558,21 @@
         <span class="badge b-soon">Coming soon · after Sam Maguire</span>
       </div>
 
+    </div>
+  </section>
+
+  <section class="signup" id="signup">
+    <div class="wrap">
+      <div class="eyebrow">The Pulse · weekly brief</div>
+      <h2>Sign up for The Pulse</h2>
+      <p class="lede">One email, every Sunday. What happened, why it happened, and what happens next — across the codes.</p>
+      <form name="pulse-signup" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/success.html">
+        <input type="hidden" name="form-name" value="pulse-signup">
+        <label class="hp" aria-hidden="true">Don't fill this out: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+        <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address">
+        <button type="submit">Sign me up</button>
+      </form>
+      <div class="fine">No spam. Unsubscribe in one click.</div>
     </div>
   </section>
 
