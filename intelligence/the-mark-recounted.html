@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.gaelicpulse.com/intelligence/the-mark-recounted.html">
+<meta property="og:title" content="The Mark, Recounted | Gaelic Pulse">
+<meta property="og:description" content="For a year, Gaelic football argued about the mark. The game's own data counted it twenty-five times.">
+<meta property="og:image" content="https://www.gaelicpulse.com/static/intel-mark-recounted.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Gaelic Pulse">
+<meta property="og:locale" content="en_IE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Mark, Recounted | Gaelic Pulse">
+<meta name="twitter:description" content="For a year, Gaelic football argued about the mark. The game's own data counted it twenty-five times.">
+<meta name="twitter:image" content="https://www.gaelicpulse.com/static/intel-mark-recounted.png">
+<meta name="description" content="For a year, Gaelic football argued about the mark. The game's own data counted it twenty-five times.">
+<link rel="canonical" href="https://www.gaelicpulse.com/intelligence/the-mark-recounted.html">
+<title>The Mark, Recounted — Gaelic Pulse</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#10212F; --ink-soft:#33485A; --ink-faint:#9AA6B0;
+    --gold:#C8A23B; --gold-deep:#A9852A; --gold-glow:rgba(200,162,59,.16);
+    --grey:#6F7782; --rule:#E2DED4; --rule-strong:#C9C3B4;
+    --paper:#F7F4EC; --paper-2:#FBF9F3; --panel:#FFFFFF;
+    --maxw:780px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Spectral",Georgia,serif;font-size:19px;line-height:1.62;
+    font-feature-settings:"liga" 1,"onum" 1;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .mono{font-family:"IBM Plex Mono",ui-monospace,monospace}
+
+  /* masthead */
+  .masthead{border-bottom:1px solid var(--rule);background:var(--paper-2);position:sticky;top:0;z-index:30}
+  .masthead .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+  .brand{font-family:"Fraunces";font-weight:600;font-size:19px}
+  .brand .dot{color:var(--gold)}
+  .masthead .mono{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--grey)}
+  /* scroll progress */
+  #prog{position:fixed;top:0;left:0;height:2px;background:var(--gold);width:0;z-index:40;transition:width .1s linear}
+
+  header.hero{padding:60px 0 8px}
+  .eyebrow{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.22em;
+    text-transform:uppercase;color:var(--gold-deep);margin:0 0 22px}
+  .eyebrow .sep{color:var(--rule-strong);padding:0 .55em}
+  h1{font-family:"Fraunces";font-weight:900;font-size:clamp(42px,8.6vw,82px);
+    line-height:.97;letter-spacing:-.02em;margin:0 0 22px}
+  .dek{font-size:clamp(20px,2.6vw,25px);line-height:1.38;color:var(--ink-soft);max-width:34ch;margin:0 0 28px}
+  .byline{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--grey);
+    border-top:1px solid var(--rule);padding-top:16px;display:flex;gap:18px;flex-wrap:wrap}
+  .byline b{color:var(--ink);font-weight:500}
+
+  .hero-fig{margin:30px 0 6px;background:var(--panel);border:1px solid var(--rule);border-radius:3px;overflow:hidden}
+  .hero-fig img{display:block;width:100%;height:auto}
+  .hero-stat{display:flex;align-items:center;gap:26px;flex-wrap:wrap;
+    padding:22px 28px 26px;border-top:1px solid var(--rule);background:var(--panel)}
+  .bignum{font-family:"Fraunces";font-weight:900;font-size:clamp(82px,17vw,158px);
+    line-height:.78;color:var(--gold);letter-spacing:-.025em;font-variant-numeric:lining-nums tabular-nums}
+  .hero-stat .cap{flex:1;min-width:220px}
+  .hero-stat .cap .lead{font-size:20px;line-height:1.3;margin:0 0 6px}
+  .hero-stat .cap .sub{font-family:"IBM Plex Mono",monospace;font-size:12px;
+    letter-spacing:.04em;color:var(--grey);text-transform:uppercase}
+  figcaption{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--grey);
+    padding:12px 28px;border-top:1px solid var(--rule);background:var(--paper-2)}
+
+  article{padding:14px 0 10px}
+  article p{margin:0 0 22px}
+  .lead-in::first-letter{font-family:"Fraunces";font-weight:900;float:left;
+    font-size:82px;line-height:.64;padding:9px 13px 0 0;color:var(--gold-deep)}
+  h2{font-family:"Fraunces";font-weight:600;font-size:clamp(27px,4vw,35px);
+    line-height:1.07;letter-spacing:-.012em;margin:54px 0 8px}
+  .kicker{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--gold-deep);margin:0 0 14px}
+  .section-rule{border:0;border-top:1px solid var(--rule);margin:50px 0 0}
+  .pull{font-family:"Fraunces";font-weight:500;font-size:clamp(25px,3.7vw,32px);
+    line-height:1.2;border-left:3px solid var(--gold);padding:2px 0 2px 24px;margin:36px 0}
+
+  .defs{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--rule-strong);
+    border-radius:3px;background:var(--panel);margin:30px 0;overflow:hidden}
+  .def{padding:24px 22px}
+  .def + .def{border-left:1px solid var(--rule)}
+  .def .tag{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--grey);margin:0 0 6px}
+  .def h3{font-family:"Fraunces";font-weight:600;font-size:21px;margin:0 0 8px}
+  .def p{font-size:15.5px;line-height:1.5;color:var(--ink-soft);margin:0}
+  .def .verdict{margin-top:14px;font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink)}
+  .def .verdict b{color:var(--gold-deep)}
+
+  /* ---- chart shell ---- */
+  figure.viz{margin:44px 0;background:var(--panel);border:1px solid var(--rule);border-radius:4px;
+    box-shadow:0 1px 2px rgba(16,33,47,.04)}
+  .vhead{padding:26px 28px 2px}
+  .vhead .kick{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--gold-deep);margin:0 0 7px}
+  .vhead h4{font-family:"Fraunces";font-weight:600;font-size:24px;line-height:1.1;margin:0}
+  .vhead p{font-size:15px;color:var(--ink-soft);margin:9px 0 0;line-height:1.45}
+  .vbody{padding:20px 28px 8px}
+  .vnote{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--grey);
+    padding:10px 28px 20px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .vnote .hint{color:var(--gold-deep)}
+
+  /* scarcity grid */
+  .gridtop{display:flex;justify-content:space-between;align-items:baseline;margin:0 0 14px;flex-wrap:wrap;gap:8px}
+  .gridtop .big{font-family:"Fraunces";font-weight:900;font-size:40px;line-height:1;color:var(--gold)}
+  .gridtop .big small{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--grey);font-weight:400;letter-spacing:.04em}
+  .gridtop .anno{font-size:14px;color:var(--ink-soft);max-width:30ch;text-align:right;line-height:1.4}
+  .grid214{display:grid;grid-template-columns:repeat(30,1fr);gap:3px}
+  .gcell{aspect-ratio:1;background:#E7E1D3;border-radius:1px;transform:scale(.55);opacity:0;
+    transition:transform .35s ease,opacity .35s ease,background .15s,outline-color .15s}
+  .reveal .gcell{transform:scale(1);opacity:1}
+  .gcell.gold{background:var(--gold);box-shadow:0 0 0 1px var(--gold-deep) inset}
+  .gcell:hover{outline:2px solid var(--ink);outline-offset:1px;cursor:default}
+  .gridlegend{display:flex;gap:20px;align-items:center;margin:16px 0 2px;
+    font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--grey);flex-wrap:wrap}
+  .gridlegend .sw{display:inline-block;width:12px;height:12px;border-radius:1px;vertical-align:-1px;margin-right:7px}
+
+  /* pitch-zone journey */
+  .pitch{position:relative}
+  .pitch svg{width:100%;height:auto;display:block;overflow:visible}
+  .pitch .zlabel{font-family:"IBM Plex Mono",monospace;font-size:11px;fill:var(--grey);letter-spacing:.04em}
+  .pitch .pct{font-family:"Fraunces";font-weight:900;font-variant-numeric:lining-nums}
+  .pitch .yr{font-family:"IBM Plex Mono",monospace;font-size:12px;fill:var(--ink-soft);letter-spacing:.06em;text-transform:uppercase}
+  .pitch .bar{cursor:default}
+  .pitch .bar rect{transition:opacity .15s}
+  .pitch .bar:hover rect.fill{opacity:.82}
+  .annoflag{font-family:"IBM Plex Mono",monospace;font-size:11px;fill:var(--ink)}
+
+  /* delta dashboard */
+  .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);
+    border:1px solid var(--rule);border-radius:3px;overflow:hidden}
+  .tile{background:var(--panel);padding:20px 18px 17px;cursor:default;transition:background .2s;position:relative}
+  .tile:hover{background:var(--paper-2)}
+  .tile .tnum{font-family:"Fraunces";font-weight:900;font-size:36px;line-height:1;letter-spacing:-.015em;
+    font-variant-numeric:lining-nums tabular-nums}
+  .tile .tlbl{font-size:13.5px;color:var(--ink-soft);margin:8px 0 0;line-height:1.3}
+  .tile .chip{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:11px;
+    padding:2px 8px;border-radius:99px;margin-top:10px;letter-spacing:.02em}
+  .chip.up,.chip.down{background:rgba(16,33,47,.07);color:var(--ink)}
+  .tile.mark{background:var(--ink)}
+  .tile.mark .tnum{color:var(--gold)}
+  .tile.mark .tlbl{color:#C9CFD2}
+  .tile.mark .chip{background:var(--gold-glow);color:var(--gold)}
+
+  /* tooltip */
+  #tip{position:fixed;z-index:60;pointer-events:none;opacity:0;transform:translateY(4px);
+    transition:opacity .12s ease,transform .12s ease;max-width:260px;
+    background:var(--ink);color:#F4F1E8;border:1px solid #283b4b;border-radius:5px;
+    padding:11px 13px;box-shadow:0 10px 30px rgba(16,33,47,.3)}
+  #tip.on{opacity:1;transform:translateY(0)}
+  #tip .tt{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--gold);margin:0 0 4px}
+  #tip .tn{font-family:"Fraunces";font-weight:700;font-size:21px;color:#fff;margin:0 0 3px;font-variant-numeric:lining-nums}
+  #tip .tb{font-family:"Spectral",serif;font-size:14px;line-height:1.4;color:#EDEAE0;margin:0}
+
+  /* method / outro */
+  .method{background:var(--ink);color:#EAE6DA;margin-top:62px;padding:56px 0 42px;border-top:3px solid var(--gold)}
+  .method .wrap{max-width:var(--maxw)}
+  .method .kicker{color:var(--gold)} .method h2{color:#fff;margin-top:0}
+  .method p{color:#CFD3CE} .method .pull{color:#fff;border-left-color:var(--gold)} .method b{color:#fff}
+  .sources{border-top:1px solid rgba(255,255,255,.14);margin-top:40px;padding:26px 0 0}
+  .sources .tag{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin:0 0 10px}
+  .sources p{font-size:13.5px;color:#AEB6BC;line-height:1.55;margin:0 0 10px}
+  footer{background:var(--paper-2);border-top:1px solid var(--rule);padding:34px 0}
+  footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+  footer .mantra{font-family:"Fraunces";font-weight:600;font-size:18px}
+  footer .mantra .dot{color:var(--gold)}
+  footer .mono{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--grey)}
+
+  .obs{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
+  .obs.reveal{opacity:1;transform:none}
+
+  @media(max-width:640px){
+    body{font-size:18px}
+    .defs{grid-template-columns:1fr}.def + .def{border-left:0;border-top:1px solid var(--rule)}
+    .grid214{grid-template-columns:repeat(20,1fr)}
+    .tiles{grid-template-columns:repeat(2,1fr)}
+    .gridtop .anno{text-align:left}
+    .lead-in::first-letter{font-size:66px}
+  }
+</style>
+
+<link rel="stylesheet" href="../shared/site-chrome.css">
+<style id="gp-chrome-override">
+  /* Reset article-body font on chrome */
+  .gp-bar, .gp-bar *{ font-family:'Archivo', system-ui, -apple-system, sans-serif !important; }
+  .gp-bar{ background:rgba(247,244,236,.94); }
+  .gp-bar .gp-brand{ font-family:'Fraunces', Georgia, serif !important; color:#10212F; }
+  .gp-bar .gp-brand .gp-wm b{ color:#A9852A; }
+  #prog{ top:48px !important; z-index:60 !important; }
+  /* Article footer cross-link */
+  .pi-next{
+    max-width:780px; margin:60px auto 80px; padding:0 24px;
+  }
+  .pi-next .pi-rule{
+    border-top:1px solid #E2DED4; padding-top:28px;
+  }
+  .pi-next .pi-label{
+    font-family:'IBM Plex Mono', ui-monospace, monospace;
+    font-size:11px; letter-spacing:.22em; text-transform:uppercase;
+    color:#A9852A; margin:0 0 18px;
+  }
+  .pi-next a.pi-card{
+    display:block; text-decoration:none; color:inherit;
+    padding:26px 28px; background:#FFFFFF; border:1px solid #E2DED4; border-radius:4px;
+    transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  }
+  .pi-next a.pi-card:hover{
+    transform:translateY(-2px);
+    box-shadow:0 6px 24px rgba(16,33,47,.08);
+    border-color:#C9C3B4;
+  }
+  .pi-next .pi-eyebrow{
+    font-family:'IBM Plex Mono', ui-monospace, monospace;
+    font-size:11px; letter-spacing:.18em; text-transform:uppercase;
+    color:#6F7782; margin:0 0 10px;
+  }
+  .pi-next .pi-title{
+    font-family:'Fraunces', Georgia, serif; font-weight:900;
+    font-size:30px; line-height:1.06; color:#10212F; margin:0 0 10px;
+    letter-spacing:-.012em;
+  }
+  .pi-next .pi-dek{
+    font-family:'Spectral', Georgia, serif; font-size:17px; line-height:1.5;
+    color:#33485A; margin:0 0 16px; max-width:54ch;
+  }
+  .pi-next .pi-foot{
+    font-family:'IBM Plex Mono', ui-monospace, monospace;
+    font-size:11px; letter-spacing:.12em; text-transform:uppercase;
+    color:#A9852A; display:flex; gap:14px; align-items:center;
+  }
+  .pi-next .pi-foot .arrow{ transition:transform .18s ease; }
+  .pi-next a.pi-card:hover .pi-foot .arrow{ transform:translateX(4px); }
+  /* Back-to-section breadcrumb */
+  .pi-crumb{
+    max-width:780px; margin:18px auto 0; padding:0 24px;
+    font-family:'IBM Plex Mono', ui-monospace, monospace;
+    font-size:11px; letter-spacing:.18em; text-transform:uppercase;
+  }
+  .pi-crumb a{ color:#A9852A; text-decoration:none; border-bottom:1px solid transparent; }
+  .pi-crumb a:hover{ border-bottom-color:#A9852A; }
+  .pi-crumb .arrow{ display:inline-block; transform:translateY(-1px); margin-right:6px; }
+</style>
+
+</head>
+<body>
+<div id="prog"></div>
+<div id="tip" role="status" aria-live="polite"></div>
+
+<div class="gp-bar gp-bar-intel">
+  <a class="gp-brand" href="../index.html">
+    <svg width="34" height="20" viewBox="0 0 40 22" aria-hidden="true">
+      <path class="pulse-path" d="M0 11 H10 L14 11 L17 3 L21 19 L25 7 L28 11 H40"
+            fill="none" stroke="#2F8F5C" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span class="gp-wm">Gaelic<b>Pulse</b></span>
+  </a>
+  <nav class="gp-tabs">
+    <a class="gp-tab" href="../football/index.html">Football</a>
+    <a class="gp-tab" href="../hurling/index.html">Hurling</a>
+    <a class="gp-tab" href="../camogie/index.html">Camogie</a>
+    <a class="gp-tab" href="../ladies-football/index.html">Ladies Football</a>
+    <a class="gp-tab active" href="./index.html">Pulse Intelligence</a>
+  </nav>
+</div>
+
+<nav class="pi-crumb" aria-label="Breadcrumb">
+  <a href="./index.html"><span class="arrow">←</span> Pulse Intelligence</a>
+</nav>
+
+
+<div class="wrap">
+  <header class="hero">
+    <p class="eyebrow">Pulse Intelligence<span class="sep">/</span>Football<span class="sep">/</span>The 2025 Season</p>
+    <h1>The Mark,<br>Recounted</h1>
+    <p class="dek">For a year, Gaelic football argued about the mark. The game's own data counted it twenty‑five times.</p>
+    <p class="byline"><span><b>Gaelic Pulse Analysis</b></span><span>A study in measuring the noise</span><span>Source: GAA Games Intelligence Unit</span></p>
+  </header>
+
+  <figure class="hero-fig">
+    <img src="../static/intel-mark-recounted.png" alt="A footballer catches a clean mark over the goalposts; the arc of the kick is drawn from kick-point to catch." alt="Pen-and-ink illustration of a faceless footballer at full stretch catching a ball, rendered in gold — the Pulse Studio house style.">
+    <div class="hero-stat">
+      <div class="bignum mono-count" data-target="25" aria-hidden="true">0</div>
+      <div class="cap">
+        <p class="lead">advanced marks claimed across the <em>entire</em> 2025 inter‑county season.</p>
+        <p class="sub">214 games · roughly one every nine matches</p>
+      </div>
+    </div>
+    <figcaption>Pulse Studio · the high catch — black ink, one object in Insight Gold</figcaption>
+  </figure>
+</div>
+
+<div class="wrap">
+  <article>
+    <p class="lead-in">No phrase in Gaelic football generated more heat in 2025 than <em>the mark</em>. Pundits relitigated it weekly; players were split; supporters could agree only that everyone else was wrong about it. So we did the unglamorous thing and asked how often the disputed event actually occurred. The answer, from the game's own analysts, is twenty‑five times — across a season of 214 inter‑county matches. The most‑argued rule in the sport is also one of its rarest.</p>
+    <p>That single fact reframes the debate, but only once you separate two things the word <em>mark</em> has quietly fused together. There is no such thing as "the mark." There are two of them, and in 2025 they pulled in opposite directions.</p>
+
+    <hr class="section-rule">
+    <p class="kicker">What happened</p>
+    <h2>Two rules wearing one name</h2>
+    <p>The mark entered the game in 2017 to reward a clean catch from a kick‑out; an attacking version followed in 2020. Under the enhanced rulebook trialled in 2025 — the season that produced these numbers — the two settled into distinct jobs, governing entirely different parts of the field.</p>
+
+    <div class="defs obs">
+      <div class="def"><p class="tag">Rule 01 — Midfield</p><h3>The kick‑out mark</h3>
+        <p>A clean catch of a kick‑out on or beyond your own 45. It lives in the middle third, where the aerial contest is decided.</p>
+        <p class="verdict">Status: <b>structurally central</b></p></div>
+      <div class="def"><p class="tag">Rule 02 — Attack</p><h3>The advanced mark</h3>
+        <p>A clean catch inside the opposition 20‑metre line, from a kick beyond the 45. Its catching zone shrank to a strip the depth of the small square.</p>
+        <p class="verdict">Status: <b>near‑extinct</b></p></div>
+    </div>
+    <p>Treat them as one number and you learn nothing. Separate them and the season tells a clear story: one nearly vanished, while the territory the other governs took over the game. Start with the one everyone pictures — the high catch in front of goal.</p>
+
+    <hr class="section-rule">
+    <p class="kicker">The number</p>
+    <h2>A rule you could miss for a month</h2>
+    <p>Below, every inter‑county game of the 2025 season is a single square — all 214 of them. The gold squares are the games that produced an advanced mark. The picture is the argument: you can scan almost the whole season before you find one.</p>
+
+    <figure class="viz obs" id="viz-grid">
+      <div class="vhead">
+        <p class="kick">Scarcity · every inter‑county game, 2025</p>
+        <h4>Find the mark</h4>
+      </div>
+      <div class="vbody">
+        <div class="gridtop">
+          <div class="big mono-count" data-target="25" data-suffix=" / 214">0</div>
+          <div class="anno">Games with an advanced mark. The other <b>189</b> passed without one.</div>
+        </div>
+        <div class="grid214" id="grid214" aria-label="A grid of 214 squares, one per inter-county game; 25 are gold, marking the games that produced an advanced mark."></div>
+        <div class="gridlegend">
+          <span><span class="sw" style="background:#E7E1D3"></span>No advanced mark</span>
+          <span><span class="sw" style="background:var(--gold)"></span>Advanced mark claimed</span>
+        </div>
+      </div>
+      <div class="vnote"><span>GAA Games Intelligence Unit, 2025 inter‑county season.</span><span class="hint">↳ hover any square</span></div>
+    </figure>
+
+    <p>That is the attacking mark — the celebrated catch, the one in the debate. It surfaced in roughly one game in nine. To call it a feature of the modern game is to mistake a footnote for a chapter.</p>
+
+    <p class="pull">The mark you argue about happens once a fortnight of football. The mark you don't think to name now shapes nearly every restart.</p>
+
+    <hr class="section-rule">
+    <p class="kicker">The other half</p>
+    <h2>Where the catch actually came back</h2>
+    <p>Here is the half the debate skips. The kick‑out mark rewards winning the ball cleanly in the air — and in 2025 that contest stopped being a sideshow. The new rules forced kick‑outs long, banned the goalkeeper as a release valve, and priced interference with the restart. The single clearest fingerprint is <em>where the ball now lands</em>. For a decade the kick‑out was a short pass to a corner‑back. In 2025 it became a long ball into the middle third — straight into the zone the kick‑out mark governs.</p>
+
+    <figure class="viz obs" id="viz-pitch">
+      <div class="vhead">
+        <p class="kick">The restart · where kick‑outs land, by pitch zone</p>
+        <h4>The kick‑out moved up the field</h4>
+        <p>Share of kick‑outs landing in each third of the pitch, measured from the kicker's own goal. Same metric, two seasons — the safe short ball gave way to the long contest.</p>
+      </div>
+      <div class="vbody pitch">
+        <svg viewBox="0 0 760 300" role="img" aria-label="Pitch-zone chart comparing where kick-outs landed in 2022-24 versus 2025: short restarts collapsed, long restarts past the 45 rose to 78 percent.">
+          <!-- zone dividers / pitch backdrop -->
+          <g stroke="#E2DED4" stroke-width="1">
+            <line x1="60" y1="40" x2="60" y2="248"/>
+            <line x1="293" y1="40" x2="293" y2="248"/>
+            <line x1="526" y1="40" x2="526" y2="248"/>
+            <line x1="720" y1="40" x2="720" y2="248"/>
+          </g>
+          <!-- zone labels -->
+          <text class="zlabel" x="176" y="32" text-anchor="middle">OWN THIRD (inside 45)</text>
+          <text class="zlabel" x="409" y="32" text-anchor="middle">MIDDLE THIRD</text>
+          <text class="zlabel" x="615" y="32" text-anchor="middle">ATTACKING THIRD</text>
+
+          <!-- 2022-24 row -->
+          <text class="yr" x="60" y="78">2022–24</text>
+          <!-- own third 48 -->
+          <g class="bar" data-tt="Own third · 2022–24" data-tn="48%" data-tb="Nearly half of all kick‑outs stayed inside the kicker's own 45 — the short, safe restart.">
+            <rect class="fill" x="60" y="86" width="167" height="34" fill="#C3BCAC"/>
+            <text class="pct" x="68" y="110" font-size="17" fill="#10212F">48%</text>
+          </g>
+          <!-- middle 41 (52% beyond 45 split 41 mid / 11 att) -->
+          <g class="bar" data-tt="Middle third · 2022–24" data-tn="41%" data-tb="Just over a third reached the middle third.">
+            <rect class="fill" x="293" y="86" width="143" height="34" fill="#B7AE99"/>
+            <text class="pct" x="301" y="110" font-size="17" fill="#10212F">41%</text>
+          </g>
+          <!-- attacking 11 -->
+          <g class="bar" data-tt="Attacking third · 2022–24" data-tn="11%" data-tb="Long, direct kick‑outs into the attacking third were rare.">
+            <rect class="fill" x="526" y="86" width="38" height="34" fill="#ABA286"/>
+            <text class="pct" x="572" y="110" font-size="15" fill="#6F7782">11%</text>
+          </g>
+
+          <!-- 2025 row -->
+          <text class="yr" x="60" y="176">2025</text>
+          <!-- own third 22 -->
+          <g class="bar" data-tt="Own third · 2025" data-tn="22%" data-tb="The short restart was legislated into a corner — down from 48%.">
+            <rect class="fill" x="60" y="184" width="77" height="34" fill="#C3BCAC"/>
+            <text class="pct" x="68" y="208" font-size="17" fill="#10212F">22%</text>
+          </g>
+          <!-- middle 58 -->
+          <g class="bar" data-tt="Middle third · 2025" data-tn="58%" data-tb="The middle third became the kick‑out's home — and the home of the contest the kick‑out mark rewards.">
+            <rect class="fill" x="293" y="184" width="202" height="34" fill="#C8A23B"/>
+            <text class="pct" x="301" y="208" font-size="17" fill="#fff">58%</text>
+          </g>
+          <!-- attacking 20 -->
+          <g class="bar" data-tt="Attacking third · 2025" data-tn="20%" data-tb="Direct long kick‑outs into the attacking third nearly doubled.">
+            <rect class="fill" x="526" y="184" width="69" height="34" fill="#D8BE78"/>
+            <text class="pct" x="601" y="208" font-size="15" fill="#A9852A">20%</text>
+          </g>
+
+          <!-- the 45 line callout -->
+          <line x1="293" y1="48" x2="293" y2="244" stroke="#10212F" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <g class="reveal-flag">
+            <text class="annoflag" x="299" y="262" font-size="11">the 45 — 78% now cross it (was 52%)</text>
+          </g>
+        </svg>
+      </div>
+      <div class="vnote"><span>GIU full‑season 2025 vs 2022–24 average. Teams still retained 60% of their own kick‑outs.</span><span class="hint">↳ hover a zone</span></div>
+    </figure>
+
+    <p>That shift is the whole story of the kick‑out mark. The rule barely changed; its habitat was rebuilt around it. The clean catch in the middle third — once a quaint relic of a more direct era — is again one of the most valuable acts in the game, and the kick‑out mark is the rule that puts a price on it.</p>
+
+    <hr class="section-rule">
+    <p class="kicker">Context</p>
+    <h2>Everything got louder except the mark</h2>
+    <p>Step back and the scale of the 2025 reset is its own argument. Almost every measurable thing about football changed — and changed loudly. Against that backdrop, the advanced mark is the one number that barely moved off zero. Every figure here is counted from games, not from opinion.</p>
+
+    <figure class="viz obs" id="viz-tiles">
+      <div class="vhead"><p class="kick">The 2025 reset · measured change on prior seasons</p><h4>One season, measured six ways</h4></div>
+      <div class="vbody">
+        <div class="tiles">
+          <div class="tile" data-tt="Shots per game" data-tn="60.1" data-tb="Up 11% on the previous three‑year average of 52.7 — more shots, more often.">
+            <div class="tnum mono-count" data-target="60.1" data-dec="1">0</div><div class="tlbl">shots per game</div><div class="chip up">▲ 11%</div></div>
+          <div class="tile" data-tt="Scoring" data-tn="+16%" data-tb="Total scores per game rose 16% year on year.">
+            <div class="tnum mono-count" data-target="16" data-prefix="+" data-suffix="%">0</div><div class="tlbl">scores per game</div><div class="chip up">▲ on 2024</div></div>
+          <div class="tile" data-tt="Goal attempts" data-tn="4.2 → 6.1" data-tb="Goal attempts per game jumped 45%, from 4.2 to 6.1.">
+            <div class="tnum mono-count" data-target="45" data-prefix="+" data-suffix="%">0</div><div class="tlbl">goal attempts per game</div><div class="chip up">▲ 4.2→6.1</div></div>
+          <div class="tile" data-tt="Long kick‑outs" data-tn="78%" data-tb="Share of kick‑outs travelling beyond the 45 — up from 52%. The contest came back.">
+            <div class="tnum mono-count" data-target="78" data-suffix="%">0</div><div class="tlbl">kick‑outs cross the 45</div><div class="chip up">▲ from 52%</div></div>
+          <div class="tile" data-tt="Yellow cards" data-tn="810 → 539" data-tb="Yellow cards fell 33% across the inter‑county season as the discipline rules bit.">
+            <div class="tnum mono-count" data-target="33" data-prefix="−" data-suffix="%">0</div><div class="tlbl">yellow cards</div><div class="chip down">▼ 810→539</div></div>
+          <div class="tile mark" data-tt="Advanced marks" data-tn="25" data-tb="The quietest number of the season. Roughly one every nine games — 0.12 per match.">
+            <div class="tnum mono-count" data-target="25">0</div><div class="tlbl">advanced marks — all season</div><div class="chip">≈ 0.12 / game</div></div>
+        </div>
+      </div>
+      <div class="vnote"><span>GAA Games Intelligence Unit & FRC 2024/25 Final Report. All figures counted from match data.</span><span class="hint">↳ hover a tile</span></div>
+    </figure>
+
+    <hr class="section-rule">
+    <p class="kicker">What it means</p>
+    <h2>The argument was about the wrong half</h2>
+    <p>The mark didn't fail and it didn't succeed. It split. One version withered to a rounding error — twenty‑five events in a season of thousands. The other quietly became the gatekeeper of the game's most important contest, as the kick‑out it rewards was pushed thirty metres up the pitch into a live aerial duel. A year of debate treated them as one thing and argued, mostly, about the half that barely happens.</p>
+    <p>This is the gap between reporting football and understanding it. The talking point was the noise. The count — twenty‑five, against a kick‑out that moved up the field in nearly every game — is the signal. They point in opposite directions, and only one of them decides matches.</p>
+  </article>
+</div>
+
+<section class="method"><div class="wrap">
+  <p class="kicker">The Pulse method</p>
+  <h2>Why this is the first thing we made</h2>
+  <p>Gaelic Pulse exists to do exactly what this piece does: take the thing everyone is arguing about and replace the assertion with the count — then make the count impossible to look away from. We didn't watch a single match to write this. We read the game's own match data and made it legible. The data is being captured. Almost nobody is turning it into understanding.</p>
+  <p class="pull">Traditional GAA media tells you the mark is controversial. We can show you it happened twenty‑five times.</p>
+  <p>This is the template. When the 2026 season closes, every talking point that defined it — the two‑pointer, the new kick‑out, the goalkeeper rule, the cards — gets the same treatment: recounted, explained, and visualised until the argument either survives contact with the evidence or doesn't. Insight over noise. Every match, every signal.</p>
+
+  <div class="sources">
+    <p class="tag">Sources &amp; method</p>
+    <p>All figures are counted from match data published by the GAA's Games Intelligence Unit and the Football Review Committee 2024/25 Final Report (gaa.ie), covering 214 inter‑county games (115 National League, 29 provincial, 35 Tailteann Cup, 35 Sam Maguire Cup). Kick‑out zone shares are full‑season 2025 against the 2022–24 average; the "12,000+ shots" figure is derived from the GIU shot rate (≈60 per game). The 214‑square grid is an isotype representation of scale — squares show the count, not specific fixtures.</p>
+    <p>Scope: 2025 was the trial season under the enhanced rules. 2026 is the first under the permanent rulebook, in which the advanced mark's catching zone is the opposition 20‑metre line. These are the baseline numbers the 2026 season will be measured against.</p>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <span class="mantra">The pulse of the game<span class="dot">.</span></span>
+  <span class="mono">Gaelic Pulse · Pulse Intelligence</span>
+</div></footer>
+
+<script>
+(function(){
+  "use strict";
+  var tip=document.getElementById('tip');
+  function showTip(el,x,y){
+    var tt=el.getAttribute('data-tt'),tn=el.getAttribute('data-tn'),tb=el.getAttribute('data-tb');
+    var html='';
+    if(tt) html+='<p class="tt">'+tt+'</p>';
+    if(tn) html+='<p class="tn">'+tn+'</p>';
+    if(tb) html+='<p class="tb">'+tb+'</p>';
+    tip.innerHTML=html; tip.classList.add('on');
+    var w=tip.offsetWidth,h=tip.offsetHeight,px=x+14,py=y+14;
+    if(px+w>window.innerWidth-8) px=x-w-14;
+    if(py+h>window.innerHeight-8) py=y-h-14;
+    tip.style.left=px+'px'; tip.style.top=py+'px';
+  }
+  function hideTip(){tip.classList.remove('on');}
+  function bind(el){
+    el.addEventListener('mousemove',function(e){showTip(el,e.clientX,e.clientY);});
+    el.addEventListener('mouseleave',hideTip);
+    el.addEventListener('click',function(e){showTip(el,e.clientX,e.clientY);setTimeout(hideTip,2400);});
+  }
+
+  // scarcity grid
+  var grid=document.getElementById('grid214');
+  if(grid){
+    function lcg(s){return function(){s=(s*1664525+1013904223)%4294967296;return s/4294967296;};}
+    var rnd=lcg(20250713), gold={}, picked=0;
+    while(picked<25){var idx=Math.floor(rnd()*214); if(!gold[idx]){gold[idx]=1;picked++;}}
+    var gi=0;
+    for(var i=0;i<214;i++){
+      var c=document.createElement('div'); c.className='gcell'+(gold[i]?' gold':'');
+      c.style.transitionDelay=(Math.min(i,140)*5)+'ms';
+      if(gold[i]){gi++; c.setAttribute('data-tt','Advanced mark'); c.setAttribute('data-tn','#'+gi+' of 25'); c.setAttribute('data-tb','One of the 25 advanced marks claimed across the 2025 inter‑county season.');}
+      else {c.setAttribute('data-tt','Inter‑county game'); c.setAttribute('data-tb','One of 214 games — no advanced mark recorded.');}
+      bind(c); grid.appendChild(c);
+    }
+  }
+
+  document.querySelectorAll('.pitch .bar,.tile').forEach(bind);
+
+  function countUp(el){
+    var target=parseFloat(el.getAttribute('data-target'))||0,
+        dec=parseInt(el.getAttribute('data-dec')||'0',10),
+        pre=el.getAttribute('data-prefix')||'', suf=el.getAttribute('data-suffix')||'',
+        t0=null,dur=1200;
+    function step(ts){ if(!t0)t0=ts; var p=Math.min((ts-t0)/dur,1);
+      var e=1-Math.pow(1-p,3), v=(target*e).toFixed(dec);
+      el.textContent=pre+v+suf; if(p<1) requestAnimationFrame(step); }
+    requestAnimationFrame(step);
+  }
+
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting) return;
+      e.target.classList.add('reveal');
+      e.target.querySelectorAll('.mono-count').forEach(countUp);
+      io.unobserve(e.target);
+    });
+  },{threshold:.18});
+  document.querySelectorAll('.obs,.hero-fig').forEach(function(el){io.observe(el);});
+  var heroNum=document.querySelector('.hero-fig .mono-count');
+  if(heroNum){ setTimeout(function(){countUp(heroNum);},350); }
+
+  // scroll progress bar
+  var prog=document.getElementById('prog');
+  function onScroll(){
+    var h=document.documentElement, max=h.scrollHeight-h.clientHeight;
+    prog.style.width=(max>0?(h.scrollTop/max*100):0)+'%';
+  }
+  document.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+})();
+</script>
+
+<aside class="pi-next">
+  <div class="pi-rule">
+    <p class="pi-label">More from Pulse Intelligence</p>
+    <a class="pi-card" href="./the-arc-resorted.html">
+      <p class="pi-eyebrow">Football · The 2025 Season</p>
+      <h3 class="pi-title">The best two-pointers won Sam. Not the most.</h3>
+      <p class="pi-dek">The new rule produced 1,012 of them in its first year. Kerry kicked fewer but better — and lifted Sam.</p>
+      <p class="pi-foot">Read the analysis <span class="arrow">→</span></p>
+    </a>
+  </div>
+</aside>
+
+</body>
+</html>

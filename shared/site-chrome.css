@@ -1,0 +1,296 @@
+/* ============================================================
+   site-chrome.css — Gaelic Pulse global navigation & cross-page UI
+   Extends county-styles.css with chrome only (no county content).
+   Tokens (set in county-styles.css):
+     --navy:#0B1F3A  --green:#2F8F5C  --gold:#C8A23B  --cream:#F7F6F2
+============================================================ */
+
+:root{
+  --gp-navy:#0B1F3A;
+  --gp-green:#2F8F5C;
+  --gp-gold:#C8A23B;
+  --gp-cream:#F7F6F2;
+  --gp-ink:#101418;
+  --gp-mute:#5b6470;
+  --gp-line:rgba(11,31,58,.12);
+  --gp-line-strong:rgba(11,31,58,.22);
+  --gp-shadow:0 1px 0 rgba(11,31,58,.06), 0 8px 24px rgba(11,31,58,.06);
+}
+
+/* ============================================================
+   GP TOP BAR (sticky, all pages)
+============================================================ */
+.gp-bar{
+  position:sticky; top:0; z-index:50;
+  display:flex; align-items:center; gap:18px;
+  padding:10px 22px;
+  background:rgba(247,246,242,.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom:1px solid var(--gp-line);
+  font-family:'Archivo', system-ui, sans-serif;
+}
+
+.gp-brand{
+  display:flex; align-items:center; gap:10px;
+  text-decoration:none; color:var(--gp-navy);
+  font-family:'Fraunces', Georgia, serif;
+  font-weight:600; font-size:18px; letter-spacing:.2px;
+  white-space:nowrap;
+}
+.gp-brand .pulse-path{ width:36px; height:20px; }
+.gp-brand .pulse-path path{ stroke:var(--gp-green); }
+.gp-wm{ font-size:13px; color:var(--gp-mute); letter-spacing:.16em; text-transform:uppercase; }
+
+.gp-tabs{
+  display:flex; align-items:center; gap:4px; margin-left:auto; flex-wrap:wrap;
+}
+.gp-tab{
+  display:inline-flex; align-items:center; gap:8px;
+  padding:7px 14px; border-radius:999px;
+  font-size:13px; font-weight:600; letter-spacing:.06em; text-transform:uppercase;
+  color:var(--gp-navy); text-decoration:none;
+  background:transparent; border:1px solid transparent;
+  transition:background .15s ease, border-color .15s ease, color .15s ease;
+  cursor:pointer;
+}
+.gp-tab:hover{ background:rgba(11,31,58,.05); }
+.gp-tab.active{
+  background:var(--gp-navy); color:#fff;
+}
+.gp-tab.active:hover{ background:#0a1a30; }
+
+/* County dropdown */
+.gp-county-wrap{ position:relative; }
+.gp-county-btn{
+  border:1px solid var(--gp-line-strong);
+  background:#fff;
+}
+.gp-county-btn::after{
+  content:""; display:inline-block; width:8px; height:8px;
+  border-right:1.5px solid currentColor; border-bottom:1.5px solid currentColor;
+  transform:rotate(45deg) translateY(-2px); margin-left:4px;
+}
+.gp-dropdown{
+  display:none;
+  position:absolute; top:calc(100% + 8px); right:0;
+  min-width:560px; max-width:90vw;
+  background:#fff; border:1px solid var(--gp-line-strong);
+  border-radius:10px; padding:14px 16px;
+  box-shadow:var(--gp-shadow);
+  z-index:60;
+  grid-template-columns:repeat(4, 1fr);
+  gap:14px 22px;
+}
+.gp-dropdown.open{ display:grid; }
+.gp-prov{
+  display:flex; flex-direction:column; gap:4px;
+  font-size:13px;
+}
+.gp-prov > strong,
+.gp-prov > h5{
+  font-family:'Fraunces', Georgia, serif;
+  font-weight:600; font-size:12px; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--gp-green); margin:0 0 4px;
+}
+.gp-prov a{
+  color:var(--gp-navy); text-decoration:none;
+  padding:3px 0; line-height:1.3;
+  border-bottom:1px solid transparent;
+}
+.gp-prov a:hover{ border-bottom-color:var(--gp-gold); }
+.gp-prov a.current{ color:var(--gp-green); font-weight:600; }
+
+@media (max-width: 720px){
+  .gp-bar{ gap:10px; padding:8px 14px; }
+  .gp-wm{ display:none; }
+  .gp-tab{ padding:6px 10px; font-size:12px; }
+  .gp-dropdown{ min-width:88vw; grid-template-columns:repeat(2, 1fr); }
+}
+
+/* ============================================================
+   PROVINCE RAIL (below masthead on county pages)
+============================================================ */
+.province-rail{
+  margin:18px auto 8px;
+  max-width:1240px;
+  padding:0 22px;
+  font-family:'Archivo', system-ui, sans-serif;
+}
+.pr-pills{
+  display:flex; gap:8px; flex-wrap:wrap;
+}
+.prov-pill{
+  display:inline-flex; align-items:center; gap:8px;
+  padding:6px 14px; border-radius:999px;
+  background:#fff; border:1px solid var(--gp-line-strong);
+  font-size:12px; font-weight:600; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--gp-navy); cursor:pointer;
+  transition:background .15s ease, color .15s ease, border-color .15s ease;
+}
+.prov-pill:hover{ border-color:var(--gp-green); }
+.prov-pill.active{
+  background:var(--gp-green); color:#fff; border-color:var(--gp-green);
+}
+.pr-counties{
+  margin-top:10px;
+  display:flex; flex-wrap:wrap; gap:6px 10px;
+  padding:10px 14px;
+  background:rgba(11,31,58,.03);
+  border-radius:8px;
+  border:1px dashed var(--gp-line);
+  font-size:13px;
+}
+.pr-county{
+  color:var(--gp-navy); text-decoration:none;
+  padding:2px 8px; border-radius:4px;
+  border:1px solid transparent;
+}
+.pr-county:hover{ background:#fff; border-color:var(--gp-line-strong); }
+.pr-county.current{
+  background:var(--gp-gold); color:var(--gp-ink); font-weight:600;
+}
+
+/* ============================================================
+   RELATED-COUNTIES FOOTER STRIP
+============================================================ */
+.related-strip{
+  margin:48px auto 24px;
+  max-width:1240px;
+  padding:24px 22px;
+  border-top:1px solid var(--gp-line);
+  border-bottom:1px solid var(--gp-line);
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:18px;
+  font-family:'Archivo', system-ui, sans-serif;
+}
+.rel-cell{
+  display:flex; flex-direction:column; gap:6px;
+  padding:14px 16px;
+  background:#fff;
+  border:1px solid var(--gp-line);
+  border-radius:8px;
+  text-decoration:none; color:var(--gp-navy);
+  transition:border-color .15s ease, transform .15s ease;
+}
+.rel-cell:hover{ border-color:var(--gp-green); transform:translateY(-1px); }
+.rel-cell .kicker{
+  font-size:11px; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--gp-mute);
+}
+.rel-cell strong{
+  font-family:'Fraunces', Georgia, serif;
+  font-size:18px; font-weight:600; color:var(--gp-navy);
+}
+.rel-cell .note{
+  font-size:12px; color:var(--gp-mute);
+}
+@media (max-width: 720px){
+  .related-strip{ grid-template-columns:1fr; }
+}
+
+/* ============================================================
+   STATUS BADGES (hero subhead pill)
+============================================================ */
+.status-badge{
+  display:inline-flex; align-items:center; gap:6px;
+  padding:3px 10px; border-radius:999px;
+  font-family:'Archivo', system-ui, sans-serif;
+  font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase;
+  border:1px solid transparent;
+}
+.status-badge::before{
+  content:""; width:6px; height:6px; border-radius:50%;
+  background:currentColor;
+}
+.status-badge.alive{
+  color:var(--gp-green);
+  background:rgba(47,143,92,.10);
+  border-color:rgba(47,143,92,.30);
+}
+.status-badge.out{
+  color:#9a2c2c;
+  background:rgba(154,44,44,.08);
+  border-color:rgba(154,44,44,.25);
+}
+.status-badge.pending{
+  color:#8a6a14;
+  background:rgba(200,162,59,.14);
+  border-color:rgba(200,162,59,.4);
+}
+
+/* ============================================================
+   PLACEHOLDER + AWAITING (editorial blanks across county pages)
+============================================================ */
+.chip.placeholder{
+  background:rgba(11,31,58,.04);
+  border:1px dashed var(--gp-line-strong);
+  color:var(--gp-mute);
+  font-style:italic;
+  font-weight:500;
+}
+.chip.placeholder .pip{
+  background:var(--gp-line-strong);
+}
+.verdict.placeholder{
+  color:var(--gp-mute);
+  font-style:italic;
+  border-left:3px solid var(--gp-gold);
+  padding-left:14px;
+}
+.awaiting.compact{
+  display:inline-block;
+  padding:8px 12px;
+  background:rgba(11,31,58,.04);
+  border:1px dashed var(--gp-line-strong);
+  border-radius:6px;
+  font-family:'Archivo', system-ui, sans-serif;
+  font-size:12px; color:var(--gp-mute);
+  font-style:italic;
+}
+
+/* ============================================================
+   SRCREF (source link arrow used in results timeline)
+============================================================ */
+.srcref{
+  display:inline-flex; align-items:center; gap:3px;
+  color:var(--gp-mute); text-decoration:none;
+  font-size:11px; letter-spacing:.06em;
+  margin-left:6px;
+  border-bottom:1px dotted transparent;
+}
+.srcref:hover{ color:var(--gp-green); border-bottom-color:var(--gp-green); }
+.srcref::after{
+  content:"↗"; font-size:11px;
+}
+
+/* ============================================================
+   DISCIPLINE STACK (section 05)
+============================================================ */
+.disc-stack{
+  display:flex; flex-direction:column; gap:10px;
+  font-family:'Archivo', system-ui, sans-serif;
+}
+.disc-row{
+  display:grid;
+  grid-template-columns:120px 1fr auto;
+  align-items:center;
+  gap:14px;
+  padding:10px 14px;
+  background:#fff;
+  border:1px solid var(--gp-line);
+  border-radius:6px;
+  font-size:13px;
+}
+.disc-row > .dt{
+  color:var(--gp-mute); font-size:12px;
+  font-variant-numeric:tabular-nums;
+}
+.disc-row > .opp{
+  font-family:'Fraunces', Georgia, serif;
+  color:var(--gp-navy); font-weight:500;
+}
+@media (max-width:560px){
+  .disc-row{ grid-template-columns:1fr; gap:4px; }
+}

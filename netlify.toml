@@ -1,0 +1,51 @@
+# Netlify configuration for Gaelic Pulse
+# Static site — no build step required.
+
+[build]
+  publish = "."
+  command = ""
+
+# Pretty URLs (trailing slash for directory indexes)
+[[redirects]]
+  from = "/intelligence"
+  to = "/intelligence/"
+  status = 301
+
+[[redirects]]
+  from = "/football"
+  to = "/football/"
+  status = 301
+
+[[redirects]]
+  from = "/hurling"
+  to = "/hurling/"
+  status = 301
+
+[[redirects]]
+  from = "/camogie"
+  to = "/camogie/"
+  status = 301
+
+[[redirects]]
+  from = "/ladies-football"
+  to = "/ladies-football/"
+  status = 301
+
+# Cache headers — static assets get aggressive caching, HTML is revalidated
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/shared/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

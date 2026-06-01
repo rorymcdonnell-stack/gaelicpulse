@@ -1,0 +1,5 @@
+# Netlify _redirects — fallback rules
+# (Primary rules live in netlify.toml; this file is for ad-hoc additions.)
+
+# Catch any /index.html requests and redirect to clean URLs
+/index.html  /  301!

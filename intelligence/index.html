@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.gaelicpulse.com/intelligence/">
+<meta property="og:title" content="Pulse Intelligence — Long-form analysis | Gaelic Pulse">
+<meta property="og:description" content="Stories the trackers can't tell. Long-form analysis built on the game's own data — rules, runs, and the lines that decide a season.">
+<meta property="og:image" content="https://www.gaelicpulse.com/static/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Gaelic Pulse">
+<meta property="og:locale" content="en_IE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pulse Intelligence — Long-form analysis | Gaelic Pulse">
+<meta name="twitter:description" content="Stories the trackers can't tell. Long-form analysis built on the game's own data — rules, runs, and the lines that decide a season.">
+<meta name="twitter:image" content="https://www.gaelicpulse.com/static/og-default.png">
+<meta name="description" content="Stories the trackers can't tell. Long-form analysis built on the game's own data — rules, runs, and the lines that decide a season.">
+<link rel="canonical" href="https://www.gaelicpulse.com/intelligence/">
+<title>Pulse Intelligence — Gaelic Pulse</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Archivo:wght@400;500;600;700&family=Spectral:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/site-chrome.css">
+<style>
+  :root{
+    --paper:#F7F4EC; --ink:#10212F; --gold:#C8A23B; --gold-dark:#A9852A;
+    --muted:#6F7782; --rule:#E2DED4; --rule-strong:#C9C3B4;
+    --navy:#0B1F3A; --green:#2F8F5C;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Archivo', system-ui, sans-serif;
+    background:var(--paper); color:var(--ink); line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none}
+
+  /* Ensure gp-bar uses cream-paper background here */
+  .gp-bar{ background:rgba(247,244,236,.94) !important; }
+
+  /* ---------- Section hero ---------- */
+  .pi-hero{
+    max-width:1080px; margin:0 auto;
+    padding:96px clamp(22px,5vw,40px) 56px;
+    border-bottom:1px solid var(--rule);
+  }
+  .pi-eyebrow{
+    font-family:'IBM Plex Mono', ui-monospace, monospace;
+    font-size:11px; letter-spacing:.24em; text-transform:uppercase;
+    color:var(--gold-dark); margin-bottom:22px;
+    display:inline-flex; align-items:center; gap:10px;
+  }
+  .pi-eyebrow .dot{ width:6px; height:6px; border-radius:50%; background:var(--gold); }
+  .pi-hero h1{
+    font-family:'Fraunces', Georgia, serif; font-weight:500;
+    font-size:clamp(40px, 6.4vw, 78px); line-height:1.02;
+    letter-spacing:-.025em; color:var(--ink); margin:0 0 26px;
+    max-width:18ch;
+  }
+  .pi-hero h1 em{ font-style:italic; font-weight:500; color:var(--green); }
+  .pi-strap{
+    font-family:'Spectral', Georgia, serif; font-style:italic;
+    font-size:clamp(17px, 1.9vw, 21px); line-height:1.5;
+    color:#33485A; max-width:62ch; margin-top:6px;
+  }
+  .pi-mantra{
+    margin-top:36px;
+    font-family:'IBM Plex Mono', ui-monospace, monospace;
+    font-size:12px; letter-spacing:.16em; text-transform:uppercase;
+    color:var(--ink);
+  }
+  .pi-mantra b{ color:var(--gold-dark); font-weight:500; }
+  .pi-mantra .sep{ color:var(--rule-strong); margin:0 10px; }
+
+  /* ---------- Rail ---------- */
+  .pi-rail{
+    max-width:1080px; margin:0 auto;
+    padding:56px clamp(22px,5vw,40px) 96px;
+  }
+  .pi-rail-head{
+    display:flex; align-items:baseline; justify-content:space-between;
+    gap:16px; margin-bottom:30px;
+  }
+  .pi-rail-head h2{
+    font-family:'Fraunces', Georgia, serif; font-weight:600;
+    font-size:clamp(22px, 2.8vw, 28px); letter-spacing:-.01em;
+  }
+  .pi-rail-head .count{
+    font-family:'IBM Plex Mono', ui-monospace, monospace;
+    font-size:11px; letter-spacing:.18em; text-transform:uppercase;
+    color:var(--muted);
+  }
+  .pi-grid{
+    display:grid; grid-template-columns:1fr 1fr; gap:22px;
+  }
+  .pi-card{
+    display:flex; flex-direction:column;
+    background:#FFFFFF; border:1px solid var(--rule); border-radius:4px;
+    padding:30px 30px 26px;
+    transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  }
+  .pi-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 18px 44px -22px rgba(16,33,47,.32);
+    border-color:var(--rule-strong);
+  }
+  .pi-card .c-eyebrow{
+    font-family:'IBM Plex Mono', ui-monospace, monospace;
+    font-size:11px; letter-spacing:.18em; text-transform:uppercase;
+    color:var(--muted); margin-bottom:14px;
+  }
+  .pi-card .c-title{
+    font-family:'Fraunces', Georgia, serif; font-weight:700;
+    font-size:clamp(28px, 3.2vw, 34px); line-height:1.05;
+    letter-spacing:-.012em; color:var(--ink); margin:0 0 14px;
+  }
+  .pi-card .c-dek{
+    font-family:'Spectral', Georgia, serif; font-size:17px;
+    line-height:1.5; color:#33485A; margin:0 0 24px; max-width:42ch;
+  }
+  .pi-card .c-foot{
+    display:flex; align-items:center; justify-content:space-between;
+    margin-top:auto; padding-top:18px; border-top:1px solid var(--rule);
+    font-family:'IBM Plex Mono', ui-monospace, monospace;
+    font-size:11px; letter-spacing:.14em; text-transform:uppercase;
+  }
+  .pi-card .c-foot .read{
+    color:var(--gold-dark); display:inline-flex; align-items:center; gap:8px;
+  }
+  .pi-card .c-foot .read .arrow{ transition:transform .2s ease; }
+  .pi-card:hover .c-foot .read .arrow{ transform:translateX(4px); }
+  .pi-card .c-foot .date{ color:var(--muted); }
+
+  /* ---------- Footer ---------- */
+  footer{
+    max-width:1080px; margin:0 auto;
+    padding:32px clamp(22px,5vw,40px) 64px;
+    border-top:1px solid var(--rule);
+    display:flex; align-items:center; justify-content:space-between;
+    gap:16px; flex-wrap:wrap;
+    font-size:11.5px; letter-spacing:.04em; color:var(--muted);
+  }
+  footer a{ color:var(--gold-dark); }
+
+  @media(max-width:760px){
+    .pi-grid{ grid-template-columns:1fr; gap:18px; }
+    .pi-hero{ padding-top:64px; padding-bottom:40px; }
+    .pi-hero h1{ font-size:clamp(34px, 9vw, 50px); }
+    .pi-mantra{ font-size:11px; letter-spacing:.12em; }
+    .pi-rail-head{ flex-direction:column; align-items:flex-start; gap:8px; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="gp-bar">
+    <a class="gp-brand" href="../index.html">
+      <svg width="34" height="20" viewBox="0 0 40 22" aria-hidden="true">
+        <path class="pulse-path" d="M0 11 H10 L14 11 L17 3 L21 19 L25 7 L28 11 H40"
+              fill="none" stroke="#2F8F5C" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="gp-wm">Gaelic<b>Pulse</b></span>
+    </a>
+    <nav class="gp-tabs">
+      <a class="gp-tab" href="../football/index.html">Football</a>
+      <a class="gp-tab" href="../hurling/index.html">Hurling</a>
+      <a class="gp-tab" href="../camogie/index.html">Camogie</a>
+      <a class="gp-tab" href="../ladies-football/index.html">Ladies Football</a>
+      <a class="gp-tab active" href="./index.html">Pulse Intelligence</a>
+    </nav>
+  </div>
+
+  <main>
+
+    <section class="pi-hero">
+      <div class="pi-eyebrow"><span class="dot"></span> Pulse Intelligence</div>
+      <h1>The longer <em>read.</em></h1>
+      <p class="pi-strap">
+        Stories the trackers can't tell. Long-form analysis built on the game's own data —
+        rules, runs, and the lines that decide a season.
+      </p>
+      <div class="pi-mantra">
+        <b>What happened</b><span class="sep">·</span><b>Why it happened</b><span class="sep">·</span><b>What happens next</b>
+      </div>
+    </section>
+
+    <section class="pi-rail" aria-label="Pulse Intelligence pieces">
+      <div class="pi-rail-head">
+        <h2>The 2025 Season</h2>
+        <div class="count">3 pieces</div>
+      </div>
+
+      <div class="pi-grid">
+
+        <a class="pi-card" href="./the-arc-resorted.html">
+          <p class="c-eyebrow">Football · Rules &amp; Reality</p>
+          <h3 class="c-title">The best two-pointers won Sam</h3>
+          <p class="c-dek">
+            The new rule produced 1,012 of them in its first year. Kerry kicked fewer
+            but better — and lifted Sam.
+          </p>
+          <div class="c-foot">
+            <span class="read">Read the analysis <span class="arrow">→</span></span>
+            <span class="date">June 2026</span>
+          </div>
+        </a>
+
+        <a class="pi-card" href="./the-handpass-paradox.html">
+          <p class="c-eyebrow">Football · Rules &amp; Reality</p>
+          <h3 class="c-title">The Handpass Paradox</h3>
+          <p class="c-dek">
+            The one new rule that did the opposite of what it was built to do — and why
+            the proposed fix is aimed at children.
+          </p>
+          <div class="c-foot">
+            <span class="read">Read the analysis <span class="arrow">→</span></span>
+            <span class="date">May 2026</span>
+          </div>
+        </a>
+
+        <a class="pi-card" href="./the-mark-recounted.html">
+          <p class="c-eyebrow">Football · Rules &amp; Reality</p>
+          <h3 class="c-title">The Mark, Recounted</h3>
+          <p class="c-dek">
+            For a year, Gaelic football argued about the mark. The game's own data
+            counted it twenty-five times.
+          </p>
+          <div class="c-foot">
+            <span class="read">Read the analysis <span class="arrow">→</span></span>
+            <span class="date">May 2026</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div>Gaelic Pulse · The Intelligence Platform for Gaelic Games</div>
+    <div><a href="../index.html">← Back to home</a></div>
+  </footer>
+
+</body>
+</html>

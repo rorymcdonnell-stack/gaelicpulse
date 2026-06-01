@@ -1,0 +1,23 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Node (not currently used, future-proof)
+node_modules/
+
+# Local build artefacts
+.cache/
+.tmp/
+
+# Old prototypes kept locally but not part of production
+_archive/
