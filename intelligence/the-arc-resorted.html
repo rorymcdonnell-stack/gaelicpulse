@@ -158,11 +158,9 @@ footer .mono{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:
 
 <link rel="stylesheet" href="../shared/site-chrome.css">
 <style id="gp-chrome-override">
-  /* Reset article-body font on chrome */
-  .gp-bar, .gp-bar *{ font-family:'Archivo', system-ui, -apple-system, sans-serif !important; }
+  /* Tabs/nav font in chrome bar; brand mark keeps its serif (set in site-chrome.css) */
+  .gp-bar .gp-tabs, .gp-bar .gp-tabs *{ font-family:'Archivo', system-ui, -apple-system, sans-serif !important; }
   .gp-bar{ background:rgba(247,244,236,.94); }
-  .gp-bar .gp-brand{ font-family:'Fraunces', Georgia, serif !important; color:#10212F; }
-  .gp-bar .gp-brand .gp-wm b{ color:#A9852A; }
   #prog{ top:48px !important; z-index:60 !important; }
   /* Article footer cross-link */
   .pi-next{ max-width:780px; margin:60px auto 80px; padding:0 24px; }

@@ -40,7 +40,14 @@
 }
 .gp-brand .pulse-path{ width:36px; height:20px; }
 .gp-brand .pulse-path path{ stroke:var(--gp-green); }
-.gp-wm{ font-size:13px; color:var(--gp-mute); letter-spacing:.16em; text-transform:uppercase; }
+/* Wordmark: mixed-case Fraunces serif, navy 'Gaelic' + green 'Pulse'.
+   Matches the landing mast brand mark exactly (just scaled to fit the chrome bar). */
+.gp-wm{
+  font-family:'Fraunces', Georgia, serif;
+  font-weight:700; font-size:18px; letter-spacing:-.01em;
+  color:var(--gp-navy); text-transform:none; line-height:1;
+}
+.gp-wm b{ color:var(--gp-green); font-weight:700; }
 
 .gp-tabs{
   display:flex; align-items:center; gap:4px; margin-left:auto; flex-wrap:wrap;
