@@ -247,6 +247,36 @@
   .prize{margin-top:14px;padding:13px 16px;background:var(--gold-soft);border:1px solid var(--gold);border-radius:4px;font-size:14px;color:#5a4a1c}
   .prize b{font-weight:700;color:var(--navy)}
   @media(max-width:680px){.lives{grid-template-columns:1fr}}
+
+  /* Round 2 fixtures section */
+  .anchors{display:flex;flex-wrap:wrap;gap:0 26px;margin:8px 0 0;padding:10px 0 6px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .anchors a{font-family:'Archivo',sans-serif;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;text-decoration:none;padding:4px 0;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
+  .anchors a:hover{color:var(--ink);border-bottom-color:var(--gold)}
+  .anchors a .ad{display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--green);margin-right:8px;vertical-align:2px}
+  .fixtures{margin-top:34px}
+  .fix-band{display:flex;align-items:baseline;justify-content:space-between;border-bottom:1px solid var(--line-strong);padding:0 0 9px;margin:26px 0 14px}
+  .fix-band:first-of-type{margin-top:0}
+  .fix-band .t{font-family:'Fraunces',serif;font-size:20px;font-weight:600;letter-spacing:-.01em;display:flex;align-items:center;gap:9px}
+  .fix-band .t .tag{width:10px;height:10px;border-radius:2px}
+  .fix-band .c{font-size:12px;font-weight:600;color:var(--muted)}
+  .fix-band .stakes{font-size:12.5px;color:var(--muted);font-style:italic;font-family:'Fraunces',serif}
+  .fix-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .fix-card{background:#fff;border:1px solid var(--line);border-left:3px solid var(--navy);border-radius:4px;padding:13px 15px 12px;transition:box-shadow .15s,transform .15s}
+  .fix-card.up{border-left-color:var(--green)}
+  .fix-card.down{border-left-color:var(--gold)}
+  .fix-card:hover{box-shadow:0 6px 20px -12px rgba(11,31,58,.35);transform:translateY(-1px)}
+  .fix-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:4px}
+  .fix-tie{font-family:'Archivo',sans-serif;font-weight:700;font-size:16px;letter-spacing:-.01em;color:var(--ink)}
+  .fix-tie a{color:inherit;text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s}
+  .fix-tie a:hover{border-bottom-color:var(--line-strong)}
+  .fix-tie .v{color:var(--muted);font-weight:500;margin:0 5px;font-size:14px}
+  .fix-badge{font-size:9.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:2px 7px;border-radius:2px;background:var(--navy-soft);color:var(--muted);flex-shrink:0}
+  .fix-card.up .fix-badge{background:var(--green-soft);color:var(--green)}
+  .fix-card.down .fix-badge{background:var(--gold-soft);color:#9a7a1d}
+  .fix-meta{font-size:11.5px;color:var(--muted);font-variant-numeric:tabular-nums;margin-bottom:7px}
+  .fix-stake{font-size:12.5px;color:#243349;line-height:1.45;padding-top:7px;border-top:1px dashed var(--line)}
+  .fix-stake b{color:var(--ink);font-weight:600}
+  @media(max-width:720px){.fix-grid{grid-template-columns:1fr;gap:11px}.anchors{gap:0 18px}}
 </style>
 <link rel="stylesheet" href="../shared/site-chrome.css">
 </head>
@@ -281,14 +311,79 @@
 
   <section class="hero">
     <div class="kicker"><span class="dot"></span> All-Ireland SFC · Sam Maguire &amp; Tailteann Cup 2026</div>
-    <h1>Who's <em>still in?</em></h1>
-    <p class="standfirst">The race for the Sam Maguire is on. <b>Sixteen counties, one cup</b>, and a simple rule: lose twice and you're out. Here's who's still standing after Round 1, who's flying, who's down to their last life, and what each county's next game decides. <b>The Tailteann Cup</b>, the second-tier All-Ireland, is tracked further down.</p>
+    <h1>Round 2: <em>the draw that splits</em> the season in two</h1>
+    <p class="standfirst">Eight ties, one weekend, two completely different stakes. The eight Round 1 winners go into <b>Round 2A</b>, where the prize is a direct line to the quarter-finals and the cost of defeat is only a detour through Round 3. The eight Round 1 losers go into <b>Round 2B</b>, where there is no detour: lose and your championship is over.</p>
     <div class="meta">
-      <span><b id="roundlbl">Round 1</b></span><span class="sep">/</span>
-      <span><b id="played">8</b> of <b id="gtotal">8</b> games played</span><span class="sep">/</span>
-      <span>Updated <b id="updated">Sun 31 May, evening</b></span><span class="sep">/</span>
+      <span><b id="roundlbl">Round 2 draw made</b></span><span class="sep">/</span>
+      <span><b id="played">0</b> of <b id="gtotal">8</b> fixtures played</span><span class="sep">/</span>
+      <span>Updated <b id="updated">Tue 2 June, draw complete</b></span><span class="sep">/</span>
       <span>Facts only, no rumour</span>
     </div>
+  </section>
+
+  <nav class="anchors">
+    <a href="#fixtures"><span class="ad"></span>Round 2 fixtures</a>
+    <a href="#counties"><span class="ad"></span>Counties detail</a>
+    <a href="#tailteann"><span class="ad"></span>The Tailteann Cup</a>
+  </nav>
+
+  <section class="fixtures" id="fixtures">
+
+    <div class="fix-band">
+      <div class="t"><span class="tag" style="background:var(--green)"></span>Round 2A · Winners' bracket</div>
+      <div class="stakes">Win and you're in the quarter-finals. Lose and you drop to Round 3.</div>
+    </div>
+    <div class="fix-grid">
+      <div class="fix-card up">
+        <div class="fix-head"><div class="fix-tie"><a href="donegal.html">Donegal</a> <span class="v">v</span> <a href="cork.html">Cork</a></div><div class="fix-badge">Home, Donegal</div></div>
+        <div class="fix-meta">Ballybofey</div>
+        <div class="fix-stake">Donegal beat Kerry away in R1; Cork put 0-30 past Meath at home. Two openers, two statement wins, now they meet.</div>
+      </div>
+      <div class="fix-card up">
+        <div class="fix-head"><div class="fix-tie"><a href="galway.html">Galway</a> <span class="v">v</span> <a href="westmeath.html">Westmeath</a></div><div class="fix-badge">Home, Galway</div></div>
+        <div class="fix-meta">Venue TBC</div>
+        <div class="fix-stake">Galway welcome the new Leinster champions. Westmeath needed extra time to floor Cavan in R1; Galway dispatched Kildare in 70.</div>
+      </div>
+      <div class="fix-card up">
+        <div class="fix-head"><div class="fix-tie"><a href="tyrone.html">Tyrone</a> <span class="v">v</span> <a href="mayo.html">Mayo</a></div><div class="fix-badge">Home, Tyrone</div></div>
+        <div class="fix-meta">Venue TBC</div>
+        <div class="fix-stake">Tyrone won away in Roscommon. Mayo hung on against Monaghan after letting a lead slip. The first real test for both.</div>
+      </div>
+      <div class="fix-card up">
+        <div class="fix-head"><div class="fix-tie"><a href="louth.html">Louth</a> <span class="v">v</span> <a href="armagh.html">Armagh</a></div><div class="fix-badge">Home, Louth</div></div>
+        <div class="fix-meta">Venue TBC</div>
+        <div class="fix-stake">Louth, still riding their R1 win over Dublin, host Armagh, who handled Derry comfortably at the Athletic Grounds.</div>
+      </div>
+    </div>
+
+    <div class="fix-band">
+      <div class="t"><span class="tag" style="background:var(--gold)"></span>Round 2B · Losers' bracket</div>
+      <div class="stakes">Win to stay alive. Lose and the championship is over.</div>
+    </div>
+    <div class="fix-grid">
+      <div class="fix-card down">
+        <div class="fix-head"><div class="fix-tie"><a href="kildare.html">Kildare</a> <span class="v">v</span> <a href="kerry.html">Kerry</a></div><div class="fix-badge">Home, Kildare</div></div>
+        <div class="fix-meta">Venue TBC</div>
+        <div class="fix-stake"><b>Kerry away, Kerry on the brink.</b> The All-Ireland holders lost their opener to Donegal. Jack O'Connor returns to the county he once managed, with the season on the line.</div>
+      </div>
+      <div class="fix-card down">
+        <div class="fix-head"><div class="fix-tie"><a href="cavan.html">Cavan</a> <span class="v">v</span> <a href="dublin.html">Dublin</a></div><div class="fix-badge">Home, Cavan</div></div>
+        <div class="fix-meta">Venue TBC</div>
+        <div class="fix-stake"><b>Dublin away, Dublin out of lives.</b> Beaten by Louth in R1. A second loss this weekend and one of the modern era's most decorated counties is done for the summer.</div>
+      </div>
+      <div class="fix-card down">
+        <div class="fix-head"><div class="fix-tie"><a href="derry.html">Derry</a> <span class="v">v</span> <a href="meath.html">Meath</a></div><div class="fix-badge">Home, Derry</div></div>
+        <div class="fix-meta">Venue TBC</div>
+        <div class="fix-stake">Derry lost to Armagh in the Ulster derby; Meath were beaten away in Cork. Both already on their last life.</div>
+      </div>
+      <div class="fix-card down">
+        <div class="fix-head"><div class="fix-tie"><a href="monaghan.html">Monaghan</a> <span class="v">v</span> <a href="roscommon.html">Roscommon</a></div><div class="fix-badge">Home, Monaghan</div></div>
+        <div class="fix-meta">Venue TBC</div>
+        <div class="fix-stake">Monaghan came up agonisingly short against Mayo; Roscommon were undone at home by Tyrone. Lose and one of these proud counties is out.</div>
+      </div>
+    </div>
+
+    <p class="fix-foot" style="font-size:12px;color:var(--muted);margin-top:18px;font-style:italic;font-family:'Fraunces',serif">Four counties will be eliminated by Sunday night, all four from the 2B side of the draw.</p>
   </section>
 
   <figure class="pulse-illo">
@@ -314,14 +409,17 @@
 
   <section class="story">
     <div class="lab">The story so far</div>
-    <p>The reigning champions are already in trouble. <b>Kerry lost their opener to Donegal</b>, last year's final in reverse, so the All-Ireland holders are down to their last life. Knockout football doesn't care who you are.</p>
+    <p>This is the weekend the field starts to empty. <b>Four counties will be eliminated by Sunday night</b>, and all four will come from the 2B side of the draw.</p>
+    <p>The headline name in that last-chance section is Kerry. The All-Ireland champions lost their opener and now travel to Kildare for a winner-takes-all tie, a fixture that also reunites Jack O'Connor with the county he previously managed. Dublin, beaten by Louth in Round 1, are likewise on the road and likewise out of lives, away to Cavan. <b>Two of the most decorated football counties of the modern era spend the second weekend of June playing not to disappear.</b></p>
+    <p>Above them, in the comfort of the winners' section, Donegal host Cork at Ballybofey, Galway welcome Leinster champions Westmeath, Tyrone host Mayo, and Louth, still riding their Round 1 win over Dublin, take on Armagh.</p>
   </section>
 
+  <a id="counties" style="display:block;position:relative;top:-20px"></a>
   <div class="lanes" id="lanes"></div>
 
   <div class="elim">
     <div class="n" id="elimN">0</div>
-    <div class="x"><b>Nobody's out yet.</b> You can't be knocked out in Round 1, a loss just costs a life. The first counties go out after the next round.</div>
+    <div class="x"><b>Nobody's out yet.</b> You can't be knocked out in Round 1, a loss just costs a life. <b>The first four eliminations come this weekend</b>, all from the 2B side of the draw.</div>
   </div>
 
   <footer>
@@ -329,11 +427,11 @@
       <span><b>Sources:</b> gaa.ie, RTÉ Sport, The Irish Times</span>
       <span><b>Scope:</b> Men's senior football (Sam Maguire &amp; Tailteann Cup)</span>
     </div>
-    <p class="note">Scorelines follow GAA convention, goals-points, where a goal is worth 3. Since 2025, a point kicked from on or beyond the 40m arc counts as 2 and is already included in the points total shown. <b>Sunday's two games are in</b>, <a href="louth.html">Louth</a> beat <a href="dublin.html">Dublin</a> <b>4-18 to 1-24</b> at Croke Park (<a href="https://www.rte.ie/sport/football/2026/0531/1576092-majestic-louth-turn-it-on-after-the-break-to-floor-dublin/">RTÉ report</a>), their first championship win over Dublin since 1973, sealed by Craig Lennon's 67th-minute goal. <a href="mayo.html">Mayo</a> held off an epic Monaghan comeback to win <b>1-24 to 2-20</b> in Clones (<a href="https://www.rte.ie/sport/football/2026/0531/1576093-mayo-hang-on-to-deny-epic-monaghan-comeback/">RTÉ report</a>). The Round 2A and 2B draws are made once all eight Round 1 ties are complete.</p>
+    <p class="note">Scorelines follow GAA convention, goals-points, where a goal is worth 3. Since 2025, a point kicked from on or beyond the 40m arc counts as 2 and is already included in the points total shown. <b>The Round 2 draw was made on Tuesday 2 June</b>, pairing the eight Round 1 winners (2A) and the eight Round 1 losers (2B) for ties this coming weekend. R1 results in: <a href="louth.html">Louth</a> beat <a href="dublin.html">Dublin</a> <b>4-18 to 1-24</b> at Croke Park (<a href="https://www.rte.ie/sport/football/2026/0531/1576092-majestic-louth-turn-it-on-after-the-break-to-floor-dublin/">RTÉ report</a>), their first championship win over Dublin since 1973, sealed by Craig Lennon's 67th-minute goal. <a href="mayo.html">Mayo</a> held off an epic Monaghan comeback to win <b>1-24 to 2-20</b> in Clones (<a href="https://www.rte.ie/sport/football/2026/0531/1576093-mayo-hang-on-to-deny-epic-monaghan-comeback/">RTÉ report</a>).</p>
     <div class="fm">Know the game beneath the scoreline.</div>
   </footer>
 
-  <section class="format tailteann-block" style="margin-top:34px">
+  <section class="format tailteann-block" id="tailteann" style="margin-top:34px">
     <div class="lab" style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px">The other cup</div>
     <h2>The Tailteann Cup</h2>
     <div class="lede">The second-tier All-Ireland, contested by counties who didn't make the Sam Maguire group stage. Same final venue, different cup. Sixteen counties enter; one comes out with silverware.</div>
@@ -395,10 +493,10 @@ const tot = (g,p)=> g*3+p;
 })();
 
 const LANES = [
-  {key:"2a", title:"Won Round 1, two lives left", tag:"var(--green)",
-   sub:"Both lives intact. One more win and they're in the quarter-finals."},
-  {key:"2b", title:"Lost Round 1, one life left", tag:"var(--gold)",
-   sub:"Down to their last life. Win the next game to stay alive; lose it and the summer's over."},
+  {key:"2a", title:"Counties in the 2A bracket", tag:"var(--green)",
+   sub:"Won Round 1, both lives intact. Win the Round 2A tie and they're into the quarter-finals."},
+  {key:"2b", title:"Counties in the 2B bracket", tag:"var(--gold)",
+   sub:"Lost Round 1, one life left. Win the Round 2B tie to stay alive; lose it and the summer's over."},
 ];
 
 function resultLine(t){
@@ -427,14 +525,15 @@ function card(t,i){
   }
   const up = t.lane==="2a";
   const decides = up
-    ? `<b>Next game:</b> win and they're in the quarter-finals; lose and they're down to their last life.`
-    : `<b>Next game:</b> must win to stay alive. Lose and they're out for the summer.`;
-  return `<div class="card ${up?'up':'down'}" style="animation-delay:${i*45}ms">
+    ? `<b>Round 2A:</b> win and they're in the quarter-finals; lose and they drop to Round 3.`
+    : `<b>Round 2B:</b> must win to stay alive. Lose and they're out for the summer.`;
+  const countySlug = t.county.toLowerCase().replace(/[^a-z]/g,'');
+  return `<a class="card ${up?'up':'down'}" href="${countySlug}.html" style="animation-delay:${i*45}ms;text-decoration:none;color:inherit;display:block">
     <div class="card-top"><div class="county">${t.county}</div>
       <div class="badge ${up?'won':'lost'}">${up?'Won R1':'Lost R1'}</div></div>
     ${resultLine(t)}
     <div class="decides">${decides}</div>
-  </div>`;
+  </a>`;
 }
 
 const host = document.getElementById('lanes');
