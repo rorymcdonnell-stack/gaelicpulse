@@ -453,8 +453,8 @@
    Scores are goals-points (a goal = 3; two-pointers already folded into points).
    ============================================================================ */
 const DATA = {
-  updated: "Sun 31 May, evening",
-  round: "Round 1",
+  updated: "Tue 2 June, draw complete",
+  round: "Round 2 draw made",
   teams: [
   // lane: 2a (won R1) | 2b (lost R1) | next (Sunday, not played)
   // result totals are computed as goals*3 + points
@@ -485,10 +485,10 @@ const tot = (g,p)=> g*3+p;
 
 // derive the header numbers from the data so one edit updates everything
 (function(){
-  const played = TEAMS.filter(t=>t.lane!=="next").length/2;
-  const toplay = TEAMS.filter(t=>t.lane==="next").length/2;
+  // Meta strip now refers to Round 2 fixtures (8 to play this weekend, 0 played so far).
+  // The DATA.teams below still describes Round 1 results for the lanes block.
   const set=(id,v)=>{const el=document.getElementById(id); if(el) el.textContent=v;};
-  set("played", played); set("gtotal", played+toplay);
+  set("played", 0); set("gtotal", 8);
   set("updated", DATA.updated); set("roundlbl", DATA.round);
 })();
 
