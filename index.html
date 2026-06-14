@@ -377,6 +377,90 @@
     .doors-head .note{text-align:left}
     .door.soon{flex-direction:column;align-items:flex-start;gap:14px}
   }
+
+  /* ── PULSE PANELS RAIL ── */
+  .pp-rail{
+    max-width:1280px;margin:0 auto;
+    padding:clamp(56px,8vw,96px) clamp(22px,6vw,40px) clamp(40px,6vw,56px);
+  }
+  .pp-rail-head{
+    display:flex;align-items:flex-end;justify-content:space-between;gap:24px;
+    padding-bottom:18px;border-bottom:1.5px solid var(--ink);margin-bottom:34px;flex-wrap:wrap;
+  }
+  .pp-rail-head .lhs{display:flex;flex-direction:column;gap:8px}
+  .pp-rail-head .pp-eyebrow{
+    font-family:'Archivo',sans-serif;font-weight:700;
+    font-size:11px;letter-spacing:.24em;text-transform:uppercase;
+    color:var(--gold);display:inline-flex;align-items:center;gap:9px;
+  }
+  .pp-rail-head .pp-eyebrow .dt{width:6px;height:6px;border-radius:50%;background:var(--gold);}
+  .pp-rail-head h2{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(34px,5vw,56px);letter-spacing:-.022em;line-height:1.02}
+  .pp-rail-head h2 em{font-style:italic;color:var(--green);font-weight:500}
+  .pp-rail-head .note{font-size:13px;color:var(--muted);font-weight:500;max-width:360px;text-align:right;font-family:'Archivo',sans-serif;line-height:1.5}
+  .pp-rail-head .note a{color:var(--gold);font-weight:700}
+  .pp-rail-head .note a:hover{text-decoration:underline}
+
+  .pp-stack{display:flex;flex-direction:column;gap:22px}
+
+  .pp-panel{
+    position:relative;display:grid;grid-template-columns:1.05fr 1fr;
+    background:#fff;border:1px solid var(--line);border-radius:6px;
+    overflow:hidden;min-height:clamp(360px,40vw,520px);
+    transition:box-shadow .25s ease,transform .25s ease,border-color .25s ease;
+    text-decoration:none;color:inherit;
+  }
+  .pp-panel:hover{box-shadow:0 30px 60px -32px rgba(11,31,58,.55);transform:translateY(-3px);border-color:var(--line-strong)}
+
+  .pp-art{
+    position:relative;overflow:hidden;
+    background:#0a0a0a;
+    border-right:1px solid var(--line);
+  }
+  .pp-art img{
+    width:100%;height:100%;object-fit:cover;display:block;
+    filter:grayscale(15%);
+    transition:transform .4s ease;
+  }
+  .pp-panel:hover .pp-art img{transform:scale(1.03)}
+
+  .pp-text{
+    display:flex;flex-direction:column;justify-content:space-between;gap:30px;
+    padding:clamp(28px,3.6vw,52px);
+  }
+  .pp-eyebrow-row{
+    display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+    font-family:'Archivo',sans-serif;font-weight:700;
+    font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);
+  }
+  .pp-eyebrow-row .tag{
+    display:inline-flex;align-items:center;gap:6px;
+    background:var(--gold-soft);color:var(--gold);
+    padding:3px 9px;border-radius:999px;font-size:10px;letter-spacing:.14em;
+  }
+  .pp-eyebrow-row .tag .dt{width:5px;height:5px;border-radius:50%;background:var(--gold);}
+  .pp-eyebrow-row .sep{color:var(--line-strong)}
+  .pp-panel h3{
+    font-family:'Fraunces',serif;font-weight:500;
+    font-size:clamp(26px,3.5vw,44px);letter-spacing:-.02em;line-height:1.06;
+  }
+  .pp-panel h3 em{font-style:italic;color:var(--green);font-weight:500}
+  .pp-dek{font-size:clamp(14px,1.5vw,17px);color:var(--muted);line-height:1.62;font-family:'Archivo',sans-serif;}
+  .pp-dek b{color:var(--ink);font-weight:600}
+  .pp-foot{
+    display:flex;align-items:center;justify-content:space-between;
+    padding-top:18px;border-top:1px solid var(--line);
+    font-family:'Archivo',sans-serif;font-size:12px;font-weight:700;
+    letter-spacing:.1em;text-transform:uppercase;
+  }
+  .pp-foot .read{color:var(--ink);display:flex;align-items:center;gap:6px}
+  .pp-foot .arrow{font-size:14px;transition:transform .2s}
+  .pp-panel:hover .pp-foot .arrow{transform:translateX(4px)}
+  .pp-foot .date{color:var(--muted);font-weight:500;letter-spacing:.06em;text-transform:none;font-size:12px}
+
+  @media(max-width:680px){
+    .pp-panel{grid-template-columns:1fr;min-height:auto}
+    .pp-art{height:240px;border-right:none;border-bottom:1px solid var(--line)}
+  }
 </style>
 </head>
 <body>
@@ -413,6 +497,37 @@
       </a>
     </div>
   </main>
+
+  <!-- ══ PULSE PANELS ══════════════════════════════════════ -->
+  <section class="pp-rail" id="pulse-panels" aria-label="Pulse Panels">
+    <div class="pp-rail-head">
+      <div class="lhs">
+        <div class="pp-eyebrow"><span class="dt"></span>Pulse Panels</div>
+        <h2>The championship <em>in ink.</em></h2>
+      </div>
+      <div class="note">Every round. Every story. Pen-and-ink illustration, big type, and the facts that matter. <a href="pulse-panels/">All chapters →</a></div>
+    </div>
+    <div class="pp-stack">
+      <a class="pp-panel" href="pulse-panels/leinster-sfc-2026/chapter-1/">
+        <div class="pp-art" role="img" aria-label="Brandon Kelly roars in celebration after Westmeath's first goal against Longford">
+          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3F4tgkYLVB49QSI8f1FiOfN5roq/hf_20260614_211546_cf0807d6-3ad0-4b88-884b-3bf467637377.png" alt="Brandon Kelly celebrates Westmeath's first goal" loading="lazy">
+        </div>
+        <div class="pp-text">
+          <div class="pp-eyebrow-row">
+            <span class="tag"><span class="dt"></span>New</span>
+            <span class="sep">·</span>
+            <span>Leinster SFC 2026 · Chapter I</span>
+          </div>
+          <h3>Westmeath v <em>Longford.</em></h3>
+          <p class="pp-dek">Five goals before half-time. <b>5–23 from play.</b> The media barely noticed. Dylan Farrell scored 0–10 for Longford. His side lost by 21.</p>
+          <div class="pp-foot">
+            <span class="read">Read Chapter I <span class="arrow">→</span></span>
+            <span class="date">12 April 2026 · Preliminary Round</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
 
   <!-- Pulse Intelligence, dominant editorial rail -->
   <section class="pi-rail" id="intelligence" aria-label="Pulse Intelligence">
