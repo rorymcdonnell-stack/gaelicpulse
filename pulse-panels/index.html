@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pulse Panels — Gaelic Pulse</title>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=IBM+Plex+Mono:wght@400;500;600&family=Spectral:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: #0a0a0a; color: #fff; font-family: 'IBM Plex Mono', monospace; -webkit-font-smoothing: antialiased; }
+
+.page { max-width: 1400px; margin: 0 auto; padding: 4px; display: flex; flex-direction: column; gap: 4px; }
+
+/* MASTHEAD */
+.mast { padding: 2.5rem 2rem 2rem; border: 1px solid #1e1e1e; }
+.mast__eyebrow { font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase; color: #C8A23B; display: block; margin-bottom: 0.5rem; }
+.mast__title { font-family: 'Bangers', cursive; font-size: clamp(3.5rem, 9vw, 8rem); letter-spacing: 0.03em; line-height: 0.88; color: #fff; text-transform: uppercase; }
+.mast__title em { color: #C8A23B; font-style: normal; }
+.mast__sub { font-family: 'Spectral', serif; font-style: italic; font-size: clamp(1rem, 1.5vw, 1.3rem); color: rgba(242,239,230,0.55); margin-top: 1.25rem; max-width: 60ch; line-height: 1.65; }
+
+/* CHAPTER GRID */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 4px; }
+
+.chapter-card { background: #0d0d0d; border: 1px solid #1a1a1a; text-decoration: none; display: flex; flex-direction: column; transition: border-color .15s; }
+.chapter-card:hover { border-color: #C8A23B; }
+
+.chapter-card__img { width: 100%; height: 260px; object-fit: cover; display: block; filter: grayscale(20%); }
+
+.chapter-card__body { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
+.chapter-card__eyebrow { font-size: 0.58rem; letter-spacing: 0.2em; text-transform: uppercase; color: #C8A23B; display: block; margin-bottom: 0.6rem; }
+.chapter-card__title { font-family: 'Bangers', cursive; font-size: clamp(1.8rem, 3vw, 2.6rem); letter-spacing: 0.03em; line-height: 0.92; color: #fff; text-transform: uppercase; margin-bottom: 0.75rem; }
+.chapter-card__title em { color: #C8A23B; font-style: normal; }
+.chapter-card__score { font-family: 'Bangers', cursive; font-size: 1.4rem; color: #444; letter-spacing: 0.04em; margin-bottom: 0.75rem; }
+.chapter-card__blurb { font-family: 'Spectral', serif; font-style: italic; font-size: 0.95rem; color: rgba(242,239,230,0.45); line-height: 1.6; }
+.chapter-card__cta { font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: #C8A23B; margin-top: 1.25rem; display: block; }
+
+/* COMING SOON */
+.chapter-card--soon { opacity: 0.4; pointer-events: none; }
+.chapter-card--soon .chapter-card__img { filter: grayscale(100%); }
+
+/* FOOTER */
+.foot { display: flex; justify-content: space-between; align-items: center; padding: 1.25rem 2rem; border-top: 1px solid #1e1e1e; }
+.foot__brand { font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; color: #C8A23B; text-decoration: none; }
+.foot__tag { font-size: 0.58rem; letter-spacing: 0.14em; text-transform: uppercase; color: #333; }
+
+@media (max-width: 680px) {
+  .mast__title { font-size: 3rem; }
+  .grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="mast">
+    <span class="mast__eyebrow">Gaelic Pulse · Graphic Novel Series</span>
+    <h1 class="mast__title">Pulse<br><em>Panels</em></h1>
+    <p class="mast__sub">The championship, told in ink. Every round. Every story. Pen-and-ink illustration, Bangers type, and the facts that matter — in a format no other GAA outlet has attempted.</p>
+  </header>
+
+  <div class="grid">
+
+    <!-- CHAPTER 1 — LIVE -->
+    <a href="/pulse-panels/leinster-sfc-2026/chapter-1/" class="chapter-card">
+      <img class="chapter-card__img"
+           src="https://d8j0ntlcm91z4.cloudfront.net/user_3F4tgkYLVB49QSI8f1FiOfN5roq/hf_20260614_211546_cf0807d6-3ad0-4b88-884b-3bf467637377.png"
+           alt="Brandon Kelly celebrates Westmeath's first goal against Longford">
+      <div class="chapter-card__body">
+        <div>
+          <span class="chapter-card__eyebrow">Chapter I · Leinster SFC 2026 · Preliminary Round</span>
+          <h2 class="chapter-card__title">Westmeath<br>v <em>Longford</em></h2>
+          <div class="chapter-card__score">5–25 · 1–16</div>
+          <p class="chapter-card__blurb">Five goals before half-time. 5–23 from play. The media barely noticed. Glennon Brothers Pearse Park, Good Friday, 2026.</p>
+        </div>
+        <span class="chapter-card__cta">Read Chapter I →</span>
+      </div>
+    </a>
+
+    <!-- CHAPTER 2 — COMING SOON -->
+    <a href="#" class="chapter-card chapter-card--soon">
+      <img class="chapter-card__img"
+           src="https://d8j0ntlcm91z4.cloudfront.net/user_3F4tgkYLVB49QSI8f1FiOfN5roq/hf_20260614_204338_79cfbe3a-104d-45d9-ba4f-8a9a1d67b8bc.png"
+           alt="Coming soon">
+      <div class="chapter-card__body">
+        <div>
+          <span class="chapter-card__eyebrow">Chapter II · Leinster SFC 2026 · Quarter-Final</span>
+          <h2 class="chapter-card__title">Westmeath<br>v <em>Meath</em></h2>
+          <div class="chapter-card__score">Coming Soon</div>
+          <p class="chapter-card__blurb">All-Ireland semi-finalists. Delaney Cup favourites. Nobody gave Westmeath a prayer.</p>
+        </div>
+        <span class="chapter-card__cta">Coming Soon</span>
+      </div>
+    </a>
+
+  </div>
+
+  <footer class="foot">
+    <a href="/" class="foot__brand">Gaelic Pulse</a>
+    <span class="foot__tag">The pulse of the game.</span>
+  </footer>
+
+</div>
+</body>
+</html>
