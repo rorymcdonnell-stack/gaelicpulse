@@ -345,9 +345,9 @@
     </div>
     <div class="fix-grid">
       <div class="fix-card up">
-        <div class="fix-head"><div class="fix-tie"><a href="donegal.html">Donegal</a> <span class="v">v</span> <a href="cork.html">Cork</a></div><div class="fix-badge">Home, Donegal</div></div>
-        <div class="fix-meta">Ballybofey</div>
-        <div class="fix-stake">Donegal beat Kerry away in R1; Cork put 0-30 past Meath at home. Two openers, two statement wins, now they meet.</div>
+        <div class="fix-head"><div class="fix-tie"><a href="donegal.html">Donegal</a> <span class="v">v</span> <a href="cork.html">Cork</a></div><div class="fix-badge">MacCumhaill Park · 13 Jun</div></div>
+        <div class="fix-meta">Cork 0–17 · Donegal 1–13 · Cork win</div>
+        <div class="fix-stake"><b>Cork into the quarter-finals.</b> Six two-pointers — four in the second half — overturned a five-point half-time deficit at Ballybofey. Donegal survive into Round 3, one life left. <a href="sam-maguire/2026/cork-donegal/" style="color:var(--gold);font-weight:600;text-decoration:none;border-bottom:1px solid currentColor">Six Orange Flags — read the analysis →</a></div>
       </div>
       <div class="fix-card up">
         <div class="fix-head"><div class="fix-tie"><a href="galway.html">Galway</a> <span class="v">v</span> <a href="westmeath.html">Westmeath</a></div><div class="fix-badge">Home, Galway</div></div>
@@ -411,7 +411,7 @@
     <div class="lab">The story so far</div>
     <p>This is the weekend the field starts to empty. <b>Four counties will be eliminated by Sunday night</b>, and all four will come from the 2B side of the draw.</p>
     <p>The headline name in that last-chance section is Kerry. The All-Ireland champions lost their opener and now travel to Kildare for a winner-takes-all tie, a fixture that also reunites Jack O'Connor with the county he previously managed. Dublin, beaten by Louth in Round 1, are likewise on the road and likewise out of lives, away to Cavan. <b>Two of the most decorated football counties of the modern era spend the second weekend of June playing not to disappear.</b></p>
-    <p>Above them, in the comfort of the winners' section, Donegal host Cork at Ballybofey, Galway welcome Leinster champions Westmeath, Tyrone host Mayo, and Louth, still riding their Round 1 win over Dublin, take on Armagh.</p>
+    <p>In the winners' section, Cork have already beaten Donegal at Ballybofey — six two-pointers did the damage; Donegal drop to Round 3, one life left. Still to come: Galway welcome Leinster champions Westmeath, Tyrone host Mayo, and Louth, still riding their Round 1 win over Dublin, take on Armagh.</p>
   </section>
 
   <a id="counties" style="display:block;position:relative;top:-20px"></a>
@@ -453,8 +453,8 @@
    Scores are goals-points (a goal = 3; two-pointers already folded into points).
    ============================================================================ */
 const DATA = {
-  updated: "Tue 2 June, draw complete",
-  round: "Round 2 draw made",
+  updated: "Sat 14 Jun, R2A result in",
+  round: "Round 2 underway",
   teams: [
   // lane: 2a (won R1) | 2b (lost R1) | next (Sunday, not played)
   // result totals are computed as goals*3 + points
@@ -488,7 +488,7 @@ const tot = (g,p)=> g*3+p;
   // Meta strip now refers to Round 2 fixtures (8 to play this weekend, 0 played so far).
   // The DATA.teams below still describes Round 1 results for the lanes block.
   const set=(id,v)=>{const el=document.getElementById(id); if(el) el.textContent=v;};
-  set("played", 0); set("gtotal", 8);
+  set("played", 1); set("gtotal", 8);
   set("updated", DATA.updated); set("roundlbl", DATA.round);
 })();
 
