@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pulse Panels · Chapter 3 · Nothing Between Them — Westmeath v Kildare</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=IBM+Plex+Mono:wght@400;500;600&family=Spectral:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  background: #0a0a0a;
+  color: #fff;
+  font-family: 'IBM Plex Mono', monospace;
+  overflow-x: hidden;
+}
+
+.comic-page {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: #0a0a0a;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 4px;
+}
+
+/* ---------- STORY HEADER ---------- */
+.story-header {
+  background: #0a0a0a;
+  display: flex;
+  align-items: flex-end;
+  padding: 2.5rem 2rem;
+  min-height: 130px;
+  border: 1px solid #1e1e1e;
+}
+.story-header__eyebrow {
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #C8A23B;
+  display: block;
+  margin-bottom: 0.45rem;
+}
+.story-header__title {
+  font-family: 'Bangers', cursive;
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  letter-spacing: 0.03em;
+  line-height: 0.88;
+  color: #fff;
+  text-transform: uppercase;
+}
+.story-header__title em { color: #C8A23B; font-style: normal; }
+.story-header__meta {
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8a8a8a;
+  margin-top: 0.85rem;
+  display: block;
+}
+
+/* ---------- OPENER (full-width establishing image) ---------- */
+.opener-hero { position: relative; line-height: 0; background: #111; border: 1px solid #1e1e1e; }
+.opener-hero img { width: 100%; height: auto; display: block; }
+
+/* ---------- INTRO (chapter masthead + standfirst / lede) ---------- */
+.intro { display: flex; gap: 2.8rem; background: #101010; border: 1px solid #1e1e1e; padding: 2.8rem 2.4rem; }
+.intro__head { flex: 0 0 36%; max-width: 36%; }
+.intro__body { flex: 1 1 auto; min-width: 0; }
+.intro__chapter { font-size: 0.64rem; letter-spacing: 0.24em; text-transform: uppercase; color: #C8A23B; display: block; margin-bottom: 0.9rem; }
+.intro__title { font-family: 'Bangers', cursive; text-transform: uppercase; font-size: clamp(2.8rem, 5vw, 5rem); line-height: 0.9; letter-spacing: 0.02em; color: #fff; }
+.intro__match { font-size: 0.82rem; letter-spacing: 0.12em; text-transform: uppercase; color: #dcdcdc; margin-top: 0.8rem; }
+.intro__rule { width: 46px; height: 3px; background: #C8A23B; border: 0; margin: 1.2rem 0; }
+.intro__meta { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: #8a8a8a; }
+.intro__standfirst { font-family: 'Spectral', serif; font-style: italic; font-weight: 500; font-size: clamp(1.3rem, 1.9vw, 1.55rem); line-height: 1.36; color: #ffffff; margin-bottom: 1.1rem; }
+.intro__lede { font-family: 'Spectral', serif; font-style: italic; font-size: 1.14rem; line-height: 1.62; color: #e2e2e2; margin-bottom: 0.9rem; }
+.intro__lede:last-child { margin-bottom: 0; }
+
+/* ---------- PANEL ROWS ---------- */
+.panel-row { display: flex; gap: 4px; background: #0a0a0a; }
+.row--tall   .panel { height: 520px; }
+.row--medium .panel { height: 380px; }
+.row--short  .panel { height: 240px; }
+
+.panel {
+  position: relative; overflow: hidden; line-height: 0; background: #111; flex-shrink: 0;
+}
+.panel img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.row--full        .panel        { flex: 1 1 100%; background: transparent; }
+.row--pair        .panel        { flex: 1 1 0; min-width: 0; }
+
+/* Panels shown full — height follows the image, nothing is cropped */
+.row--auto .panel     { height: auto; background: transparent; }
+.row--auto .panel img { height: auto; object-fit: unset; }
+
+/* ---------- CAPTIONS ---------- */
+.caption {
+  position: absolute; bottom: 14px; left: 14px; max-width: 82%;
+  background: rgba(0,0,0,0.9); border-left: 3px solid #C8A23B;
+  padding: 0.5rem 0.7rem; font-size: 0.74rem; font-weight: 500;
+  line-height: 1.5; letter-spacing: 0.01em; color: #ededed; z-index: 10;
+}
+.caption--gold {
+  background: #C8A23B; border-left: 3px solid #fff; color: #0a0a0a;
+  font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; font-size: 0.68rem; line-height: 1.45;
+}
+.caption--top-right {
+  bottom: auto; left: auto; top: 12px; right: 12px; text-align: right;
+  border-left: none; border-right: 3px solid #C8A23B; max-width: 60%;
+}
+
+/* ---------- TITLE CARD ---------- */
+.titlecard {
+  background: #0a0a0a; border: 1px solid #1e1e1e;
+  display: flex; align-items: center; justify-content: center;
+  text-align: center; padding: 3.2rem 1.5rem;
+}
+.titlecard h2 {
+  font-family: 'Bangers', cursive; text-transform: uppercase;
+  font-size: clamp(2.4rem, 6vw, 5rem); line-height: 0.92; letter-spacing: 0.03em; color: #fff;
+}
+.titlecard h2 .gold { color: #C8A23B; display: block; }
+.titlecard__sub {
+  font-family: 'Spectral', serif; font-style: italic;
+  font-size: clamp(0.95rem, 1.6vw, 1.2rem); line-height: 1.5; color: #9a9a9a;
+  margin: 1.1rem auto 0; max-width: 640px;
+}
+
+/* ---------- SIGN-OFF ---------- */
+.signoff { display: flex; gap: 4px; background: #0a0a0a; }
+.signoff-panel {
+  flex: 1 1 0; min-width: 0; background: #101010; border: 1px solid #1e1e1e;
+  padding: 1.9rem 1.6rem; display: flex; flex-direction: column;
+}
+.signoff__score {
+  font-family: 'Bangers', cursive; text-transform: uppercase;
+  font-size: clamp(2.2rem, 3.4vw, 3.2rem); line-height: 1.02; letter-spacing: 0.02em; color: #fff;
+}
+.signoff__score .loser { color: #444; }
+.signoff__aet {
+  font-size: 0.56rem; letter-spacing: 0.2em; text-transform: uppercase; color: #C8A23B; margin: 0.5rem 0 1.1rem;
+}
+.signoff__fact {
+  font-family: 'Bangers', cursive; text-transform: uppercase;
+  font-size: clamp(1.4rem, 2vw, 1.9rem); line-height: 1.12; letter-spacing: 0.02em;
+  color: #9a9a9a; margin-bottom: 0.55rem;
+}
+.signoff__fact--gold { color: #C8A23B; }
+.signoff__eyebrow {
+  font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: #C8A23B; margin-bottom: 0.9rem;
+}
+.signoff__next {
+  font-family: 'Bangers', cursive; text-transform: uppercase;
+  font-size: clamp(2.6rem, 4.4vw, 4rem); line-height: 0.92; letter-spacing: 0.02em; color: #fff;
+}
+.signoff__context {
+  font-family: 'Bangers', cursive; text-transform: uppercase;
+  font-size: clamp(1.2rem, 1.7vw, 1.55rem); line-height: 1.15; color: #777; margin: 0.9rem 0 1.2rem;
+}
+.signoff__kicker {
+  font-family: 'Spectral', serif; font-style: italic;
+  font-size: 0.98rem; line-height: 1.5; color: #e8e8e8; margin-top: auto;
+}
+
+/* ---------- OUTRO (closing beat) ---------- */
+.outro { background: #101010; border: 1px solid #1e1e1e; padding: 2.8rem 2rem; text-align: center; }
+.outro__eyebrow {
+  font-size: 0.64rem; letter-spacing: 0.24em; text-transform: uppercase; color: #C8A23B;
+  display: block; margin-bottom: 1.15rem;
+}
+.outro__text {
+  font-family: 'Spectral', serif; font-style: italic;
+  font-size: clamp(1.1rem, 1.9vw, 1.42rem); line-height: 1.62; color: #e8e8e8;
+  max-width: 760px; margin: 0 auto;
+}
+.outro__text strong { color: #fff; font-weight: 600; }
+
+/* ---------- FOOTER ---------- */
+.story-footer {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1.25rem 2rem; border-top: 1px solid #1e1e1e;
+}
+.story-footer__brand { font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; color: #C8A23B; }
+.story-footer__tagline { font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase; color: #6a6a6a; }
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 760px) {
+  .intro { flex-direction: column; gap: 1.5rem; padding: 1.8rem 1.4rem; }
+  .intro__head, .intro__body { max-width: 100%; flex: none; }
+  .panel-row { flex-direction: column; }
+  .row--tall .panel { height: 300px; }
+  .row--medium .panel { height: 230px; }
+  .row--short .panel { height: 200px; }
+  .signoff { flex-direction: column; }
+  .story-header__title { font-size: 2.9rem; }
+}
+</style>
+</head>
+<body>
+<main class="comic-page">
+
+  <!-- ===================== STORY HEADER ===================== -->
+  <header class="story-header">
+    <div>
+      <span class="story-header__eyebrow">Gaelic Pulse · Pulse Panels</span>
+      <h1 class="story-header__title">Leinster SFC<br><em>2026</em></h1>
+      <span class="story-header__meta">Senior Football Championship · Semi-Final</span>
+    </div>
+  </header>
+
+  <!-- ===================== OPENER ===================== -->
+  <!-- ===================== OPENER — full-width establishing aerial ===================== -->
+  <!-- IMG: O'Connor Park aerial — job 85515b13 -->
+  <section class="opener-hero">
+    <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3F4tgkYLVB49QSI8f1FiOfN5roq/hf_20260615_172501_85515b13-c227-4ef5-99d4-2337ac51c3ca.png" alt="Aerial pen-and-ink illustration of O'Connor Park, Tullamore — a modest provincial GAA ground hemmed in by terraced streets, gold goalposts at each end.">
+    <div class="caption">O'Connor Park, Tullamore — neutral ground, and the stage for a Leinster semi-final that would go the full distance.</div>
+  </section>
+
+  <!-- ===================== INTRO — chapter masthead + standfirst / lede ===================== -->
+  <section class="intro">
+    <div class="intro__head">
+      <span class="intro__chapter">Chapter Three</span>
+      <h2 class="intro__title">Nothing Between Them</h2>
+      <div class="intro__match">Westmeath v Kildare · Leinster Semi-Final</div>
+      <hr class="intro__rule">
+      <div class="intro__meta">O'Connor Park, Tullamore · 3 May 2026</div>
+    </div>
+    <div class="intro__body">
+      <p class="intro__standfirst">Twenty-three points were not enough for Kildare. Two goals were enough for Westmeath. That, in the end, was the semi-final.</p>
+      <p class="intro__lede">It was tight from the first whistle. Kildare made the early running and led by four, only for Westmeath to haul it back and edge in front through a Brían Cooney goal. It was level at the break, and level again with the last kick of normal time, when Alex Beirne kicked the equaliser that forced extra time.</p>
+      <p class="intro__lede">Kildare looked the fresher side and scored first in extra time. But Westmeath had a goal left in them — Brandon Kelly forcing home a rebound — and they pulled clear from there. Ten years on from their last Leinster final, the Lake County were back in one.</p>
+    </div>
+  </section>
+
+  <!-- ===================== ROW A — THE SAVE (PULSE PANEL) ===================== -->
+  <!-- IMG: Jason Daly save — ORIGINAL render, job e65a01eb -->
+  <div class="panel-row row--full row--auto">
+    <div class="panel">
+      <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3F4tgkYLVB49QSI8f1FiOfN5roq/hf_20260615_172432_e65a01eb-5667-4021-94ff-f2ad2ed85572.png" alt="Pen-and-ink illustration: a Westmeath goalkeeper at full horizontal stretch, diving low across his goalmouth, the gold football just kept out near the line as Kildare attackers arrive.">
+      <div class="caption caption--gold">Daly, full stretch, to deny Cully. Kildare's clearest sight of a goal — and it stayed out.</div>
+    </div>
+  </div>
+
+  <!-- ===================== ROW B — WESTMEATH ANSWER (PAIR) ===================== -->
+  <!-- IMG left: Cooney to goal — job 15b1e368 | IMG right: Westmeath break — job 2e37f9a9 -->
+  <div class="panel-row row--pair row--auto">
+    <div class="panel">
+      <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3F4tgkYLVB49QSI8f1FiOfN5roq/hf_20260615_173436_15b1e368-de89-49cf-a0a8-ab4f9adf6140.png" alt="Pen-and-ink illustration: a Westmeath player in a maroon TEG jersey driving forward at pace with the gold ball, a Kildare defender in white chasing.">
+      <div class="caption">Cooney's answer was a goal: past Gill, into the roof of the net, Westmeath four clear. The first sign that points alone might not settle this.</div>
+    </div>
+    <div class="panel">
+      <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3F4tgkYLVB49QSI8f1FiOfN5roq/hf_20260615_173444_2e37f9a9-fd7d-4030-83f5-477dab86c921.png" alt="Pen-and-ink illustration: a Westmeath attacker in maroon bursting through the line with the gold ball as two Kildare defenders in white converge.">
+      <div class="caption">Westmeath carrying the ball straight at Kildare. Neither side could shake the other all afternoon.</div>
+    </div>
+  </div>
+
+  <!-- ===================== TITLE CARD ===================== -->
+  <div class="titlecard">
+    <h2>Then Kildare<span class="gold">came back.</span></h2>
+  </div>
+
+  <!-- ===================== ROW D — THE EQUALISER + THE AGONY (diptych) ===================== -->
+  <!-- IMG left: Beirne equaliser — job db200195 | IMG right: Kildare dejection — job 90a2c8d3 (no gold, deliberate) -->
+  <div class="panel-row row--pair row--auto">
+    <div class="panel">
+      <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3F4tgkYLVB49QSI8f1FiOfN5roq/hf_20260615_173451_db200195-08ae-4da0-be51-0834883fd0b8.png" alt="Pen-and-ink illustration: a Kildare forward in a white Brady Family jersey in possession, the gold ball at his chest, eyes up, gathering to strike.">
+      <div class="caption">The last kick of normal time. A ball lobbed in, Beirne first to it, and Kildare were level at 0-19 to 1-16. Extra time.</div>
+    </div>
+    <div class="panel">
+      <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3F4tgkYLVB49QSI8f1FiOfN5roq/hf_20260615_173837_90a2c8d3-07ff-473b-9964-6b4f8729a778.png" alt="Pen-and-ink illustration with no gold accent: a defeated Kildare player in a white Brady Family jersey, hands clasped behind his head, eyes down.">
+      <div class="caption">Into extra time the fresher team — but it was Westmeath who found the goal, and Kildare had no reply.</div>
+    </div>
+  </div>
+
+  <!-- ===================== OUTRO — the chapter's closing beat ===================== -->
+  <section class="outro">
+    <span class="outro__eyebrow">After Extra Time</span>
+    <p class="outro__text">It came down to goals, the way these games often do. Westmeath raised two green flags; Kildare, for all twenty-three of their points, raised none. That was the margin in Tullamore — and a glimpse of what was still to come. Ten years on from their last Leinster final, Westmeath were one win from the Delaney Cup. Dublin lay in wait.</p>
+  </section>
+
+  <!-- ===================== SIGN-OFF ===================== -->
+  <section class="signoff">
+    <!-- Panel 1 — chapter result -->
+    <div class="signoff-panel">
+      <div class="signoff__score">Westmeath 2-21<br><span class="loser">Kildare 0-23</span></div>
+      <div class="signoff__aet">After extra time</div>
+      <div class="signoff__fact">Level at 1-16 to 0-19 after 70 minutes.</div>
+      <div class="signoff__fact">Westmeath outscored Kildare 0-4 to 0-2 once it mattered.</div>
+      <div class="signoff__fact">Brandon Kelly 1-4 · Man of the Match.</div>
+      <div class="signoff__fact signoff__fact--gold">Two goals to none. That was the game.</div>
+    </div>
+    <!-- Panel 2 — other semi-final -->
+    <div class="signoff-panel">
+      <div class="signoff__score">Dublin 0-20<br><span class="loser">Louth 0-10</span></div>
+      <div class="signoff__aet">Leinster SFC Semi-Final · 2 May</div>
+      <div class="signoff__fact">The defending champions, dismantled.</div>
+      <div class="signoff__fact">Dublin didn't score a goal. They didn't need one — yet.</div>
+      <div class="signoff__fact signoff__fact--gold">Croke Park final · two weeks.</div>
+    </div>
+    <!-- Panel 3 — closer -->
+    <div class="signoff-panel">
+      <span class="signoff__eyebrow">Up Next · Chapter IV</span>
+      <div class="signoff__next">The Blue Wall</div>
+      <div class="signoff__context">Westmeath are in the final. Now — how Dublin got there.</div>
+      <p class="signoff__kicker">Dublin reached the final too. Wicklow nearly stopped them in the quarter-final.</p>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="story-footer">
+    <span class="story-footer__brand">Gaelic Pulse</span>
+    <span class="story-footer__tagline">The pulse of the game.</span>
+  </footer>
+
+</main>
+</body>
+</html>
