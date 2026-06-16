@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Last Kick — Pulse Panels — Gaelic Pulse</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#10212F;--ink-soft:#33485A;--gold:#C8A23B;--gold-deep:#A9852A;--grey:#6F7782;
+  --rule:#E2DED4;--paper:#F7F4EC;--panel:#FBF9F3;--gutter:#0c0e10}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--gutter);color:var(--ink);
+  font-family:"Spectral",Georgia,serif;-webkit-font-smoothing:antialiased;font-feature-settings:"liga" 1,"onum" 1}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace}
+#prog{position:fixed;top:0;left:0;height:2px;background:var(--gold);width:0;z-index:60;transition:width .1s linear}
+
+.feed-head{max-width:1080px;margin:0 auto;padding:30px 24px 10px;display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:10px}
+.feed-head .brand{font-family:"Fraunces";font-weight:600;font-size:19px;color:var(--paper)}
+.feed-head .brand .dot{color:var(--gold)}
+.feed-head .nav{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7d848c}
+.feed-title{max-width:1080px;margin:0 auto;padding:18px 24px 30px;border-bottom:1px solid #1d2024}
+.feed-title h1{font-family:"Fraunces";font-weight:900;font-size:clamp(40px,7vw,82px);line-height:.92;letter-spacing:-.02em;color:var(--paper);margin:0 0 12px}
+.feed-title h1 em{color:var(--gold);font-style:normal}
+.feed-title p{font-family:"Spectral";font-style:italic;font-size:clamp(17px,2vw,21px);color:#aeb4ba;margin:0;max-width:46ch}
+
+.feed{max-width:1080px;margin:0 auto;padding:40px 24px 80px;display:flex;flex-direction:column;gap:48px}
+.panel-card{background:var(--paper);border:1px solid #1d2024;border-radius:6px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.45)}
+
+.pc-hero{position:relative;width:100%;aspect-ratio:16/9;max-height:62vh;background:#e9e4d8;overflow:hidden}
+.pc-hero img{width:100%;height:100%;object-fit:cover;object-position:center 50%;display:block}
+.pc-eyebrow{position:absolute;top:18px;right:18px;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#fff;background:rgba(168,133,42,.95);padding:7px 12px}
+
+.pc-body{padding:clamp(28px,4vw,52px)}
+.pc-body h2{font-family:"Fraunces";font-weight:900;font-size:clamp(38px,6vw,64px);line-height:.95;letter-spacing:-.02em;margin:0 0 16px;color:var(--ink)}
+.pc-dek{font-family:"Spectral";font-style:italic;font-size:clamp(19px,2.3vw,24px);line-height:1.4;color:var(--ink-soft);margin:0 0 26px;max-width:42ch}
+
+.pc-score{display:inline-flex;align-items:center;gap:clamp(14px,3vw,38px);background:var(--ink);padding:18px 30px;border-top:3px solid var(--gold);margin:0 0 30px}
+.pc-score .side{display:flex;flex-direction:column;align-items:center;gap:5px}
+.pc-score .team{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#C9CFD2}
+.pc-score .num{font-family:"Fraunces";font-weight:900;font-size:clamp(30px,5vw,46px);line-height:.9;color:#fff;font-variant-numeric:lining-nums tabular-nums}
+.pc-score .win .num{color:var(--gold)}
+.pc-score .vs{font-family:"IBM Plex Mono",monospace;font-size:11px;color:#7C8A96;text-transform:uppercase}
+.pc-score .ht{display:block;margin-top:5px;font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#7C8A96}
+
+.pc-grid{display:grid;grid-template-columns:1fr;gap:30px}
+@media(min-width:780px){.pc-grid{grid-template-columns:1.7fr 1fr;gap:44px;align-items:start}}
+.pc-report p{font-size:17.5px;line-height:1.62;margin:0 0 16px;color:var(--ink)}
+.pc-report p:first-child::first-letter{font-family:"Fraunces";font-weight:900;float:left;font-size:62px;line-height:.7;padding:6px 11px 0 0;color:var(--gold-deep)}
+.pc-report p:last-child{margin-bottom:0}
+
+.pc-stat{background:var(--panel);border:1px solid var(--rule);border-left:3px solid var(--gold);padding:24px 26px;border-radius:3px}
+.pc-stat .big{font-family:"Fraunces";font-weight:900;font-size:clamp(64px,9vw,92px);line-height:.82;color:var(--gold);letter-spacing:-.03em;font-variant-numeric:lining-nums}
+.pc-stat .lbl{font-size:15.5px;line-height:1.45;color:var(--ink-soft);margin:12px 0 0}
+.pc-stat .lbl b{color:var(--ink)}
+
+.pc-strip{margin-top:34px;border-top:1px solid var(--rule);padding-top:26px}
+.pc-strip .lead{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 18px}
+.pc-strip .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.pc-strip figure{margin:0}
+.pc-strip .thumb{width:100%;aspect-ratio:4/3;background:#e9e4d8;border:1px solid var(--rule);border-radius:3px;overflow:hidden}
+.pc-strip img{width:100%;height:100%;object-fit:cover;display:block}
+.pc-strip figcaption{font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.03em;color:var(--grey);margin:11px 2px 0;line-height:1.4}
+@media(max-width:560px){.pc-strip .grid{grid-template-columns:1fr}}
+
+.pc-signoff{margin-top:34px;background:var(--ink);border-top:3px solid var(--gold);border-radius:3px;display:grid;grid-template-columns:repeat(3,1fr)}
+.pc-signoff .cell{padding:26px 24px;border-right:1px solid #21323f}
+.pc-signoff .cell:last-child{border-right:none}
+.pc-signoff .n{font-family:"Fraunces";font-weight:900;font-size:clamp(40px,6vw,58px);line-height:.85;color:var(--gold);letter-spacing:-.02em;font-variant-numeric:lining-nums tabular-nums}
+.pc-signoff .l{font-family:"Spectral";font-size:14.5px;line-height:1.4;color:#C9CFD2;margin:11px 0 0}
+.pc-signoff .l b{color:#fff;font-weight:600}
+@media(max-width:560px){.pc-signoff{grid-template-columns:1fr}.pc-signoff .cell{border-right:none;border-bottom:1px solid #21323f}.pc-signoff .cell:last-child{border-bottom:none}}
+
+.pc-foot{margin-top:26px;border-top:1px solid var(--rule);padding-top:18px;font-family:"IBM Plex Mono",monospace;font-size:11px;line-height:1.6;color:var(--grey)}
+.pc-foot .confirm{color:var(--gold-deep)}
+
+.ghost{border:1px dashed #2a2e33;border-radius:6px;padding:60px 30px;text-align:center;background:rgba(255,255,255,.015)}
+.ghost .g1{font-family:"Fraunces";font-weight:600;font-size:24px;color:#5d646c;margin:0 0 8px}
+.ghost .g2{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#3f454b}
+
+.feed-foot{max-width:1080px;margin:0 auto;padding:30px 24px 60px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid #1d2024}
+.feed-foot .mantra{font-family:"Fraunces";font-weight:600;font-size:16px;color:var(--paper)}
+.feed-foot .mantra .dot{color:var(--gold)}
+.feed-foot .mono{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--grey)}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+
+<div class="feed-head">
+  <span class="brand">Gaelic Pulse<span class="dot">.</span></span>
+  <span class="nav mono">Pulse Panels · Pulse Intelligence · Counties</span>
+</div>
+<div class="feed-title">
+  <h1>Pulse <em>Panels</em></h1>
+  <p>The championship, one match at a time. Each panel: what happened, why it happened, and the one number that decided it.</p>
+</div>
+
+<div class="feed">
+
+  <!-- LOUTH v ARMAGH — All-Ireland SFC Round 2A — 14 June 2026 -->
+  <!-- Hero: job d8f12d5c-9f47-47dc-94a5-ae089d00b364 -->
+  <article class="panel-card">
+    <div class="pc-hero">
+      <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3F4tgkYLVB49QSI8f1FiOfN5roq/hf_20260616_133828_8c38bd5a-040e-4e96-a376-46f9371171a6.png" alt="Páirc Grattan, Inniskeen, a small GAA ground under a vast sky, a single gold light at the edge of the pitch.">
+      <span class="pc-eyebrow">All-Ireland SFC · Round 2A · 14 Jun 2026</span>
+    </div>
+    <div class="pc-body">
+      <h2>The Last Kick</h2>
+      <p class="pc-dek">Armagh led by two when the clock went red. Sam Mulroy had one swing from the edge of the arc. The ball dropped, Rafferty could not hold it, and Inniskeen lost its mind.</p>
+
+      <div class="pc-score">
+        <div class="side win"><span class="team">Louth</span><span class="num">2-20</span></div>
+        <span class="vs">FT</span>
+        <div class="side"><span class="team">Armagh</span><span class="num">2-19</span></div>
+        <span class="ht">HT Louth 0-14 · Armagh 1-9</span>
+      </div>
+
+      <div class="pc-grid">
+        <div class="pc-report">
+          <p>Armagh made the ideal start. Inside two minutes corner back Gareth Murphy finished low into the bottom corner, and the Ulster champions had the early running in front of a sold-out Páirc Grattan. It was going as expected. Then Louth found their feet, and the second quarter was theirs: they hauled in the Murphy goal and a Rafferty two-point free, with a Mulroy two-pointer, a Mulroy clearance off his own line from Cian McConville, and a Ciarán Downey point that sold dummies to two Armagh men before splitting the posts. Louth went in ahead, 0-14 to 1-9.</p>
+          <p>The second half brought Armagh back. Oisín Conaty levelled it three minutes after the restart, racing onto a Louth turnover at their own kickout and finishing after his first effort was blocked. A Jarlath Óg Burns two-pointer pushed the Ulster champions clear. Then Dara McDonnell, after good work from Craig Lennon, slid home the goal that hauled Louth back into it, on his way to 1-3 from play. Jarlath Óg Burns and Jason Duffy answered with insurance scores. With seconds left, Armagh led by two. The game was theirs. The clock was gone.</p>
+          <p>Then Armagh coughed it up. Deep in stoppage time, the 70 minutes up on the clock, a turnover handed Louth one last possession and they worked it to Mulroy, a couple of metres outside the 45. He struck it long and high, going for the two-pointer to draw level. The ball dropped under the bar. Ethan Rafferty rose to claim it and palmed it back over his own line. Green flag. The ground erupted. The first championship meeting between these counties ended with the last kick of the game going in.</p>
+        </div>
+        <aside class="pc-stat">
+          <div class="big">2</div>
+          <p class="lbl"><b>Points ahead</b> Armagh were when the clock expired. The lead that was not enough. One moment separated the quarter-finals from the backdoor.</p>
+        </aside>
+      </div>
+
+      <div class="pc-strip">
+        <p class="lead">The afternoon, in four frames</p>
+        <div class="grid">
+          <!-- Frame 1: Ground exterior, job 4b0d5f7b-768e-4105-a7e2-59eb73a6e795 -->
+          <figure><div class="thumb"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3F4tgkYLVB49QSI8f1FiOfN5roq/hf_20260616_133837_9508538b-c740-4200-bd82-992a7fc456d5.png" alt="The exterior of Páirc Grattan, Inniskeen, a small, intimate county ground"></div><figcaption>Páirc Grattan, Inniskeen · 6,000</figcaption></figure>
+          <!-- Frame 2: Mulroy kicking, job 3df9e5f7-04a6-4d3a-9578-c172c44f2d2e -->
+          <figure><div class="thumb"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3F4tgkYLVB49QSI8f1FiOfN5roq/hf_20260616_130502_3df9e5f7-04a6-4d3a-9578-c172c44f2d2e.png" alt="Louth player in red, striking a long-range shot from the edge of the arc"></div><figcaption>Mulroy, from distance, injury time</figcaption></figure>
+          <!-- Frame 3: Rafferty and net, job 49297f12-9f1e-47a9-8995-12d5fc7cf8c6 -->
+          <figure><div class="thumb"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3F4tgkYLVB49QSI8f1FiOfN5roq/hf_20260616_142212_325a1f2e-0c53-42fa-a45d-a04bcbba586c.png" alt="Armagh goalkeeper number 1 in orange, staring into the net after conceding"></div><figcaption>The ball was in the net</figcaption></figure>
+          <!-- Frame 4: Louth celebration, job PENDING -->
+          <figure><div class="thumb"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3F4tgkYLVB49QSI8f1FiOfN5roq/hf_20260616_130915_c325773e-3087-4b4e-b6ff-c808e6305d36.png" alt="Louth players in red jerseys, arms raised, celebrating at full time"></div><figcaption>Full time, Inniskeen</figcaption></figure>
+        </div>
+      </div>
+
+      <div class="pc-signoff">
+        <div class="cell"><div class="n">1-3</div><p class="l"><b>Dara McDonnell.</b> From play. Louth's main man on the day.</p></div>
+        <div class="cell"><div class="n">1-4</div><p class="l"><b>Sam Mulroy.</b> A two-point free, two more, and the dropping ball that won it.</p></div>
+        <div class="cell"><div class="n">1</div><p class="l"><b>The margin</b> at the hooter. The first championship meeting between these counties, decided by Rafferty's dropped ball.</p></div>
+      </div>
+
+      <div class="pc-foot">
+        Sources. gaa.ie official report and team lists (14 June 2026): final and half-time scores, Gareth Murphy’s second-minute goal, Oisín Conaty’s leveller, referee Conor Lane (Cork). The42 and Irish Examiner scorer breakdowns: Armagh and Louth scorers, Mulroy 1-4, McDonnell 1-3 from play, attendance around 6,000. Irish Times (14 June 2026): Mulroy in possession a couple of metres outside the 45 with the clock up, the 0-14 to 1-9 half-time lead, Downey’s dummy-solo point, McDonnell’s 45th-minute goal. RTÉ and Irish News: the late turnover that freed Louth, and Rafferty palming Mulroy’s dropping ball back over his own line.
+        <span class="confirm"> No detail added for narrative effect; every figure and incident above traces to a named primary source.</span>
+      </div>
+    </div>
+  </article>
+
+  <div class="ghost">
+    <p class="g1">The next match report appears here.</p>
+    <p class="g2">Pulse Panels grows one match at a time</p>
+  </div>
+
+</div>
+
+<div class="feed-foot">
+  <span class="mantra">The pulse of the game<span class="dot">.</span></span>
+  <span class="mono">Gaelic Pulse · Pulse Panels</span>
+</div>
+
+<script>
+(function(){var p=document.getElementById('prog');function s(){var h=document.documentElement,m=h.scrollHeight-h.clientHeight;p.style.width=(m>0?h.scrollTop/m*100:0)+'%';}addEventListener('scroll',s,{passive:true});s();})();
+</script>
+</body>
+</html>
