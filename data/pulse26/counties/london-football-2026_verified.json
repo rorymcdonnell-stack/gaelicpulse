@@ -1,0 +1,333 @@
+{
+  "_meta": {
+    "note": "Built to the Armagh-locked standard, though London is a lighter record by nature: an overseas team in the Connacht championship with a four-game season (one Connacht game, three Tailteann Cup games). Scorer detail is sparse in the available coverage for London's games and is recorded honestly where found.",
+    "verification": "All scorelines and venues verified against the official RTE and Connacht GAA results tables and primary match reports (gaa.ie, the42, Irish Times, Laois Today). Note one cross-source scoreline discrepancy on the Sligo Round 3 game, flagged in that game's note.",
+    "built": "2026-06-30"
+  },
+  "entity": {
+    "county": "London",
+    "code": "football",
+    "season": 2026,
+    "province": "Connacht (overseas entrant)",
+    "tier": "Tailteann Cup",
+    "nickname": "The Exiles"
+  },
+  "manager": {
+    "name": null,
+    "first_season": null,
+    "note": "Manager name not sourced in the available 2026 coverage. Left null rather than assumed.",
+    "source": {
+      "url": "",
+      "snippet": "",
+      "publisher": "",
+      "accessed": "2026-06-30",
+      "tier": ""
+    }
+  },
+  "league": {
+    "competition": "Allianz NFL Division 4",
+    "finish": null,
+    "movement": null,
+    "note": "London competed in Division 4 of the National League. Exact final position and round-by-round results not sourced.",
+    "source": {
+      "url": "https://www.leitrimgaa.ie/2025/12/2026-football-fixtures-fbd-league-allianz-national-league-and-connacht-championship/",
+      "snippet": "four trips to Wicklow, London, Tipperary, and Carlow",
+      "publisher": "Leitrim GAA",
+      "accessed": "2026-06-30",
+      "tier": "club_official"
+    }
+  },
+  "state": {
+    "status": "eliminated",
+    "stage": "Tailteann Cup Round 3 (eliminated)",
+    "lives_left": 0,
+    "next_decides": null,
+    "as_of": "2026-06-06",
+    "source": {
+      "url": "https://www.rte.ie/sport/results/gaa/2026/6471/results/",
+      "snippet": "Round 3 6 Jun London 0-16 2-16 Sligo McGovern Park, Ruislip",
+      "publisher": "RTE Sport",
+      "accessed": "2026-06-30",
+      "tier": "national_press"
+    }
+  },
+  "results": [
+    {
+      "date": "2026-04-11",
+      "competition": "Connacht SFC",
+      "round": "Quarter-Final",
+      "opponent": "Mayo",
+      "venue": "McGovern Park, Ruislip",
+      "home_away": "home",
+      "aet": false,
+      "score_for": "1-15",
+      "score_against": "0-31",
+      "two_pointers": {
+        "for": 4,
+        "against": 7
+      },
+      "result": "L",
+      "margin": -13,
+      "scorers": [
+        {
+          "player": "James Davis",
+          "tally": "0-6",
+          "note": "three two-pointers in three minutes late on",
+          "source_note": "Western People scorers (0-3-0); Irish Times narrative"
+        },
+        {
+          "player": "Joe McGill",
+          "tally": "0-5",
+          "note": "1 two-pointer, 3 frees; opened the scoring",
+          "source_note": "Western People (0-1-3)"
+        },
+        {
+          "player": "Micheál O'Reilly",
+          "tally": "1-0",
+          "note": "goal a minute into the second half, the game's only goal",
+          "source_note": "Western People (1-0-0); HoganStand"
+        },
+        {
+          "player": "Shay Rafter",
+          "tally": "0-3",
+          "note": "1 free",
+          "source_note": "Western People (0-0-3)"
+        },
+        {
+          "player": "Kristian Healy",
+          "tally": "0-1",
+          "source_note": "Western People (0-0-1)"
+        }
+      ],
+      "source": {
+        "url": "https://www.gaa.ie/football/connacht-gaa-football-senior-championship",
+        "snippet": "London Quarter-Final 1-15 0-31 Mayo Venue: McGovern Park, Ruislip Referee: Paddy Neilan",
+        "publisher": "GAA.ie",
+        "accessed": "2026-06-30",
+        "tier": "primary"
+      },
+      "scoreline_unverified": false,
+      "note": "Connacht opener at home to Mayo. London actually opened the scoring through Joe McGill and traded early scores before Mayo's two-pointers pulled them clear to an 11-point half-time lead. The 0-31 Mayo total was the most points by one team in the 2026 Connacht series. Full London scorer list not sourced. Referee: Paddy Neilan."
+    },
+    {
+      "date": "2026-05-10",
+      "competition": "Tailteann Cup",
+      "round": "Round 1",
+      "opponent": "Waterford",
+      "venue": "Cappoquin Logistics Fraher Field, Dungarvan",
+      "home_away": "away",
+      "aet": false,
+      "score_for": "5-12",
+      "score_against": "0-10",
+      "two_pointers": {
+        "for": 0,
+        "against": 0
+      },
+      "result": "W",
+      "margin": 17,
+      "scorers": [
+        {
+          "player": "Shay Rafter",
+          "tally": "1-2",
+          "note": "early goal",
+          "source_note": "gaa.ie 'Scorers for London' block"
+        },
+        {
+          "player": "Joe McGill",
+          "tally": "1-1",
+          "note": "opening-minute goal (dropped over the line)",
+          "source_note": "gaa.ie block"
+        },
+        {
+          "player": "James Davis",
+          "tally": "1-1",
+          "source_note": "gaa.ie block"
+        },
+        {
+          "player": "David Gouldson",
+          "tally": "1-1",
+          "note": "32nd-min goal",
+          "source_note": "gaa.ie block"
+        },
+        {
+          "player": "Finbarr Crowley",
+          "tally": "1-0",
+          "note": "70th-min goal",
+          "source_note": "gaa.ie block"
+        },
+        {
+          "player": "Henry Walsh",
+          "tally": "0-3",
+          "note": "2 frees",
+          "source_note": "gaa.ie block"
+        },
+        {
+          "player": "Kristian Healy",
+          "tally": "0-1",
+          "source_note": "gaa.ie block"
+        },
+        {
+          "player": "Liam Gallagher",
+          "tally": "0-1",
+          "source_note": "gaa.ie block"
+        },
+        {
+          "player": "Conor O'Donohue",
+          "tally": "0-1",
+          "source_note": "gaa.ie block"
+        },
+        {
+          "player": "Ciaran Diver",
+          "tally": "0-1",
+          "source_note": "gaa.ie block"
+        }
+      ],
+      "source": {
+        "url": "https://www.the42.ie/tailteann-cup-7-7035855-May2026/",
+        "snippet": "London fired five goals past Waterford as they stormed to a 17-point win in their Tailteann Cup opener in Dungarvan.",
+        "publisher": "The42",
+        "accessed": "2026-06-30",
+        "tier": "national_press"
+      },
+      "scoreline_unverified": false,
+      "note": "A landmark day for London: five goals (four in the first half) and a 17-point win, their first-round Tailteann victory. Waterford goalkeeper Paudie Hunt fumbled an early McGill shot for the first goal, with Rafter, Davis and Gouldson adding the others before half-time and Crowley a fifth after the break. Goal scorers identified; full point breakdown not sourced."
+    },
+    {
+      "date": "2026-05-23",
+      "competition": "Tailteann Cup",
+      "round": "Round 2A",
+      "opponent": "Laois",
+      "venue": "McGovern Park, Ruislip",
+      "home_away": "home",
+      "aet": false,
+      "score_for": "1-14",
+      "score_against": "1-29",
+      "two_pointers": {
+        "for": 2,
+        "against": 4
+      },
+      "result": "L",
+      "margin": -15,
+      "scorers": [
+        {
+          "player": "Joe McGill",
+          "tally": "0-5",
+          "note": "1 two-pointer, 1 free",
+          "source_note": "gaa.ie 'Scorers for London' block"
+        },
+        {
+          "player": "Shay Rafter",
+          "tally": "0-3",
+          "source_note": "gaa.ie block"
+        },
+        {
+          "player": "Ciaran Diver",
+          "tally": "0-3",
+          "note": "1 two-pointer, 1 free",
+          "source_note": "gaa.ie block"
+        },
+        {
+          "player": "Michael O'Reilly",
+          "tally": "1-0",
+          "note": "goal that briefly cut the gap to three",
+          "source_note": "gaa.ie block"
+        },
+        {
+          "player": "Henry Freeman",
+          "tally": "0-1",
+          "source_note": "gaa.ie block"
+        },
+        {
+          "player": "David Gouldson",
+          "tally": "0-1",
+          "source_note": "gaa.ie block"
+        },
+        {
+          "player": "Tighe Barry",
+          "tally": "0-1",
+          "source_note": "gaa.ie block"
+        }
+      ],
+      "source": {
+        "url": "https://www.gaa.ie/article/tailteann-cup-r2a-laois-finish-strongly",
+        "snippet": "Tailteann Cup Round 2A Laois 1-29 London 1-14... London came with a surge. Sub Tighe Barry started a move that was finished to the net by Michael O'Reilly.",
+        "publisher": "GAA.ie",
+        "accessed": "2026-06-30",
+        "tier": "primary"
+      },
+      "scoreline_unverified": false,
+      "note": "Led briefly into the second half (1-14 to 1-11 at one stage) before Laois scored nine in a row to win by 15, a record-high Laois championship tally. London's goal came from Michael O'Reilly, set up by sub Tighe Barry. This Round 2A loss dropped London into the Round 3 knockout. Full London scorer list not sourced."
+    },
+    {
+      "date": "2026-06-06",
+      "competition": "Tailteann Cup",
+      "round": "Round 3",
+      "opponent": "Sligo",
+      "venue": "McGovern Park, Ruislip",
+      "home_away": "home",
+      "aet": false,
+      "score_for": "0-16",
+      "score_against": "2-16",
+      "two_pointers": {
+        "for": 0,
+        "against": 2
+      },
+      "result": "L",
+      "margin": -6,
+      "scorers": [
+        {
+          "player": "Shay Rafter",
+          "tally": "0-6",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Joe McGill",
+          "tally": "0-4",
+          "note": "1 free",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Ciaran Diver",
+          "tally": "0-2",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Liam Gallagher",
+          "tally": "0-2",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Daniel Clarke",
+          "tally": "0-1",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Conor O'Donohue",
+          "tally": "0-1",
+          "source_note": "gaa.ie report"
+        }
+      ],
+      "source": {
+        "url": "https://www.rte.ie/sport/results/gaa/2026/6471/results/",
+        "snippet": "Round 3 6 Jun London 0-16 2-16 Sligo McGovern Park, Ruislip",
+        "publisher": "RTE Sport",
+        "accessed": "2026-06-30",
+        "tier": "national_press"
+      },
+      "scoreline_unverified": false,
+      "note": "Elimination game. London led 0-6 to 0-4 early and were level several times before two second-half Sligo goals (Gorman, Mulligan) settled it. Scoreline discrepancy noted: the RTE and Irish Times results give the final as London 0-16 Sligo 2-16 (used here); one gaa.ie/Examiner match report rendered an in-game figure of Sligo 2-13 to London 0-13. The official results-table total (2-16 to 0-16) is treated as authoritative and the report figure flagged. London's own perspective recorded here; Sligo's file carries the opposite side."
+    }
+  ],
+  "signals": [],
+  "collection_meta": {
+    "collected_by": "Claude (research session, not yet hand-verified by Rory)",
+    "collected_at": "2026-06-30",
+    "fields_not_found": [
+      "Manager name",
+      "Allianz NFL Division 4 final position and results",
+      "Full scorer lists for the Mayo Connacht QF, the Waterford R1 five-goal win, and the Laois R2A game (goal scorers and standout names identified, full point breakdowns not published in available coverage)",
+      "Attendance figures"
+    ],
+    "notes": "London is a deliberately lighter record, appropriate to an overseas entrant with a four-game season and thin published coverage. The one genuinely notable beat is the five-goal demolition of Waterford in the Tailteann Cup Round 1, a landmark win for the Exiles. Shay Rafter and Joe McGill are the recurring names across their campaign. Scorer detail is fullest for the Sligo elimination game; honest nulls elsewhere rather than invented tallies."
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "_meta": {
+    "note": "Built to the Armagh-locked standard. Carlow's 2026 was defined by their spring: a historic Division 4 league title (their first league or championship trophy since 1944) won over Longford after extra time. The championship was bleak by contrast: a Leinster opener loss to Wicklow, then two Tailteann defeats (a wild eight-goal loss to Antrim, then Leitrim) with no championship win. Three championship games.",
+    "verification": "All scorelines, venues and dates verified against primary tables and reports (RTE, gaa.ie, HoganStand, Irish Times, The42, Irish Examiner). Per-player championship scorer detail not captured; full league-final scorers held (recorded in the league note).",
+    "built": "2026-06-30"
+  },
+  "entity": {
+    "county": "Carlow",
+    "code": "football",
+    "season": 2026,
+    "province": "Leinster",
+    "tier": "Tailteann Cup",
+    "nickname": "The Barrowsiders"
+  },
+  "manager": {
+    "name": "Joe Murphy",
+    "first_season": false,
+    "note": "First full season in charge after taking over as interim boss mid-2025 (replacing the departed Shane Curran) and then being given a three-year term. A former Carlow and Éire Óg player who had success with Kildare champions Naas. Delivered Carlow's first league or championship title since 1944.",
+    "source": {
+      "url": "https://www.irishtimes.com/sport/gaelic-games/2025/09/02/coaching-churn-just-two-counties-still-to-appoint-football-managers-for-2026/",
+      "snippet": "Former Carlow and Éire Óg player Murphy took over in emergency circumstances last season after Shane Curran's departure... formally given a three-year term.",
+      "publisher": "Irish Times",
+      "accessed": "2026-06-30",
+      "tier": "national_press"
+    }
+  },
+  "league": {
+    "competition": "Allianz NFL Division 4",
+    "finish": "champions",
+    "movement": "promoted to Division 3 for 2027",
+    "note": "Won the Division 4 league title at Croke Park, beating Longford 1-24 to 2-18 after extra time, Carlow's first league or championship trophy since the 1944 Leinster SFC and their first Croke Park win since 1971. Substitute Chris Blake (0-4) supplied the decisive extra-time scores after Longford's Ronan Bleakley was red carded; Ross Dunphy hit 1-3, Conor Doyle 0-4, captain Mikey Bambrick lifted the cup. Promoted to Division 3.",
+    "source": {
+      "url": "https://www.irishtimes.com/sport/gaelic-games/2026/03/28/carlow-claim-historic-croke-park-win-to-seal-division-4-title-over-longford/",
+      "snippet": "Carlow earned a first win at Croke Park since 1971, a first ever National League title and a first senior football trophy since the 2002 O'Byrne Cup with a hard-earned victory over Longford... 1-24 to 2-18.",
+      "publisher": "Irish Times",
+      "accessed": "2026-06-30",
+      "tier": "national_press"
+    }
+  },
+  "state": {
+    "status": "eliminated",
+    "stage": "Tailteann Cup Round 2B (eliminated)",
+    "lives_left": 0,
+    "next_decides": null,
+    "as_of": "2026-05-24",
+    "source": {
+      "url": "https://www.irishtimes.com/sport/gaelic-games/2026/05/05/all-ireland-football-championship-a-complete-guide-to-the-sam-maguire-and-tailteann-cup-competitions/",
+      "snippet": "the 2B winners were Longford, Wicklow, Leitrim and Sligo, while it was the end of the road for the counties they respectively defeated, Clare, Limerick, Carlow, and Waterford.",
+      "publisher": "Irish Times",
+      "accessed": "2026-06-30",
+      "tier": "national_press"
+    }
+  },
+  "results": [
+    {
+      "date": "2026-04-11",
+      "competition": "Leinster SFC",
+      "round": "Round 1",
+      "opponent": "Wicklow",
+      "venue": "Netwatch Dr Cullen Park, Carlow",
+      "home_away": "home",
+      "aet": false,
+      "score_for": "1-7",
+      "score_against": "2-15",
+      "two_pointers": {
+        "for": 1,
+        "against": 3
+      },
+      "result": "L",
+      "margin": -11,
+      "scorers": [
+        {
+          "player": "Jamie Clarke",
+          "tally": "1-0",
+          "note": "substitute; looping goal that dipped under the bar",
+          "source_note": "Irish Examiner / Carlow Nationalist reports"
+        },
+        {
+          "player": "Colm Hulton",
+          "tally": "0-2",
+          "note": "1 two-pointer from play",
+          "source_note": "Irish Examiner / Carlow Nationalist reports"
+        },
+        {
+          "player": "Liam Gavin",
+          "tally": "0-2",
+          "note": "2 frees",
+          "source_note": "Irish Examiner / Carlow Nationalist reports"
+        },
+        {
+          "player": "Chris Blake",
+          "tally": "0-2",
+          "note": "substitute",
+          "source_note": "Irish Examiner / Carlow Nationalist reports"
+        },
+        {
+          "player": "Mikey Bambrick",
+          "tally": "0-1",
+          "note": "captain; sent off (second yellow) late",
+          "source_note": "Irish Examiner / Carlow Nationalist reports"
+        }
+      ],
+      "source": {
+        "url": "https://www.rte.ie/sport/results/gaa/2026/6463/results/",
+        "snippet": "Round 1 Carlow 1-07 2-15 Wicklow Netwatch Cullen Park",
+        "publisher": "RTE Sport",
+        "accessed": "2026-06-30",
+        "tier": "national_press"
+      },
+      "scoreline_unverified": false,
+      "note": "An 11-point home Leinster opening loss to neighbours Wicklow, who would go on to reach the Tailteann final. Sent Carlow into the Tailteann Cup. Full scorer list not captured. Wicklow's perspective will live in Wicklow's file (Wicklow still alive, Tailteann finalist). (Leinster terms this the preliminary round / Round 1.)"
+    },
+    {
+      "date": "2026-05-10",
+      "competition": "Tailteann Cup",
+      "round": "Round 1",
+      "opponent": "Antrim",
+      "venue": "Netwatch Dr Cullen Park, Carlow",
+      "home_away": "home",
+      "aet": false,
+      "score_for": "2-26",
+      "score_against": "6-17",
+      "two_pointers": {
+        "for": 2,
+        "against": 2
+      },
+      "result": "L",
+      "margin": -3,
+      "scorers": [
+        {
+          "player": "Lee Walker",
+          "tally": "1-4",
+          "note": "penalty goal, 3 frees",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Conor Crowley",
+          "tally": "0-6",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Padhraig Bolger",
+          "tally": "1-1",
+          "note": "close-range goal on 43 minutes",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Ross Dunphy",
+          "tally": "0-3",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Aran McCarron",
+          "tally": "0-3",
+          "note": "1 two-point free",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Jamie Clarke",
+          "tally": "0-2",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Conor Blake",
+          "tally": "0-2",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Kyle Nolan",
+          "tally": "0-2",
+          "note": "1 two-pointer",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Joshua Phiri",
+          "tally": "0-1",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Padraig McDonnell",
+          "tally": "0-1",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Liam Gavin",
+          "tally": "0-1",
+          "note": "free",
+          "source_note": "gaa.ie report"
+        }
+      ],
+      "source": {
+        "url": "https://www.rte.ie/sport/results/gaa/2026/6471/results/",
+        "snippet": "First Round 10 May Carlow 2-26 6-17 Antrim Netwatch Dr Cullen Park",
+        "publisher": "RTE Sport",
+        "accessed": "2026-06-30",
+        "tier": "national_press"
+      },
+      "scoreline_unverified": false,
+      "note": "A wild eight-goal shoot-out at Dr Cullen Park, lost by three. Carlow's 2-26 (32 points) would win most games, but Antrim's six goals (6-17, 35 points) carried the day. Not after extra time, despite the high aggregate. Dropped Carlow into the Round 2B knockout. Full scorer list not captured. Antrim's perspective is held in Antrim's file."
+    },
+    {
+      "date": "2026-05-24",
+      "competition": "Tailteann Cup",
+      "round": "Round 2B",
+      "opponent": "Leitrim",
+      "venue": "Heartland Credit Union Páirc Seán Mac Diarmada, Carrick-on-Shannon",
+      "home_away": "away",
+      "aet": false,
+      "score_for": "1-13",
+      "score_against": "0-22",
+      "two_pointers": {
+        "for": 3,
+        "against": 5
+      },
+      "result": "L",
+      "margin": -6,
+      "scorers": [
+        {
+          "player": "Ross Dunphy",
+          "tally": "0-4",
+          "note": "1 two-pointer (pre-break)",
+          "source_note": "PJ Leddy/Leitrim Observer full match report; reconciled from named narrative scores (gaa.ie summary block was short and mis-credited Bolger's from-play two-pointer to Dunphy)"
+        },
+        {
+          "player": "Adam McCarron",
+          "tally": "0-3",
+          "note": "1 two-point free; opened the scoring",
+          "source_note": "PJ Leddy/Leitrim Observer full match report; reconciled from named narrative scores (gaa.ie summary block was short and mis-credited Bolger's from-play two-pointer to Dunphy)"
+        },
+        {
+          "player": "Padhraig Bolger",
+          "tally": "0-3",
+          "note": "two-pointer from play (game's first from play); plus a late point",
+          "source_note": "PJ Leddy/Leitrim Observer full match report; reconciled from named narrative scores (gaa.ie summary block was short and mis-credited Bolger's from-play two-pointer to Dunphy)"
+        },
+        {
+          "player": "Paddy McDonnell",
+          "tally": "0-2",
+          "source_note": "PJ Leddy/Leitrim Observer full match report; reconciled from named narrative scores (gaa.ie summary block was short and mis-credited Bolger's from-play two-pointer to Dunphy)"
+        },
+        {
+          "player": "Lee Walker",
+          "tally": "1-0",
+          "note": "goal to regain the lead in the second half",
+          "source_note": "PJ Leddy/Leitrim Observer full match report; reconciled from named narrative scores (gaa.ie summary block was short and mis-credited Bolger's from-play two-pointer to Dunphy)"
+        },
+        {
+          "player": "Conor Crowley",
+          "tally": "0-1",
+          "source_note": "PJ Leddy/Leitrim Observer full match report; reconciled from named narrative scores (gaa.ie summary block was short and mis-credited Bolger's from-play two-pointer to Dunphy)"
+        }
+      ],
+      "source": {
+        "url": "https://hoganstand.com/Results",
+        "snippet": "Tailteann Cup Round 2B ... Leitrim 0-22 Carlow 1-13.",
+        "publisher": "HoganStand",
+        "accessed": "2026-06-30",
+        "tier": "aggregator"
+      },
+      "scoreline_unverified": false,
+      "note": "Elimination game: a six-point Round 2B loss away to Leitrim, ending Carlow's championship without a win. Full scorer list not captured. Leitrim's perspective is held in Leitrim's file."
+    }
+  ],
+  "signals": [],
+  "collection_meta": {
+    "collected_by": "Claude (research session, not yet hand-verified by Rory)",
+    "collected_at": "2026-06-30",
+    "fields_not_found": [
+      "Per-player championship scorer lists for all three Carlow games (scorelines verified; full league-final scorers are held and summarised in the league note)",
+      "Two-pointer counts; attendance figures"
+    ],
+    "notes": "Carlow is a light championship file but carries one of the warmest stories of the 2026 spring: an 80-year wait ended with a Division 4 league title at Croke Park (their first league or championship trophy since the 1944 Leinster SFC), captained by Mikey Bambrick under first-full-season manager Joe Murphy, with Ross Dunphy and sub Chris Blake the match-winners. The championship was the cold counterpoint, no wins, a Leinster loss to Wicklow, an eight-goal Tailteann loss to Antrim, and elimination by Leitrim. The league title is the editorial hook (the historic-drought-ended angle); the championship line is honest and brief. The eight-goal Antrim game (2-26 to 6-17) is a striking scoreline in its own right."
+  }
+}

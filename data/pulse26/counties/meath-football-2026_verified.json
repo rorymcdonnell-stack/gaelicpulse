@@ -1,0 +1,374 @@
+{
+  "_meta": {
+    "note": "Built to the Armagh-locked standard. Meath, Division 2 league champions and 2025 Leinster final breakthrough side, had a bye to the Leinster quarter-final where Westmeath upset them, then qualified for the Sam Maguire via league ranking and reached Round 3 (lost R1 to Cork, beat Derry in R2B, lost R3 to Mayo). Four championship games.",
+    "verification": "All scorelines, venues and referees verified against primary match reports and official tables (gaa.ie, RTE, Irish Times, The42, Irish Examiner, Derry Journal). Full scorer lists held for the Derry R2B win and the Mayo R3 loss; partial for the Westmeath QF and Cork R1 (where the opposing files carry the fuller detail).",
+    "built": "2026-06-30"
+  },
+  "entity": {
+    "county": "Meath",
+    "code": "football",
+    "season": 2026,
+    "province": "Leinster",
+    "tier": "Sam Maguire Cup",
+    "nickname": "The Royals"
+  },
+  "manager": {
+    "name": "Robbie Brennan",
+    "first_season": false,
+    "note": "Led Meath's 2025 breakthrough (ending Dublin's long Leinster dominance and reaching the All-Ireland semi-finals) and a Division 2 league title in 2026. The 2026 championship was a step back: a Leinster quarter-final upset by Westmeath, then a Sam Maguire run that recovered with a strong Derry win before Mayo edged them in Round 3.",
+    "source": {
+      "url": "https://www.irishtimes.com/sport/gaelic-games/2026/06/13/meath-make-air-superiority-count-as-they-send-derry-packing-at-celtic-park/",
+      "snippet": "Robbie Brennan's side breathed life back into their stuttering season, producing an outstanding second half to carve out a well-earned win over a limited Derry side.",
+      "publisher": "Irish Times",
+      "accessed": "2026-06-30",
+      "tier": "national_press"
+    }
+  },
+  "league": {
+    "competition": "Allianz NFL Division 2",
+    "finish": "champions",
+    "movement": "promoted to Division 1 for 2027",
+    "note": "Won the Division 2 league final against Cork (a contentious finish in which Meath hauled Cork down in the final minute to kill the clock, prompting a refereeing clarification on Rule 5.42). Promoted to Division 1.",
+    "source": {
+      "url": "https://www.irishexaminer.com/sport/gaa/arid-41862129.html",
+      "snippet": "Cast your mind back to the league final and when Meath hauled Cork down in the final minute to kill the clock and deny them a chance to work an equaliser.",
+      "publisher": "Irish Examiner",
+      "accessed": "2026-06-30",
+      "tier": "national_press"
+    }
+  },
+  "state": {
+    "status": "eliminated",
+    "stage": "All-Ireland SFC Round 3 (eliminated, 9th-12th)",
+    "lives_left": 0,
+    "next_decides": null,
+    "as_of": "2026-06-21",
+    "source": {
+      "url": "https://www.irishexaminer.com/sport/gaa/arid-41866314.html",
+      "snippet": "Mayo complete comeback to pip Meath to All-Ireland quarter-final spot",
+      "publisher": "Irish Examiner",
+      "accessed": "2026-06-30",
+      "tier": "national_press"
+    }
+  },
+  "results": [
+    {
+      "date": "2026-04-19",
+      "competition": "Leinster SFC",
+      "round": "Quarter-Final",
+      "opponent": "Westmeath",
+      "venue": "Glenisk O'Connor Park, Tullamore",
+      "home_away": "neutral",
+      "aet": false,
+      "score_for": "0-25",
+      "score_against": "4-18",
+      "two_pointers": {
+        "for": 4,
+        "against": 1
+      },
+      "result": "L",
+      "margin": -5,
+      "scorers": [
+        {
+          "player": "Ruairí Kinsella",
+          "tally": "0-6",
+          "note": "2 two-pointers",
+          "source_note": "RTE / Irish Times reports"
+        },
+        {
+          "player": "James Conlon",
+          "tally": "0-4",
+          "note": "substitute; four points off the bench",
+          "source_note": "RTE / Irish Times reports"
+        },
+        {
+          "player": "Eoghan Frayne",
+          "tally": "0-4",
+          "note": "1 two-point free",
+          "source_note": "RTE / Irish Times reports"
+        },
+        {
+          "player": "Jack Flynn",
+          "tally": "0-3",
+          "note": "1 two-pointer",
+          "source_note": "RTE / Irish Times reports"
+        },
+        {
+          "player": "Jordan Morris",
+          "tally": "0-3",
+          "note": "2 frees",
+          "source_note": "RTE / Irish Times reports"
+        },
+        {
+          "player": "Jack O'Connor",
+          "tally": "0-2",
+          "source_note": "RTE / Irish Times reports"
+        },
+        {
+          "player": "Aaron Lynch",
+          "tally": "0-2",
+          "source_note": "RTE / Irish Times reports"
+        },
+        {
+          "player": "Bryan Menton",
+          "tally": "0-1",
+          "source_note": "RTE / Irish Times reports"
+        }
+      ],
+      "source": {
+        "url": "https://www.rte.ie/sport/results/gaa/2026/6463/results/",
+        "snippet": "Quarter-Final Meath 0-25 4-18 Westmeath Glenisk O'Connor Park",
+        "publisher": "RTE Sport",
+        "accessed": "2026-06-30",
+        "tier": "national_press"
+      },
+      "scoreline_unverified": false,
+      "note": "Meath, many people's Leinster favourites, were upset by Westmeath despite scoring 0-25; Westmeath's four goals (including a late one) made the five-point difference. This was Meath's only Leinster game (they had a bye to the quarter-final). Full Meath scorer list not captured here; Westmeath's file carries the opposite perspective. To be filled on a verification pass."
+    },
+    {
+      "date": "2026-05-31",
+      "competition": "All-Ireland SFC",
+      "round": "Round 1",
+      "opponent": "Cork",
+      "venue": "SuperValu Páirc Uí Chaoimh, Cork",
+      "home_away": "away",
+      "aet": false,
+      "score_for": "1-24",
+      "score_against": "0-30",
+      "two_pointers": {
+        "for": 6,
+        "against": 6
+      },
+      "result": "L",
+      "margin": -3,
+      "scorers": [
+        {
+          "player": "James Conlon",
+          "tally": "0-7",
+          "note": "1 two-pointer",
+          "source_note": "gaa.ie / The42 reports"
+        },
+        {
+          "player": "Eoghan Frayne",
+          "tally": "0-5",
+          "note": "captain; 2 two-pointers, 1 free",
+          "source_note": "gaa.ie / The42 reports"
+        },
+        {
+          "player": "Ruairí Kinsella",
+          "tally": "0-5",
+          "note": "1 two-pointer",
+          "source_note": "gaa.ie / The42 reports"
+        },
+        {
+          "player": "Seán Brennan",
+          "tally": "0-4",
+          "note": "goalkeeper; 2 two-point frees",
+          "source_note": "gaa.ie / The42 reports"
+        },
+        {
+          "player": "Ciarán Caulfield",
+          "tally": "1-0",
+          "note": "27th-minute goal off a Morris one-two",
+          "source_note": "gaa.ie / The42 reports"
+        },
+        {
+          "player": "Jordan Morris",
+          "tally": "0-2",
+          "source_note": "gaa.ie / The42 reports"
+        },
+        {
+          "player": "Mathew Costello",
+          "tally": "0-1",
+          "source_note": "gaa.ie / The42 reports"
+        }
+      ],
+      "source": {
+        "url": "https://gaacork.ie/event/2026-all-ireland-sfc-q-final-cork-v-mayo/",
+        "snippet": "Cork responded with an impressive 0-30 to 1-24 victory over Meath in Páirc Uí Chaoimh.",
+        "publisher": "Cork GAA",
+        "accessed": "2026-06-30",
+        "tier": "primary"
+      },
+      "scoreline_unverified": false,
+      "note": "Meath qualified for the Sam Maguire via league ranking (Division 2 champions) and opened away to Munster finalists Cork, losing by three (1-24 to 0-30), a rematch of the bad-tempered league final. Colm O'Callaghan was sent off for Cork in this game. This Round 1 loss dropped Meath into the Round 2B knockout. Full Meath scorer list not captured here; Cork's file carries the opposite perspective. Date approximate (first All-Ireland weekend, late May)."
+    },
+    {
+      "date": "2026-06-13",
+      "competition": "All-Ireland SFC",
+      "round": "Round 2B",
+      "opponent": "Derry",
+      "venue": "Find Insurance Celtic Park, Derry",
+      "home_away": "away",
+      "aet": false,
+      "score_for": "1-24",
+      "score_against": "1-20",
+      "two_pointers": {
+        "for": 3,
+        "against": 3
+      },
+      "result": "W",
+      "margin": 4,
+      "scorers": [
+        {
+          "player": "James Conlon",
+          "tally": "0-7",
+          "note": "outstanding, the game's standout scorer",
+          "source_note": "the42 / derry journal report"
+        },
+        {
+          "player": "Donal Keogan",
+          "tally": "1-2",
+          "note": "defender, rounded the keeper for an early goal",
+          "source_note": "the42 / derry journal report"
+        },
+        {
+          "player": "Jack Flynn",
+          "tally": "0-3",
+          "note": "1 two-pointer from play",
+          "source_note": "the42 / derry journal report"
+        },
+        {
+          "player": "Bryan Menton",
+          "tally": "0-3",
+          "note": "1 two-pointer from play",
+          "source_note": "the42 / derry journal report"
+        },
+        {
+          "player": "Matthew Costello",
+          "tally": "0-2",
+          "source_note": "the42 / derry journal report"
+        },
+        {
+          "player": "Seán Brennan",
+          "tally": "0-2",
+          "note": "goalkeeper; 1 two-point free, a key second-half score",
+          "source_note": "the42 / derry journal report"
+        },
+        {
+          "player": "Jordan Morris",
+          "tally": "0-2",
+          "source_note": "the42 / derry journal report"
+        },
+        {
+          "player": "Jack O'Connor",
+          "tally": "0-1",
+          "source_note": "the42 / derry journal report"
+        },
+        {
+          "player": "Eoghan Frayne",
+          "tally": "0-1",
+          "note": "1 free",
+          "source_note": "the42 / derry journal report"
+        },
+        {
+          "player": "Killian Smyth",
+          "tally": "0-1",
+          "note": "substitute; late sealing point",
+          "source_note": "the42 / derry journal report"
+        }
+      ],
+      "source": {
+        "url": "https://www.gaa.ie/article/all-ireland-sfc-meath-show-class-against-derry",
+        "snippet": "Meath scorers: Donal Keogan 1-2, Jack Flynn 0-3 (1tp), Bryan Menton 0-3 (1tp), James Conlon 0-7, Mathew Costello 0-2, Sean Brennan 0-2 (1tpf), Jordan Morris 0-2, Jack O'Connor 0-1, Eoghan Frayne 0-1 (1f), Killian Smyth 0-1.",
+        "publisher": "GAA.ie",
+        "accessed": "2026-06-30",
+        "tier": "primary"
+      },
+      "scoreline_unverified": false,
+      "note": "A four-point away win that revived Meath's season and ended Derry's. Level 1-9 each at half-time (goals from Keogan and Derry's James Sargent), four half-time black cards (two each side) preceded a Meath second-half surge, James Conlon's 0-7 and dominance of the Derry kick-out decisive. Full scorer list. Both sides hit three two-pointers. Derry's perspective is held in Derry's file. Referee: Sean Hurson."
+    },
+    {
+      "date": "2026-06-21",
+      "competition": "All-Ireland SFC",
+      "round": "Round 3",
+      "opponent": "Mayo",
+      "venue": "Hastings Insurance MacHale Park, Castlebar",
+      "home_away": "away",
+      "aet": false,
+      "score_for": "2-13",
+      "score_against": "0-22",
+      "two_pointers": {
+        "for": 0,
+        "against": 3
+      },
+      "result": "L",
+      "margin": -3,
+      "scorers": [
+        {
+          "player": "Ciarán Caulfield",
+          "tally": "1-1",
+          "note": "rolled the ball past Livingstone for the first goal",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Seán Coffey",
+          "tally": "1-1",
+          "note": "found the net after a run through the Mayo backline",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Jordan Morris",
+          "tally": "0-2",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "James Conlon",
+          "tally": "0-2",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Jack O'Connor",
+          "tally": "0-2",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Seán Brennan",
+          "tally": "0-1",
+          "note": "goalkeeper, '45",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Cian McBride",
+          "tally": "0-1",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Bryan Menton",
+          "tally": "0-1",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Matthew Costello",
+          "tally": "0-1",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Jack Flynn",
+          "tally": "0-1",
+          "source_note": "gaa.ie report"
+        }
+      ],
+      "source": {
+        "url": "https://www.gaa.ie/article/all-ireland-sfc-mayo-comeback-floors-meath",
+        "snippet": "Scorers for Meath: Ciarán Caulfield and Seán Coffey 1-1 each, Jordan Morris, James Conlon and Jack O'Connor 0-2 each, Seán Brennan ('45), Cian McBride, Bryan Menton...",
+        "publisher": "GAA.ie",
+        "accessed": "2026-06-30",
+        "tier": "primary"
+      },
+      "scoreline_unverified": false,
+      "note": "Elimination game (9th-12th finish). Meath led 2-8 to 0-7 at half-time off two goals and looked in control, but a Ronan Jones straight red card on 54 minutes (off-the-ball on Jack Coyne) shifted momentum, and Mayo's two-pointers (Jordan Flynn 2, Jack Carney 1) powered a comeback, Carney's two-pointer putting Mayo ahead for the first time since the third minute. Full scorer list. Meath hit no two-pointers, Mayo three. Mayo's perspective is held in Mayo's file (Mayo still alive, semi-finalist). Referee per primary report."
+    }
+  ],
+  "signals": [],
+  "collection_meta": {
+    "collected_by": "Claude (research session, not yet hand-verified by Rory)",
+    "collected_at": "2026-06-30",
+    "fields_not_found": [
+      "Full Meath scorer lists for the Westmeath Leinster QF loss and the Cork All-Ireland R1 loss (scorelines verified; opposing files carry the fuller detail)",
+      "Exact date of the Cork Round 1 game (placed on the first All-Ireland weekend, late May 2026)",
+      "Attendance figures"
+    ],
+    "notes": "Meath is a mid-weight Leinster county with a clear arc of regression-then-recovery-then-near-miss: Division 2 league champions and 2025 breakthrough side who were upset by Westmeath in Leinster, then steadied in the Sam Maguire (beat Derry well) before a costly red card and a Mayo comeback ended them one round short of the quarter-final (9th-12th, same bracket as Westmeath and Armagh). James Conlon (0-7 v Derry) and goalkeeper-scorer Seán Brennan are the names; Donal Keogan, Bryan Menton and Jack Flynn the spine. Note: 2026 was a step back from Meath's 2025 (when they ended Dublin's long Leinster reign and reached the All-Ireland semi-final). A verification pass should fill the Westmeath and Cork scorer lists."
+  }
+}

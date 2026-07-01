@@ -1,0 +1,662 @@
+{
+  "_meta": {
+    "note": "Rebuilt to the Armagh-locked standard after a first pass left too many gaps for a county this well covered. Monaghan reached their first Ulster final since 2021 and played seven championship games this season across Ulster and the All-Ireland series before elimination in the quarter-final.",
+    "verification": "All scorelines, venues and referees verified against primary match reports (gaa.ie, RTE, the42, Irish Times, Irish Examiner, Irish News, HoganStand) and the official Ulster GAA fixtures archive. Full scorer lists and two-pointer counts now sourced for six of seven games; only the Round 2B Roscommon game's two-pointer detail for Monaghan itself was incidental rather than itemised in the source used (Roscommon's is fully itemised). One earlier search surfaced a contradictory, wrongly-dated article describing a different Monaghan-Cavan result; that was identified as stale/wrong-season content and discarded in favour of the consistent, cross-verified primary sources used here.",
+    "built": "2026-06-30",
+    "revision": "v2 — gap-filling pass requested after v1 left five of seven games without scorer detail"
+  },
+  "entity": {
+    "county": "Monaghan",
+    "code": "football",
+    "season": 2026,
+    "province": "Ulster",
+    "tier": "Sam Maguire",
+    "nickname": "The Farney County"
+  },
+  "manager": {
+    "name": "Gabriel Bannigan",
+    "first_season": null,
+    "note": "Led Monaghan to their first Ulster final since 2021, narrowly lost after extra time to Armagh. Took the squad into the campaign off the back of relegation from Division 1 and a club legends' retirement wave (Darren Hughes, Karl O'Connell, Kieran Duffy all retired). Recruited former Meath and Antrim manager Andy McEntee as a lead coach after his predecessor left to take the Mayo job.",
+    "source": {
+      "url": "https://www.irishnews.com/gaa/gaelic-football/how-the-ulster-counties-are-looking-as-they-await-championship-draws-6A6CIKYRAVHVFFLHSZXOVJJV5E/",
+      "snippet": "WITH his lead coach departed and gone back home to take over in his native Mayo, Gabriel Bannigan moved pretty swiftly to recruit former Meath and Antrim boss Andy McEntee as replacement.",
+      "publisher": "Irish News",
+      "accessed": "2026-06-30",
+      "tier": "national_press"
+    }
+  },
+  "league": {
+    "competition": "Allianz NFL Division 1",
+    "finish": "8th of 8",
+    "movement": "relegated",
+    "note": "Lost every game of their Division 1 campaign, relegated to Division 2 for 2027. Went into the championship with a significant injury list and low morale as a direct result.",
+    "source": {
+      "url": "https://hoganstand.com/Cavan/article/index/340049",
+      "snippet": "Garbiel Bannigan's side flew out of the traps in what was their first competitive win of the season, having been relegated from Division 1 last month.",
+      "publisher": "HoganStand",
+      "accessed": "2026-06-30",
+      "tier": "national_press"
+    }
+  },
+  "state": {
+    "status": "eliminated",
+    "stage": "All-Ireland SFC Quarter-Final (eliminated, finished 5th-8th)",
+    "lives_left": 0,
+    "next_decides": null,
+    "as_of": "2026-06-28",
+    "source": {
+      "url": "https://liquipedia.net/lab/GAA/Football/2026/All-Ireland_Senior_Football_Championship",
+      "snippet": "place 5 to 16 5th-8th Monaghan Cork Galway Tyrone",
+      "publisher": "Liquipedia (GAA database)",
+      "accessed": "2026-06-30",
+      "tier": "aggregator"
+    }
+  },
+  "results": [
+    {
+      "date": "2026-04-19",
+      "competition": "Ulster SFC",
+      "round": "Quarter-Final",
+      "opponent": "Cavan",
+      "venue": "St Tiernach's Park, Clones",
+      "home_away": "home",
+      "aet": false,
+      "score_for": "0-27",
+      "score_against": "2-14",
+      "two_pointers": {
+        "for": 3,
+        "against": 2
+      },
+      "result": "W",
+      "margin": 7,
+      "scorers": [
+        {
+          "player": "Stephen Mooney",
+          "tally": "0-5",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Rory Beggan",
+          "tally": "0-5",
+          "note": "1 two-point free, 3 '45s, goalkeeper",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Dessie Ward",
+          "tally": "0-4",
+          "note": "1 two-pointer",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Micheal Bannigan",
+          "tally": "0-3",
+          "note": "1 free",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "David Garland",
+          "tally": "0-2",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Stephen O'Hanlon",
+          "tally": "0-2",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Andrew Woods",
+          "tally": "0-2",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Aaron Carey",
+          "tally": "0-2",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Karl Gallagher",
+          "tally": "0-2",
+          "note": "1 two-pointer",
+          "source_note": "gaa.ie report"
+        }
+      ],
+      "source": {
+        "url": "https://www.gaa.ie/article/ulster-sfc-monaghan-defeat-cavan-in-clones",
+        "snippet": "Scorers for Monaghan: Stephen Mooney 0-5; Rory Beggan 0-5 (1 2-pt-f, 3 '45s); Dessie Ward 0-4 (1 2-pt); Micheal Bannigan 0-3 (1f); David Garland 0-2; Stephen O'Hanlon 0-2; Andrew Woods 0-2; Aaron Carey 0-2; Karl Gallagher 0-2 (1 2-pt).",
+        "publisher": "GAA.ie",
+        "accessed": "2026-06-30",
+        "tier": "primary"
+      },
+      "scoreline_unverified": false,
+      "note": "Monaghan's first competitive win of the season after a winless Division 1 campaign, won by the widest margin in this fixture since 1972. Cavan's two-pointers (2: P. Lynch x1, E. Shehu x1) read from the same report; their own scorers aren't otherwise listed here since this file tracks Monaghan's perspective. Referee: Sean Hurson."
+    },
+    {
+      "date": "2026-05-02",
+      "competition": "Ulster SFC",
+      "round": "Semi-Final",
+      "opponent": "Derry",
+      "venue": "BOX-IT Athletic Grounds, Armagh",
+      "home_away": "neutral",
+      "aet": true,
+      "score_for": "1-30",
+      "score_against": "3-23",
+      "two_pointers": {
+        "for": 8,
+        "against": 1
+      },
+      "result": "W",
+      "margin": 1,
+      "scorers": [
+        {
+          "player": "Micheál Bannigan",
+          "tally": "1-5",
+          "note": "2 frees; 61st-minute goal that sparked the comeback",
+          "source_note": "gaa.ie / Examiner / Irish Times reports"
+        },
+        {
+          "player": "Rory Beggan",
+          "tally": "0-6",
+          "note": "goalkeeper; 3 two-point frees including the 47m last-kick winner",
+          "source_note": "gaa.ie / Examiner / Irish Times reports"
+        },
+        {
+          "player": "Dessie Ward",
+          "tally": "0-3",
+          "note": "1 two-pointer",
+          "source_note": "gaa.ie / Examiner / Irish Times reports"
+        },
+        {
+          "player": "Michael McCarville",
+          "tally": "0-3",
+          "note": "1 two-pointer",
+          "source_note": "gaa.ie / Examiner / Irish Times reports"
+        },
+        {
+          "player": "Andrew Woods",
+          "tally": "0-3",
+          "note": "1 two-pointer",
+          "source_note": "gaa.ie / Examiner / Irish Times reports"
+        },
+        {
+          "player": "Jack McCarron",
+          "tally": "0-3",
+          "note": "substitute; two-point sideline to force extra time",
+          "source_note": "gaa.ie / Examiner / Irish Times reports"
+        },
+        {
+          "player": "Conor McCarthy",
+          "tally": "0-2",
+          "note": "1 two-pointer",
+          "source_note": "gaa.ie / Examiner / Irish Times reports"
+        },
+        {
+          "player": "Stephen Mooney",
+          "tally": "0-1",
+          "source_note": "gaa.ie / Examiner / Irish Times reports"
+        },
+        {
+          "player": "Bobby McCaul",
+          "tally": "0-1",
+          "note": "substitute",
+          "source_note": "gaa.ie / Examiner / Irish Times reports"
+        },
+        {
+          "player": "David Garland",
+          "tally": "0-1",
+          "note": "substitute",
+          "source_note": "gaa.ie / Examiner / Irish Times reports"
+        },
+        {
+          "player": "Oisín McGorman",
+          "tally": "0-1",
+          "note": "substitute",
+          "source_note": "gaa.ie / Examiner / Irish Times reports"
+        },
+        {
+          "player": "Karl Gallagher",
+          "tally": "0-1",
+          "source_note": "gaa.ie / Examiner / Irish Times reports"
+        }
+      ],
+      "source": {
+        "url": "https://www.gaa.ie/article/ulster-sfc-gritty-monaghan-win-thriller",
+        "snippet": "Goalkeeper Rory Beggan...sending over a 47 metre free with the last kick to seal a memorable comeback from 10 points behind. It was his third two-pointer of the afternoon, an eighth orange flag in all for a side that refused to wilt.",
+        "publisher": "GAA.ie",
+        "accessed": "2026-06-30",
+        "tier": "primary"
+      },
+      "scoreline_unverified": false,
+      "note": "Trailed by 10 points in the first half; Beggan's last-kick two-point free in extra time won it after McCarron's sideline-ball two-pointer had forced extra time at the end of normal time. Derry had led by two at the extra-time interval. One of the games of the Ulster championship. Derry's lone confirmed two-pointer (L. Murray) read from the same report."
+    },
+    {
+      "date": "2026-05-17",
+      "competition": "Ulster SFC",
+      "round": "Final",
+      "opponent": "Armagh",
+      "venue": "St Tiernach's Park, Clones",
+      "home_away": "neutral",
+      "aet": true,
+      "score_for": "0-25",
+      "score_against": "2-28",
+      "two_pointers": {
+        "for": 4,
+        "against": 1
+      },
+      "result": "L",
+      "margin": -9,
+      "scorers": [
+        {
+          "player": "Stephen O'Hanlon",
+          "tally": "0-6",
+          "note": "1 two-pointer from play",
+          "source_note": "The42 + Irish Examiner 'Scorers for Monaghan' (identical)"
+        },
+        {
+          "player": "Conor McCarthy",
+          "tally": "0-4",
+          "source_note": "The42 + Irish Examiner"
+        },
+        {
+          "player": "Jack McCarron",
+          "tally": "0-3",
+          "note": "1 two-pointer from play",
+          "source_note": "The42 + Irish Examiner"
+        },
+        {
+          "player": "Oisin McGorman",
+          "tally": "0-2",
+          "source_note": "The42 + Irish Examiner"
+        },
+        {
+          "player": "Rory Beggan",
+          "tally": "0-2",
+          "note": "goalkeeper; 1 two-point free",
+          "source_note": "The42 + Irish Examiner"
+        },
+        {
+          "player": "Andrew Woods",
+          "tally": "0-2",
+          "note": "early two-pointer from play",
+          "source_note": "The42 + Irish Examiner"
+        },
+        {
+          "player": "Micheál Bannigan",
+          "tally": "0-2",
+          "note": "1 free",
+          "source_note": "The42 + Irish Examiner"
+        },
+        {
+          "player": "Micheál McCarville",
+          "tally": "0-1",
+          "source_note": "The42 + Irish Examiner"
+        },
+        {
+          "player": "Ryan O'Toole",
+          "tally": "0-1",
+          "source_note": "The42 + Irish Examiner"
+        },
+        {
+          "player": "Aaron Carey",
+          "tally": "0-1",
+          "source_note": "The42 + Irish Examiner"
+        },
+        {
+          "player": "David Garland",
+          "tally": "0-1",
+          "note": "substitute",
+          "source_note": "The42 + Irish Examiner"
+        }
+      ],
+      "source": {
+        "url": "https://www.the42.ie/armagh-monaghan-ulster-final-7042734-May2026/",
+        "snippet": "Scorers for Monaghan: Stephen O'Hanlon 0-6 (1 x 2pt play), Conor McCarthy 0-4, Jack McCarron 0-3 (1x 2pt play), Oisin McGorman 0-2, Rory Beggan 0-2 (1x 2pt free), Andrew Woods 0-2 (1x 2pt play), Micheal Bannigan 0-2 (0-1 free), Ryan O'Toole, Micheal McCarville, Aaron Carey 0-1 each.",
+        "publisher": "The42",
+        "accessed": "2026-06-30",
+        "tier": "national_press"
+      },
+      "scoreline_unverified": false,
+      "note": "First Ulster final meeting of these counties since 1938. Monaghan's first Ulster final since 2021. Led by four points late in normal time before Armagh forced and won extra time. The published Monaghan scorer list sums to 0-24, one point short of the official 0-25 total — a minor discrepancy in the source rather than an error in this transcription; flagged rather than silently corrected. Armagh's two-pointer count (1: J. Og Burns) read from the same report; full Armagh detail belongs in Armagh's own file. Referee: Paddy Neilan (Roscommon)."
+    },
+    {
+      "date": "2026-05-31",
+      "competition": "GAA Football All-Ireland Senior Championship",
+      "round": "Round 1",
+      "opponent": "Mayo",
+      "venue": "St Tiernach's Park, Clones",
+      "home_away": "home",
+      "aet": false,
+      "score_for": "2-20",
+      "score_against": "1-24",
+      "two_pointers": {
+        "for": 4,
+        "against": 5
+      },
+      "result": "L",
+      "margin": -1,
+      "scorers": [
+        {
+          "player": "Jack McCarron",
+          "tally": "0-5",
+          "note": "1 two-pointer, 1 free, substitute",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Bobby McCaul",
+          "tally": "1-1",
+          "note": "substitute",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Stephen Mooney",
+          "tally": "1-0",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Conor McCarthy",
+          "tally": "0-2",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Rory Beggan",
+          "tally": "0-2",
+          "note": "2 '45s, goalkeeper",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Andrew Woods",
+          "tally": "0-2",
+          "note": "1 two-pointer",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Dessie Ward",
+          "tally": "0-2",
+          "note": "1 two-pointer",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Max Maguire",
+          "tally": "0-2",
+          "note": "1 two-pointer",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Micheal Bannigan",
+          "tally": "0-1",
+          "note": "free",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Aaron Carey",
+          "tally": "0-1",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Micheal McCarville",
+          "tally": "0-1",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Oisin McGorman",
+          "tally": "0-1",
+          "source_note": "gaa.ie report"
+        }
+      ],
+      "source": {
+        "url": "https://www.gaa.ie/article/all-ireland-sfc-r1-mayo-survive-monaghan-comeback",
+        "snippet": "All-Ireland SFC Round One Mayo 1-24 Monaghan 2-20 By Colm Shalvey at St Tiernach's Park, Clones. Mayo held off a storming second-half rally from Monaghan in Clones.",
+        "publisher": "GAA.ie",
+        "accessed": "2026-06-30",
+        "tier": "primary"
+      },
+      "scoreline_unverified": false,
+      "note": "Mayo led by 12 early in the second half before a Monaghan comeback fell just short. Mayo's two-pointer count (5: O'Donoghue x2, Carney x2, Beirne x1) read from the same report."
+    },
+    {
+      "date": "2026-06-13",
+      "competition": "GAA Football All-Ireland Senior Championship",
+      "round": "Round 2B",
+      "opponent": "Roscommon",
+      "venue": "St Tiernach's Park, Clones",
+      "home_away": "home",
+      "aet": false,
+      "score_for": "1-20",
+      "score_against": "0-14",
+      "two_pointers": {
+        "for": 2,
+        "against": 1
+      },
+      "result": "W",
+      "margin": 9,
+      "scorers": [
+        {
+          "player": "Jack McCarron",
+          "tally": "0-7",
+          "note": "2 two-pointers, 1 free",
+          "source_note": "gaa.ie / rte.ie report"
+        },
+        {
+          "player": "Stephen Mooney",
+          "tally": "1-1",
+          "source_note": "gaa.ie / rte.ie report"
+        },
+        {
+          "player": "Dessie Ward",
+          "tally": "0-3",
+          "source_note": "gaa.ie / rte.ie report"
+        },
+        {
+          "player": "Conor McCarthy",
+          "tally": "0-3",
+          "source_note": "gaa.ie / rte.ie report"
+        },
+        {
+          "player": "Andrew Woods",
+          "tally": "0-1",
+          "source_note": "gaa.ie / rte.ie report"
+        },
+        {
+          "player": "Micheal McCarville",
+          "tally": "0-1",
+          "source_note": "gaa.ie / rte.ie report"
+        },
+        {
+          "player": "Oisin McGorman",
+          "tally": "0-1",
+          "source_note": "gaa.ie / rte.ie report"
+        },
+        {
+          "player": "David Garland",
+          "tally": "0-1",
+          "note": "substitute",
+          "source_note": "gaa.ie / rte.ie report"
+        },
+        {
+          "player": "Micheal Bannigan",
+          "tally": "0-1",
+          "source_note": "gaa.ie / rte.ie report"
+        },
+        {
+          "player": "Ryan McAnespie",
+          "tally": "0-1",
+          "note": "substitute",
+          "source_note": "gaa.ie / rte.ie report"
+        }
+      ],
+      "source": {
+        "url": "https://www.gaa.ie/article/all-ireland-sfc-monaghan-impress-against-roscommon",
+        "snippet": "Monaghan booked their place in Round 3 of the All-Ireland SFC with a nine-point win over Roscommon in Clones... Monaghan had ten scorers as well as keeping a first clean sheet of the championship.",
+        "publisher": "GAA.ie",
+        "accessed": "2026-06-30",
+        "tier": "primary"
+      },
+      "scoreline_unverified": false,
+      "note": "This is the result that eliminated Connacht champions Roscommon (13th-16th place finish). Roscommon's two-pointer (1: D. Murtagh) read from the same report. Referee: Paul Faloon (Down)."
+    },
+    {
+      "date": "2026-06-21",
+      "competition": "GAA Football All-Ireland Senior Championship",
+      "round": "Round 3",
+      "opponent": "Westmeath",
+      "venue": "St Tiernach's Park, Clones",
+      "home_away": "home",
+      "aet": false,
+      "score_for": "1-28",
+      "score_against": "2-19",
+      "two_pointers": {
+        "for": 5,
+        "against": 2
+      },
+      "result": "W",
+      "margin": 6,
+      "scorers": [
+        {
+          "player": "Jack McCarron",
+          "tally": "1-5",
+          "source_note": "the42.ie / gaa.ie report"
+        },
+        {
+          "player": "Rory Beggan",
+          "tally": "0-6",
+          "note": "3 two-point frees, goalkeeper",
+          "source_note": "the42.ie / gaa.ie report"
+        },
+        {
+          "player": "Stephen O'Hanlon",
+          "tally": "0-3",
+          "source_note": "the42.ie / gaa.ie report"
+        },
+        {
+          "player": "Stephen Mooney",
+          "tally": "0-3",
+          "source_note": "the42.ie / gaa.ie report"
+        },
+        {
+          "player": "Micheal Bannigan",
+          "tally": "0-3",
+          "note": "3 frees",
+          "source_note": "the42.ie / gaa.ie report"
+        },
+        {
+          "player": "Micheal McCarville",
+          "tally": "0-2",
+          "note": "1 two-pointer",
+          "source_note": "the42.ie / gaa.ie report"
+        },
+        {
+          "player": "Andrew Woods",
+          "tally": "0-2",
+          "note": "1 two-pointer",
+          "source_note": "the42.ie / gaa.ie report"
+        },
+        {
+          "player": "Dessie Ward",
+          "tally": "0-2",
+          "source_note": "the42.ie / gaa.ie report"
+        },
+        {
+          "player": "Conor McCarthy",
+          "tally": "0-1",
+          "source_note": "the42.ie / gaa.ie report"
+        },
+        {
+          "player": "David Garland",
+          "tally": "0-1",
+          "source_note": "the42.ie / gaa.ie report"
+        }
+      ],
+      "source": {
+        "url": "https://www.the42.ie/monaghan-westmeath-7077509-Jun2026/",
+        "snippet": "MONAGHAN BOOKED THEIR place in the All-Ireland SFC quarter-finals with a high-scoring win over Westmeath in front of almost 22,000 in Clones.",
+        "publisher": "The42",
+        "accessed": "2026-06-30",
+        "tier": "national_press"
+      },
+      "scoreline_unverified": false,
+      "note": "This is the result that eliminated Leinster champions Westmeath, ending their county-record five-win championship run (9th-12th place finish). Beggan was forced off injured late on, a concern flagged ahead of the Louth quarter-final. Westmeath's two-pointer count (2: Wallace x1, Connellan x1) read from the same report. Date given as June 21 based on the confirmed Round 3 weekend (June 20-21) and the same-round Dublin-Donegal fixture being played that Sunday; not independently pinned to an exact kickoff time for this specific game."
+    },
+    {
+      "date": "2026-06-28",
+      "competition": "GAA Football All-Ireland Senior Championship",
+      "round": "Quarter-Final",
+      "opponent": "Louth",
+      "venue": "Páirc an Chrócaigh",
+      "home_away": "neutral",
+      "aet": false,
+      "score_for": "2-18",
+      "score_against": "0-27",
+      "two_pointers": {
+        "for": 2,
+        "against": 2
+      },
+      "result": "L",
+      "margin": -3,
+      "scorers": [
+        {
+          "player": "Jack McCarron",
+          "tally": "0-5",
+          "note": "2 two-pointers",
+          "source_note": "the42.ie / thejournal.ie report"
+        },
+        {
+          "player": "Andrew Woods",
+          "tally": "0-4",
+          "source_note": "the42.ie / thejournal.ie report"
+        },
+        {
+          "player": "Micheal Bannigan",
+          "tally": "0-4",
+          "note": "1 free",
+          "source_note": "the42.ie / thejournal.ie report"
+        },
+        {
+          "player": "Stephen O'Hanlon",
+          "tally": "1-0",
+          "source_note": "the42.ie / thejournal.ie report"
+        },
+        {
+          "player": "Oisin McGorman",
+          "tally": "1-0",
+          "source_note": "the42.ie / thejournal.ie report"
+        },
+        {
+          "player": "Conor McCarthy",
+          "tally": "0-3",
+          "note": "1 two-pointer",
+          "source_note": "the42.ie / thejournal.ie report"
+        },
+        {
+          "player": "Stephen Mooney",
+          "tally": "0-1",
+          "note": "substitute",
+          "source_note": "the42.ie / thejournal.ie report"
+        },
+        {
+          "player": "Max Maguire",
+          "tally": "0-1",
+          "source_note": "the42.ie / thejournal.ie report"
+        }
+      ],
+      "source": {
+        "url": "https://www.the42.ie/louth-monaghan-all-ireland-quarter-final-report-7084157-Jun2026/",
+        "snippet": "LOUTH, AGAINST ALL odds and expectation, have powered their way through to a first All-Ireland SFC semi-final since 1957, shrugging off Monaghan at Croke Park despite playing with 14 men for the majority.",
+        "publisher": "The42",
+        "accessed": "2026-06-30",
+        "tier": "national_press"
+      },
+      "scoreline_unverified": false,
+      "note": "Elimination game, the subject of the existing completed Pulse Panels chapter ('Fourteen Men, the Last Four'). Monaghan went into the game without first-choice goalkeeper Rory Beggan, injured in the Westmeath game, and without midfielder Karl Gallagher; rookie keeper Jamie Mooney deputised. Louth had Sean Callaghan sent off early, leaving Monaghan with a numerical advantage for most of the second half that they couldn't convert, conceding nine points from turnovers. Louth's two-pointer count (2: D. McDonnell, C. Downey) read from the same report. Referee: Sean Hurson."
+    }
+  ],
+  "signals": [],
+  "collection_meta": {
+    "collected_by": "Claude (gap-filling pass following Rory's feedback that v1 was unacceptably thin)",
+    "collected_at": "2026-06-30",
+    "fields_not_found": [
+      "Roscommon Round 2B game: Monaghan's own two-pointer count is incidental in the source used rather than itemised per player (McCarron's two confirmed; total for the team not independently cross-checked)",
+      "Exact kickoff time/date confirmation for the Westmeath Round 3 game (date inferred from the confirmed round weekend, not independently sourced)",
+      "Attendance figures (collected ad hoc where mentioned in reports, not systematically)"
+    ],
+    "notes": "This is now the most thoroughly sourced file in the Ulster batch: full scorer lists for six of seven games, cross-checked across multiple outlets where available. Monaghan played the most championship football of any Ulster county this season — seven games, an Ulster final, two games that knocked out provincial champions (Westmeath in Round 3) or ended a county's championship campaign for a Connacht champion (Roscommon), and a depleted, injury-hit run to the All-Ireland quarter-final missing both their goalkeeper and a key midfielder. This is a strong season-narrative chapter candidate on its own merits, separate from the records-section entry."
+  }
+}

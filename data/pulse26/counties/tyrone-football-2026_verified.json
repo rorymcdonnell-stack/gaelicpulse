@@ -1,0 +1,370 @@
+{
+  "_meta": {
+    "note": "Built to the Armagh-locked standard. Tyrone qualified for the All-Ireland series via NFL ranking (13th-highest), not via Ulster final, after losing the Ulster preliminary round to Armagh.",
+    "verification": "All scorelines and venues verified against primary match reports (gaa.ie, Irish Times, Irish News, HoganStand). Two-pointer counts derived only from full scorer lists; left null where no full breakdown was sourced.",
+    "built": "2026-06-30"
+  },
+  "entity": {
+    "county": "Tyrone",
+    "code": "football",
+    "season": 2026,
+    "province": "Ulster",
+    "tier": "Sam Maguire",
+    "nickname": "The Red Hands"
+  },
+  "manager": {
+    "name": "Malachy O'Rourke",
+    "first_season": null,
+    "note": null,
+    "source": {
+      "url": "https://www.irishtimes.com/sport/gaelic-games/2026/06/27/live-all-ireland-quarter-finals-cork-take-on-mayo-ahead-of-meeting-of-kerry-and-tyrone/",
+      "snippet": "Malachy O'Rourke's men conceded just eight first half points to Mayo; and a mere 1-17 in total, including extra-time, against Armagh.",
+      "publisher": "Irish Times",
+      "accessed": "2026-06-30",
+      "tier": "national_press"
+    }
+  },
+  "league": {
+    "competition": "Allianz NFL",
+    "finish": null,
+    "movement": null,
+    "note": "Tyrone qualified for the All-Ireland series as the 13th-highest ranked NFL team. Division and round-by-round results not yet sourced — flagged as a gap.",
+    "source": {
+      "url": "https://www.irishtimes.com/sport/gaelic-games/2026/05/05/all-ireland-football-championship-a-complete-guide-to-the-sam-maguire-and-tailteann-cup-competitions/",
+      "snippet": "The seven top-ranked counties following this season's National Football League - Donegal (first), Mayo (third), Meath (seventh), Louth (11th), Derry (12th), Tyrone (13th) and Cavan (14th).",
+      "publisher": "Irish Times",
+      "accessed": "2026-06-30",
+      "tier": "national_press"
+    }
+  },
+  "state": {
+    "status": "eliminated",
+    "stage": "All-Ireland SFC Quarter-Final (eliminated, finished 5th-8th)",
+    "lives_left": 0,
+    "next_decides": null,
+    "as_of": "2026-06-27",
+    "source": {
+      "url": "https://liquipedia.net/lab/GAA/Football/2026/All-Ireland_Senior_Football_Championship",
+      "snippet": "place 5 to 16 5th-8th Monaghan Cork Galway Tyrone",
+      "publisher": "Liquipedia (GAA database)",
+      "accessed": "2026-06-30",
+      "tier": "aggregator"
+    }
+  },
+  "results": [
+    {
+      "date": "2026-04-12",
+      "competition": "Ulster SFC",
+      "round": "Preliminary Round",
+      "opponent": "Armagh",
+      "venue": "Athletic Grounds, Armagh",
+      "home_away": "away",
+      "aet": false,
+      "score_for": "1-16",
+      "score_against": "1-17",
+      "two_pointers": {
+        "for": 3,
+        "against": 1
+      },
+      "result": "L",
+      "margin": -1,
+      "scorers": [
+        {
+          "player": "Conn Kilpatrick",
+          "tally": "0-4",
+          "note": "1 two-pointer; big influence in the third quarter",
+          "source_note": "gaa.ie / Examiner reports"
+        },
+        {
+          "player": "Ben McDonnell",
+          "tally": "1-0",
+          "source_note": "gaa.ie / Examiner reports"
+        },
+        {
+          "player": "Mattie Donnelly",
+          "tally": "0-3",
+          "note": "1 two-pointer",
+          "source_note": "gaa.ie / Examiner reports"
+        },
+        {
+          "player": "Michael McKernan",
+          "tally": "0-3",
+          "note": "1 two-pointer",
+          "source_note": "gaa.ie / Examiner reports"
+        },
+        {
+          "player": "Ethan Jordan",
+          "tally": "0-2",
+          "note": "1 free",
+          "source_note": "gaa.ie / Examiner reports"
+        },
+        {
+          "player": "Peter Teague",
+          "tally": "0-1",
+          "source_note": "gaa.ie / Examiner reports"
+        },
+        {
+          "player": "Sean O'Donnell",
+          "tally": "0-1",
+          "source_note": "gaa.ie / Examiner reports"
+        },
+        {
+          "player": "Ciaran Daly",
+          "tally": "0-1",
+          "source_note": "gaa.ie / Examiner reports"
+        },
+        {
+          "player": "Eoin McElholm",
+          "tally": "0-1",
+          "note": "touch-of-class equaliser",
+          "source_note": "gaa.ie / Examiner reports"
+        }
+      ],
+      "source": {
+        "url": "https://liquipedia.net/lab/GAA/Football/2026/Ulster_Senior_Football_Championship",
+        "snippet": "ArmaghARM 20 TyroneTYR 19 April 12, 2026 - 16:15 BST ARM 20:19 TYR ARM 1-17 i 1-16 TYR Athletic Grounds, Armagh",
+        "publisher": "Liquipedia (GAA database)",
+        "accessed": "2026-06-30",
+        "tier": "aggregator"
+      },
+      "scoreline_unverified": false,
+      "note": "Eliminated from the Ulster Championship at the first hurdle; re-entered the season via NFL ranking."
+    },
+    {
+      "date": "2026-05-24",
+      "competition": "GAA Football All-Ireland Senior Championship",
+      "round": "Round 1",
+      "opponent": "Roscommon",
+      "venue": "King & Moffatt Dr. Hyde Park, Roscommon",
+      "home_away": "away",
+      "aet": false,
+      "score_for": "3-16",
+      "score_against": "2-18",
+      "two_pointers": {
+        "for": 1,
+        "against": 3
+      },
+      "result": "W",
+      "margin": 1,
+      "scorers": [
+        {
+          "player": "Ethan Jordan",
+          "tally": "0-7",
+          "note": "1 two-pointer, 2 frees, 1 '45; winning free in the 69th minute",
+          "source_note": "gaa.ie / The42 / Examiner reports"
+        },
+        {
+          "player": "Eoin McElholm",
+          "tally": "1-3",
+          "note": "man of the match; 23rd-minute goal",
+          "source_note": "gaa.ie / The42 / Examiner reports"
+        },
+        {
+          "player": "Mattie Donnelly",
+          "tally": "1-1",
+          "note": "57th-minute goal that swung it back to Tyrone",
+          "source_note": "gaa.ie / The42 / Examiner reports"
+        },
+        {
+          "player": "Ronan Cassidy",
+          "tally": "1-0",
+          "note": "first-half goal",
+          "source_note": "gaa.ie / The42 / Examiner reports"
+        },
+        {
+          "player": "Peter Teague",
+          "tally": "0-1",
+          "source_note": "gaa.ie / The42 / Examiner reports"
+        },
+        {
+          "player": "Niall Devlin",
+          "tally": "0-1",
+          "source_note": "gaa.ie / The42 / Examiner reports"
+        },
+        {
+          "player": "Conn Kilpatrick",
+          "tally": "0-1",
+          "source_note": "gaa.ie / The42 / Examiner reports"
+        },
+        {
+          "player": "Ciarán Daly",
+          "tally": "0-1",
+          "source_note": "gaa.ie / The42 / Examiner reports"
+        },
+        {
+          "player": "Seánie O'Donnell",
+          "tally": "0-1",
+          "source_note": "gaa.ie / The42 / Examiner reports"
+        }
+      ],
+      "source": {
+        "url": "https://www.gaa.ie/article/all-ireland-sfc-tyrone-edge-roscommon-in-thriller",
+        "snippet": "All-Ireland SFC Round 1 TYRONE 3-16 (3-1-14) ROSCOMMON 2-18 (2-3-12) By Kevin Egan at King & Moffatt Dr. Hyde Park.",
+        "publisher": "GAA.ie",
+        "accessed": "2026-06-30",
+        "tier": "primary"
+      },
+      "scoreline_unverified": false,
+      "note": "Won on a 35th-minute Ethan Jordan score with the clock past 69 minutes, ending Roscommon's provincial-champion campaign in the worst finish by a provincial champion since the 16-team format began in 2023."
+    },
+    {
+      "date": "2026-06-14",
+      "competition": "GAA Football All-Ireland Senior Championship",
+      "round": "Round 2A",
+      "opponent": "Mayo",
+      "venue": "O'Neills Healy Park, Omagh",
+      "home_away": "home",
+      "aet": false,
+      "score_for": "0-22",
+      "score_against": "1-18",
+      "two_pointers": {
+        "for": null,
+        "against": 1
+      },
+      "result": "W",
+      "margin": 1,
+      "scorers": [
+        {
+          "player": "Darren McCurry",
+          "tally": "0-6",
+          "note": "2 frees, substitute",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Ronan Cassidy",
+          "tally": "0-4",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Niall Morgan",
+          "tally": "0-3",
+          "note": "1 '45, 1 two-point free, goalkeeper",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Ciaran Daly",
+          "tally": "0-2",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Conn Kilpatrick",
+          "tally": "0-2",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Peter Teague",
+          "tally": "0-2",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Ethan Jordan",
+          "tally": "0-2",
+          "note": "1 '45, 1 free",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Eoin McElholm",
+          "tally": "0-1",
+          "source_note": "gaa.ie report"
+        }
+      ],
+      "source": {
+        "url": "https://www.gaa.ie/article/all-ireland-sfc-tyrone-overcome-mayo-in-omagh",
+        "snippet": "Niall Morgan's late two-pointer sealed the narrowest of victories and a place in the All-Ireland SFC quarter-finals as Tyrone edged Mayo in a gripping Round 2A clash at O'Neills Healy Park.",
+        "publisher": "GAA.ie",
+        "accessed": "2026-06-30",
+        "tier": "primary"
+      },
+      "scoreline_unverified": false,
+      "note": "Won on a 69th-minute Niall Morgan two-point free, his only two-pointer of the game and the only one Tyrone's scorer notes confirm; Mayo's Kobe McDonald kicked a separate two-pointer noted in match coverage but not confirmed in the full Mayo scorer list, so Tyrone's two-pointers field is left null and only Mayo's confirmed one is recorded."
+    },
+    {
+      "date": "2026-06-27",
+      "competition": "GAA Football All-Ireland Senior Championship",
+      "round": "Quarter-Final",
+      "opponent": "Kerry",
+      "venue": "Páirc an Chrócaigh",
+      "home_away": "neutral",
+      "aet": false,
+      "score_for": "0-27",
+      "score_against": "2-25",
+      "two_pointers": {
+        "for": 5,
+        "against": 4
+      },
+      "result": "L",
+      "margin": -4,
+      "scorers": [
+        {
+          "player": "Darren McCurry",
+          "tally": "0-10",
+          "note": "2 two-point frees, 2 frees, substitute",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Ethan Jordan",
+          "tally": "0-4",
+          "note": "1 two-pointer, 1 free",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Mattie Donnelly",
+          "tally": "0-3",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Eoin McElholm",
+          "tally": "0-3",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Conn Kilpatrick",
+          "tally": "0-2",
+          "note": "1 two-pointer",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Kieran McGeary",
+          "tally": "0-2",
+          "note": "1 two-pointer",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Sean O'Donnell",
+          "tally": "0-1",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Ronan Cassidy",
+          "tally": "0-1",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Michael McKernan",
+          "tally": "0-1",
+          "source_note": "gaa.ie report"
+        }
+      ],
+      "source": {
+        "url": "https://www.gaa.ie/article/all-ireland-sfc-qf-kerry-advance-after-a-cracker",
+        "snippet": "Kerry came out on top against Tyrone (2-25 to 0-27) after a thrilling battle at Croke Park this evening... Armin Heinrich's goal 10 seconds before the hooter sounded at headquarters sealed the hard-fought win.",
+        "publisher": "GAA.ie / HoganStand",
+        "accessed": "2026-06-30",
+        "tier": "primary"
+      },
+      "scoreline_unverified": false,
+      "note": "Elimination game. Kerry won with a substitute's goal in the last 10 seconds. Kerry's two-pointer count (4: D. Clifford x1 free, D. Geaney x2, P. Clifford x1 free) read from the same gaa.ie report; Kerry's own scorers aren't listed here since this file tracks Tyrone's perspective. Referee: Paddy Neilan."
+    }
+  ],
+  "signals": [],
+  "collection_meta": {
+    "collected_by": "Claude (research session, not yet hand-verified by Rory)",
+    "collected_at": "2026-06-30",
+    "fields_not_found": [
+      "Allianz NFL division and round-by-round results (know only the final ranking position: 13th)",
+      "Full scorer list and two-pointer count for the Armagh preliminary-round loss",
+      "Attendance figures (collected ad hoc where mentioned in reports, not systematically)"
+    ],
+    "notes": "Tyrone's path to the All-Ireland series ran through league ranking rather than the Ulster final, which is worth flagging for the season-narrative chapter — they lost their first championship game of the year (to Armagh) and still played four more rounds of senior inter-county football than four of the eight provincial finalists who reached the All-Ireland series directly."
+  }
+}

@@ -1,0 +1,435 @@
+{
+  "_meta": {
+    "note": "Built to the Armagh-locked standard. Wexford lost the Leinster quarter-final heavily to Louth, then ran to the Tailteann Cup quarter-final (beat Limerick, lost to Fermanagh, beat Leitrim, lost to Offaly) and won promotion to Division 2. Five championship games.",
+    "verification": "All scorelines, venues and dates verified against primary tables and reports (RTE, gaa.ie, HoganStand, Irish News, The42). Full Wexford scorer list held for the Offaly quarter-final; partial for the Leitrim Round 3 win.",
+    "built": "2026-06-30"
+  },
+  "entity": {
+    "county": "Wexford",
+    "code": "football",
+    "season": 2026,
+    "province": "Leinster",
+    "tier": "Tailteann Cup",
+    "nickname": "The Model County"
+  },
+  "manager": {
+    "name": "John Hegarty",
+    "first_season": false,
+    "note": "Fourth season as Wexford manager. Oversaw promotion to Division 2 and a Tailteann Cup quarter-final run, despite a number of retirements (Kevin O'Grady, Mick Furlong and Conor Carthy) thinning the panel.",
+    "source": {
+      "url": "https://www.rte.ie/sport/football/2026/0109/1551545-2026-football-management-guide-new-season-new-set-ups/",
+      "snippet": "John Hegarty is preparing for a fourth season as Wexford boss.",
+      "publisher": "RTE Sport",
+      "accessed": "2026-06-30",
+      "tier": "national_press"
+    }
+  },
+  "league": {
+    "competition": "Allianz NFL Division 3",
+    "finish": "promoted",
+    "movement": "promoted to Division 2 for 2027",
+    "note": "Won promotion from Division 3 to Division 2, a clear marker of progress in Hegarty's tenure.",
+    "source": {
+      "url": "https://www.irishnews.com/gaa/gaelic-football/offaly-beat-wexford-to-secure-a-semi-final-spot-in-the-tailteann-cup-4BFDLTPBPNDZJN2NBWY2JAU55I/",
+      "snippet": "The Model county, who will replace their opponents in Division Two next year after winning promotion.",
+      "publisher": "Irish News",
+      "accessed": "2026-06-30",
+      "tier": "national_press"
+    }
+  },
+  "state": {
+    "status": "eliminated",
+    "stage": "Tailteann Cup Quarter-Final (eliminated)",
+    "lives_left": 0,
+    "next_decides": null,
+    "as_of": "2026-06-13",
+    "source": {
+      "url": "https://hoganstand.com/Results",
+      "snippet": "Tailteann Cup quarter-finals Offaly 1-22 Wexford 1-17, Glenisk O'Connor Park - FT",
+      "publisher": "HoganStand",
+      "accessed": "2026-06-30",
+      "tier": "aggregator"
+    }
+  },
+  "results": [
+    {
+      "date": "2026-04-19",
+      "competition": "Leinster SFC",
+      "round": "Quarter-Final",
+      "opponent": "Louth",
+      "venue": "Netwatch Dr Cullen Park, Carlow",
+      "home_away": "neutral",
+      "aet": false,
+      "score_for": "0-11",
+      "score_against": "1-25",
+      "two_pointers": {
+        "for": 1,
+        "against": 2
+      },
+      "result": "L",
+      "margin": -17,
+      "scorers": [
+        {
+          "player": "Mark Rossiter",
+          "tally": "0-7",
+          "note": "3 frees, 1 two-point free",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Michael Kinsella",
+          "tally": "0-2",
+          "note": "substitute (half-time)",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Cathal Kehoe",
+          "tally": "0-1",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Tom Byrne",
+          "tally": "0-1",
+          "source_note": "gaa.ie report"
+        }
+      ],
+      "source": {
+        "url": "https://www.rte.ie/sport/results/gaa/2026/6463/results/",
+        "snippet": "Quarter-Final Louth 1-25 0-11 Wexford Netwatch Dr Cullen Park",
+        "publisher": "RTE Sport",
+        "accessed": "2026-06-30",
+        "tier": "national_press"
+      },
+      "scoreline_unverified": false,
+      "note": "Wexford had a bye to the Leinster quarter-final and were heavily beaten there (17 points) by eventual All-Ireland semi-finalists Louth, at a neutral venue (Louth playing home games away from the redeveloping Drogheda Park). Sent Wexford into the Tailteann Cup. Full scorer list not captured. Louth's perspective will live in Louth's file (Louth still alive, semi-finalist)."
+    },
+    {
+      "date": "2026-05-09",
+      "competition": "Tailteann Cup",
+      "round": "Round 1",
+      "opponent": "Limerick",
+      "venue": "Chadwicks Wexford Park, Wexford",
+      "home_away": "home",
+      "aet": false,
+      "score_for": "2-19",
+      "score_against": "1-11",
+      "two_pointers": {
+        "for": 3,
+        "against": 4
+      },
+      "result": "W",
+      "margin": 11,
+      "scorers": [
+        {
+          "player": "Ben Brosnan",
+          "tally": "0-6",
+          "note": "2 two-pointers",
+          "source_note": "gaa.ie / Irish Examiner reports"
+        },
+        {
+          "player": "Liam O'Connor",
+          "tally": "1-0",
+          "note": "defender; 37th-min goal",
+          "source_note": "gaa.ie / Irish Examiner reports"
+        },
+        {
+          "player": "Michael Kinsella",
+          "tally": "1-0",
+          "note": "39th-min goal",
+          "source_note": "gaa.ie / Irish Examiner reports"
+        },
+        {
+          "player": "Darragh Brooks",
+          "tally": "0-3",
+          "note": "goalkeeper; 1 free, 1 two-point free",
+          "source_note": "gaa.ie / Irish Examiner reports"
+        },
+        {
+          "player": "Páraic Hughes",
+          "tally": "0-2",
+          "source_note": "gaa.ie / Irish Examiner reports"
+        },
+        {
+          "player": "Tom Byrne",
+          "tally": "0-2",
+          "source_note": "gaa.ie / Irish Examiner reports"
+        },
+        {
+          "player": "Seán Nolan",
+          "tally": "0-2",
+          "source_note": "gaa.ie / Irish Examiner reports"
+        },
+        {
+          "player": "Cathal Kehoe",
+          "tally": "0-1",
+          "source_note": "gaa.ie / Irish Examiner reports"
+        },
+        {
+          "player": "Glen Malone",
+          "tally": "0-1",
+          "source_note": "gaa.ie / Irish Examiner reports"
+        },
+        {
+          "player": "Mark Rossiter",
+          "tally": "0-1",
+          "source_note": "gaa.ie / Irish Examiner reports"
+        },
+        {
+          "player": "Robbie Brooks",
+          "tally": "0-1",
+          "note": "substitute",
+          "source_note": "gaa.ie / Irish Examiner reports"
+        }
+      ],
+      "source": {
+        "url": "https://www.rte.ie/sport/results/gaa/2026/6471/results/",
+        "snippet": "First Round 9 May Wexford 2-19 1-11 Limerick Chadwicks Wexford Park",
+        "publisher": "RTE Sport",
+        "accessed": "2026-06-30",
+        "tier": "national_press"
+      },
+      "scoreline_unverified": false,
+      "note": "An 11-point home win over Limerick (2025 Tailteann finalists) to open the campaign. Full scorer list not captured. Limerick's perspective is held in Limerick's file."
+    },
+    {
+      "date": "2026-05-24",
+      "competition": "Tailteann Cup",
+      "round": "Round 2A",
+      "opponent": "Fermanagh",
+      "venue": "Brewster Park, Enniskillen",
+      "home_away": "away",
+      "aet": false,
+      "score_for": "2-13",
+      "score_against": "2-20",
+      "two_pointers": {
+        "for": 1,
+        "against": 3
+      },
+      "result": "L",
+      "margin": -7,
+      "scorers": [
+        {
+          "player": "Seán Ryan",
+          "tally": "2-0",
+          "note": "substitute (on 18-24 min); both Wexford goals",
+          "source_note": "Irish News full team-line; RTE concurs"
+        },
+        {
+          "player": "Ben Brosnan",
+          "tally": "0-4",
+          "note": "2 frees",
+          "source_note": "Irish News full team-line; RTE concurs"
+        },
+        {
+          "player": "Páraic Hughes",
+          "tally": "0-3",
+          "note": "1 two-pointer (RTE's '2tp' is impossible at 0-3); Fermanagh Herald notes the two-pointer",
+          "source_note": "Irish News full team-line"
+        },
+        {
+          "player": "Darragh Brooks",
+          "tally": "0-1",
+          "note": "goalkeeper; free off the ground",
+          "source_note": "Irish News full team-line; RTE concurs"
+        },
+        {
+          "player": "Eoghan Nolan",
+          "tally": "0-1",
+          "source_note": "Irish News full team-line"
+        },
+        {
+          "player": "Glen Malone",
+          "tally": "0-1",
+          "note": "point from range, confirmed in Fermanagh Herald report",
+          "source_note": "Irish News full team-line; Fermanagh Herald narrative"
+        },
+        {
+          "player": "Michael Kinsella",
+          "tally": "0-1",
+          "source_note": "Irish News full team-line; RTE concurs"
+        },
+        {
+          "player": "Seán Nolan",
+          "tally": "0-1",
+          "note": "free",
+          "source_note": "Irish News full team-line; RTE concurs"
+        },
+        {
+          "player": "Martin O'Connor",
+          "tally": "0-1",
+          "note": "substitute",
+          "source_note": "Irish News full team-line; RTE concurs"
+        }
+      ],
+      "source": {
+        "url": "https://www.rte.ie/sport/results/gaa/2026/6471/results/",
+        "snippet": "Fermanagh 2-20 2-13 Wexford Brewster Park",
+        "publisher": "RTE Sport",
+        "accessed": "2026-06-30",
+        "tier": "national_press"
+      },
+      "scoreline_unverified": false,
+      "note": "A seven-point Round 2A loss away to Fermanagh, dropping Wexford into the Round 3 knockout. Full scorer list not captured. Fermanagh's perspective is held in Fermanagh's file."
+    },
+    {
+      "date": "2026-06-06",
+      "competition": "Tailteann Cup",
+      "round": "Round 3",
+      "opponent": "Leitrim",
+      "venue": "Heartland Credit Union Páirc Seán Mac Diarmada, Carrick-on-Shannon",
+      "home_away": "away",
+      "aet": false,
+      "score_for": "0-20",
+      "score_against": "1-12",
+      "two_pointers": {
+        "for": 2,
+        "against": 3
+      },
+      "result": "W",
+      "margin": 5,
+      "scorers": [
+        {
+          "player": "Ben Brosnan",
+          "tally": "0-4",
+          "note": "2 frees",
+          "source_note": "Kevin Egan match report, Páirc Seán Mac Diarmada"
+        },
+        {
+          "player": "Niall Hughes",
+          "tally": "0-3",
+          "source_note": "Kevin Egan match report, Páirc Seán Mac Diarmada"
+        },
+        {
+          "player": "Mark Rossiter",
+          "tally": "0-3",
+          "note": "1 free, incl a closing 20m free",
+          "source_note": "Kevin Egan match report, Páirc Seán Mac Diarmada"
+        },
+        {
+          "player": "Glen Malone",
+          "tally": "0-2",
+          "source_note": "Kevin Egan match report, Páirc Seán Mac Diarmada"
+        },
+        {
+          "player": "Páiric Hughes",
+          "tally": "0-2",
+          "source_note": "Kevin Egan match report, Páirc Seán Mac Diarmada"
+        },
+        {
+          "player": "Eoghan Nolan",
+          "tally": "0-2",
+          "note": "two-pointer",
+          "source_note": "Kevin Egan match report, Páirc Seán Mac Diarmada"
+        },
+        {
+          "player": "Darragh Brooks",
+          "tally": "0-2",
+          "note": "goalkeeper; two-point free",
+          "source_note": "Kevin Egan match report, Páirc Seán Mac Diarmada"
+        },
+        {
+          "player": "Robbie Brooks",
+          "tally": "0-1",
+          "source_note": "Kevin Egan match report, Páirc Seán Mac Diarmada"
+        },
+        {
+          "player": "Michael Kinsella",
+          "tally": "0-1",
+          "source_note": "Kevin Egan match report, Páirc Seán Mac Diarmada"
+        }
+      ],
+      "source": {
+        "url": "https://www.the42.ie/tailteann-cup-wrap-2-7062927-Jun2026/",
+        "snippet": "Up in Carrick-on-Shannon, Wexford did all their business in the first half by stretching 0-14 to no score clear of Leitrim... 0-20 to 1-12.",
+        "publisher": "The42",
+        "accessed": "2026-06-30",
+        "tier": "national_press"
+      },
+      "scoreline_unverified": false,
+      "note": "A five-point away win, all but settled in a remarkable first half in which Wexford led 0-14 to 0-0. Both sides finished with 14 men (Conor Quinn and Leitrim's Liam Coleman sent off); a late Jack Kelly goal trimmed the margin. Partial scorer list (Nolan and goalkeeper Darragh Brooks both kicking two-pointers itemised). Leitrim's perspective is held in Leitrim's file."
+    },
+    {
+      "date": "2026-06-13",
+      "competition": "Tailteann Cup",
+      "round": "Quarter-Final",
+      "opponent": "Offaly",
+      "venue": "Glenisk O'Connor Park, Tullamore",
+      "home_away": "away",
+      "aet": false,
+      "score_for": "1-17",
+      "score_against": "1-22",
+      "two_pointers": {
+        "for": 5,
+        "against": null
+      },
+      "result": "L",
+      "margin": -5,
+      "scorers": [
+        {
+          "player": "Eoghan Nolan",
+          "tally": "1-3",
+          "note": "1 two-pointer; a fortuitous 24th-minute goal (a two-point attempt that dropped into the net)",
+          "source_note": "rte report"
+        },
+        {
+          "player": "Mark Rossiter",
+          "tally": "0-4",
+          "note": "1 two-pointer",
+          "source_note": "rte report"
+        },
+        {
+          "player": "Darragh Brooks",
+          "tally": "0-2",
+          "note": "goalkeeper; 2 two-point frees",
+          "source_note": "rte report"
+        },
+        {
+          "player": "Dylan Furlong",
+          "tally": "0-2",
+          "note": "1 two-pointer",
+          "source_note": "rte report"
+        },
+        {
+          "player": "Cathal Kehoe",
+          "tally": "0-2",
+          "note": "1 two-pointer",
+          "source_note": "rte report"
+        },
+        {
+          "player": "Glen Malone",
+          "tally": "0-2",
+          "source_note": "rte report"
+        },
+        {
+          "player": "Niall Hughes",
+          "tally": "0-1",
+          "source_note": "rte report"
+        },
+        {
+          "player": "Páraic Hughes",
+          "tally": "0-1",
+          "source_note": "rte report"
+        }
+      ],
+      "source": {
+        "url": "https://www.rte.ie/sport/football/2026/0613/1578248-offaly-overcome-wexford-for-tailteann-cup-semi-final-spot/",
+        "snippet": "Wexford: Darragh Brooks (0-2, 2pf)... Dylan Furlong (0-2, 2p)... Eoghan Nolan (1-3, 1 x 2p), Glen Malone (0-2)... Cathal Kehoe (0-2, 1 x 2p)... Mark Rossiter (0-4, 1 x 2p).",
+        "publisher": "RTE Sport",
+        "accessed": "2026-06-30",
+        "tier": "national_press"
+      },
+      "scoreline_unverified": false,
+      "note": "Elimination game. Wexford led 1-13 to 0-10 at half-time with the wind, their first four scores all two-pointers, but were outscored 1-12 to 0-4 in the second half as Offaly surged through, Jack Bryant's goal the turning point. A notable five two-pointers for Wexford (including two from goalkeeper Darragh Brooks). Full scorer list. Offaly's perspective is held in Offaly's file."
+    }
+  ],
+  "signals": [],
+  "collection_meta": {
+    "collected_by": "Claude (research session, not yet hand-verified by Rory)",
+    "collected_at": "2026-06-30",
+    "fields_not_found": [
+      "Full Wexford scorer lists for the Louth Leinster QF, the Limerick R1 win and the Fermanagh R2A loss (scorelines verified)",
+      "Two-pointer counts for several games",
+      "Attendance figures"
+    ],
+    "notes": "Wexford is a light-to-mid Tailteann file with a clear marker of progress (promotion to Division 2) and a quarter-final run that ended at Offaly's hands. The interesting editorial detail is the two-point shooting: Wexford hit five two-pointers in the Offaly quarter-final alone, two of them from goalkeeper Darragh Brooks, a genuine two-point free specialist, with Eoghan Nolan and Mark Rossiter the other range threats, this is a candidate data point for any Pulse Intelligence piece on the two-point arc and on goalkeeper scoring. John Hegarty's fourth season. A verification pass should fill the Louth, Limerick and Fermanagh scorer lists."
+  }
+}

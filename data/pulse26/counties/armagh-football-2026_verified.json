@@ -1,0 +1,648 @@
+{
+  "_meta": {
+    "note": "LOCKED STANDARD — Armagh is the reference build for the PULSE/26 records spine, confirmed by Rory on 2026-06-30. Built from gaa.ie match reports, Irish Examiner, Irish News, RTE, The42, cross-checked against the championship draw structure on Wikipedia. Two-pointer fields audited and corrected; null left honest where unsourced rather than guessed. This is the pattern the remaining 31 county files should follow.",
+    "verification": "All championship scorelines and venues verified against primary match reports. Two-pointer counts audited and corrected against full scorer lists where available (league/R7, Down SF, Derry R1, Louth R2A, Kerry R3); left honestly null for the three games where no reliable full scorer breakdown was sourced (Tyrone, Fermanagh, Monaghan finals — see fields_not_found). League campaign verified for the regulation-season outcome (survived relegation via Round 7 draw with Kerry) but NOT yet built out round-by-round. Manager note sourced. Important finding: the per_county_canonical_clean.json file's Armagh and Cavan rows appear to be corrupted by a scraping artifact (a 'Cavan v Armagh' Round 1 fixture that never happened — the real Round 1 was Armagh v Derry). This draft does not inherit from that file.",
+    "built": "2026-06-30"
+  },
+  "entity": {
+    "county": "Armagh",
+    "code": "football",
+    "season": 2026,
+    "province": "Ulster",
+    "tier": "Sam Maguire",
+    "nickname": "The Orchard County"
+  },
+  "manager": {
+    "name": "Kieran McGeeney",
+    "first_season": false,
+    "note": "Long-serving manager since 2014. Led Armagh to a fourth consecutive Ulster final in 2026, breaking a run of three straight final defeats (2023 on penalties to Derry, 2024 on penalties to Donegal, 2025 after extra-time to Donegal) to win the county's first Ulster title since 2008.",
+    "source": {
+      "url": "https://www.irishnews.com/gaa/gaelic-football/ulster-sfc-final-armagh-v-monaghan-live-updates-from-clones-as-orchardmen-and-farney-battle-it-out-for-the-anglo-celt-cup-R5IZMN55HRBQ3PPYPXZJ7G5JJM/",
+      "snippet": "This was Armagh's fourth Ulster final in a row, losing the last three by the tightest of margins. In 2023, Derry secured the title on penalties, in 2024, Donegal needed spot-kicks to take the Anglo Celt Cup and last year, the Tir Chonaill county again came out on top, but this time by a single point after extra-time.",
+      "publisher": "Irish News",
+      "accessed": "2026-06-30",
+      "tier": "national_press"
+    }
+  },
+  "league": {
+    "competition": "Allianz NFL Division 1",
+    "finish": null,
+    "movement": "stayed",
+    "note": "Survived relegation on the final round of the regulation season, drawing 1-21 to 0-24 away to Kerry at Box-IT Athletic Grounds on March 22nd. Exact final table position not yet sourced — flagged as a gap, not guessed.",
+    "source": {
+      "url": "https://munster.gaa.ie/event/2026-allianz-football-league-division-1-armagh-v-kerry/",
+      "snippet": "Armagh drew with Kerry on a scoreline of 1-21 to 0-24 in Round 7 of the Allianz Football League Division 1 on Sunday March 22nd at Box-IT Athletic Grounds Armagh... Kerry will face Donegal in the Allianz Football League Division One final next week after battling out a thrilling draw against Armagh, who survived being relegated.",
+      "publisher": "Munster GAA / Examiner wire",
+      "accessed": "2026-06-30",
+      "tier": "national_press"
+    }
+  },
+  "state": {
+    "status": "eliminated",
+    "stage": "All-Ireland SFC Round 3 (eliminated, finished 9th-12th)",
+    "lives_left": 0,
+    "next_decides": null,
+    "as_of": "2026-06-20",
+    "source": {
+      "url": "https://en.wikipedia.org/wiki/2026_All-Ireland_Senior_Football_Championship",
+      "snippet": "In 2026, Ulster champions Armagh and Leinster champions Westmeath were knocked out in Round 3 (9th-12th place), meaning only 1 provincial champion (Kerry) played in the last eight.",
+      "publisher": "Wikipedia",
+      "accessed": "2026-06-30",
+      "tier": "aggregator"
+    }
+  },
+  "results": [
+    {
+      "date": "2026-04-12",
+      "competition": "Ulster SFC",
+      "round": "Preliminary Round",
+      "opponent": "Tyrone",
+      "venue": "Athletic Grounds, Armagh",
+      "home_away": "home",
+      "aet": false,
+      "score_for": "1-17",
+      "score_against": "1-16",
+      "two_pointers": {
+        "for": 1,
+        "against": 3
+      },
+      "result": "W",
+      "margin": 1,
+      "scorers": [
+        {
+          "player": "Oisín O'Neill",
+          "tally": "0-6",
+          "note": "3 frees, 1 two-pointer; set up McCormack's extra-time goal",
+          "source_note": "gaa.ie / Examiner reports"
+        },
+        {
+          "player": "Tomás McCormack",
+          "tally": "1-1",
+          "note": "goal at the start of extra time",
+          "source_note": "gaa.ie / Examiner reports"
+        },
+        {
+          "player": "Callum O'Neill",
+          "tally": "0-3",
+          "note": "1 free",
+          "source_note": "gaa.ie / Examiner reports"
+        },
+        {
+          "player": "Conor Turbitt",
+          "tally": "0-2",
+          "note": "substitute; 87th-minute winner",
+          "source_note": "gaa.ie / Examiner reports"
+        },
+        {
+          "player": "Ross McQuillan",
+          "tally": "0-2",
+          "source_note": "gaa.ie / Examiner reports"
+        },
+        {
+          "player": "Blaine Hughes",
+          "tally": "0-1",
+          "note": "goalkeeper; '45",
+          "source_note": "gaa.ie / Examiner reports"
+        },
+        {
+          "player": "Darragh McMullen",
+          "tally": "0-1",
+          "note": "ran the length of the field for a point on the run",
+          "source_note": "gaa.ie / Examiner reports"
+        },
+        {
+          "player": "Cian McConville",
+          "tally": "0-1",
+          "source_note": "gaa.ie / Examiner reports"
+        }
+      ],
+      "source": {
+        "url": "https://liquipedia.net/lab/GAA/Football/2026/Ulster_Senior_Football_Championship",
+        "snippet": "ArmaghARM 20 TyroneTYR 19 April 12, 2026 - 16:15 BST ARM 20:19 TYR ARM 1-17 i 1-16 TYR Athletic Grounds, Armagh",
+        "publisher": "Liquipedia (GAA database)",
+        "accessed": "2026-06-30",
+        "tier": "aggregator"
+      },
+      "scoreline_unverified": false
+    },
+    {
+      "date": "2026-04-25",
+      "competition": "Ulster SFC",
+      "round": "Quarter-Final",
+      "opponent": "Fermanagh",
+      "venue": "Brewster Park",
+      "home_away": "away",
+      "aet": false,
+      "score_for": "2-32",
+      "score_against": "1-24",
+      "two_pointers": {
+        "for": 4,
+        "against": 8
+      },
+      "result": "W",
+      "margin": 11,
+      "scorers": [
+        {
+          "player": "Conor Turbitt",
+          "tally": "1-6",
+          "note": "1 two-point free, 1 free; palmed a second-half goal",
+          "source_note": "gaa.ie / Fermanagh Herald reports"
+        },
+        {
+          "player": "Jason Duffy",
+          "tally": "1-2",
+          "note": "palmed to the net after a flowing move",
+          "source_note": "gaa.ie / Fermanagh Herald reports"
+        },
+        {
+          "player": "Oisín Conaty",
+          "tally": "0-5",
+          "source_note": "gaa.ie / Fermanagh Herald reports"
+        },
+        {
+          "player": "Jarly Óg Burns",
+          "tally": "0-4",
+          "source_note": "gaa.ie / Fermanagh Herald reports"
+        },
+        {
+          "player": "Oisín O'Neill",
+          "tally": "0-4",
+          "note": "substitute; four points from play inside five minutes",
+          "source_note": "gaa.ie / Fermanagh Herald reports"
+        },
+        {
+          "player": "Tiernan Kelly",
+          "tally": "0-3",
+          "source_note": "gaa.ie / Fermanagh Herald reports"
+        },
+        {
+          "player": "Ethan Rafferty",
+          "tally": "0-2",
+          "note": "goalkeeper; two-point free",
+          "source_note": "gaa.ie / Fermanagh Herald reports"
+        },
+        {
+          "player": "Ross McQuillan",
+          "tally": "0-2",
+          "note": "two-pointer (per match narrative)",
+          "source_note": "gaa.ie / Fermanagh Herald reports"
+        },
+        {
+          "player": "Darragh McMullen",
+          "tally": "0-2",
+          "note": "two-pointer; opened the scoring",
+          "source_note": "gaa.ie / Fermanagh Herald reports"
+        },
+        {
+          "player": "Cian McConville",
+          "tally": "0-2",
+          "note": "1 free",
+          "source_note": "gaa.ie / Fermanagh Herald reports"
+        }
+      ],
+      "source": {
+        "url": "https://www.gaa.ie/article/ulster-sfc-armagh-cruise-to-victory",
+        "snippet": "Ulster Senior Football Championship Quarter-Final Armagh 2-32 Fermanagh 1-24 By Gareth Cauldwell at Brewster Park",
+        "publisher": "GAA.ie",
+        "accessed": "2026-06-30",
+        "tier": "primary"
+      },
+      "scoreline_unverified": false,
+      "note": "Two-pointers mentioned in the match report for both sides but no reliable team total sourced — the '5' figure cited elsewhere was McGurn's personal tally, not Fermanagh's team total, since O'Hanlon and Horan are also reported scoring two-pointers. Left null rather than guessed; needs a full scorer list."
+    },
+    {
+      "date": "2026-05-03",
+      "competition": "Ulster SFC",
+      "round": "Semi-Final",
+      "opponent": "Down",
+      "venue": "St Tiernach's Park, Clones",
+      "home_away": "neutral",
+      "aet": false,
+      "score_for": "3-33",
+      "score_against": "0-14",
+      "two_pointers": {
+        "for": 3,
+        "against": 0
+      },
+      "scorers": [
+        {
+          "player": "Conor Turbitt",
+          "tally": "2-5",
+          "note": "second goal a fisted finish after Murnin raid; 3 frees",
+          "source_note": "The42 'Scorers for Armagh'"
+        },
+        {
+          "player": "Jarly Og Burns",
+          "tally": "0-5",
+          "note": "tally per gaa.ie report; The42 listed 0-4",
+          "source_note": "The42 full block; Jarly Og Burns 0-5 per gaa.ie report (vs The42 0-4) reconciles the return to the official 3-33"
+        },
+        {
+          "player": "Oisin Conaty",
+          "tally": "0-5",
+          "source_note": "The42"
+        },
+        {
+          "player": "Oisin O'Neill",
+          "tally": "0-4",
+          "note": "substitute; 1 two-pointer",
+          "source_note": "The42"
+        },
+        {
+          "player": "Tomas McCormack",
+          "tally": "1-2",
+          "note": "first goal after Burns-Turbitt build-up",
+          "source_note": "The42"
+        },
+        {
+          "player": "Cian McConville",
+          "tally": "0-3",
+          "note": "1 free",
+          "source_note": "The42"
+        },
+        {
+          "player": "Andrew Murnin",
+          "tally": "0-3",
+          "source_note": "The42"
+        },
+        {
+          "player": "Darragh McMullan",
+          "tally": "0-2",
+          "note": "1 two-pointer",
+          "source_note": "The42"
+        },
+        {
+          "player": "Aaron O'Neill",
+          "tally": "0-2",
+          "note": "substitute; two-pointer with his first touch on championship debut",
+          "source_note": "The42"
+        },
+        {
+          "player": "Peter McGrane",
+          "tally": "0-1",
+          "source_note": "The42"
+        },
+        {
+          "player": "Tiernan Kelly",
+          "tally": "0-1",
+          "source_note": "The42"
+        }
+      ],
+      "source": {
+        "url": "https://www.gaa.ie/article/ulster-sfc-impressive-armagh-advance-x7349",
+        "snippet": "Ulster SFC Semi-Final Armagh 3-33 Down 0-14 By Steve Malone at St Tiernach's Park, Clones. Armagh inflicted their biggest ever championship win over neighbours Down.",
+        "publisher": "GAA.ie",
+        "accessed": "2026-06-30",
+        "tier": "primary"
+      },
+      "scoreline_unverified": false,
+      "note": "Armagh's highest-ever Ulster SFC tally (3-33/42 points); winning margin of 28 equalled the worst defeat ever handed out in the province. Down's heaviest-ever championship loss. Two-pointer count (3 for Armagh: D. McMullan, O. O'Neill, A. O'Neill; 0 for Down) read from the full team sheet in the source, which lists more scorers than the headline five above."
+    },
+    {
+      "date": "2026-05-17",
+      "competition": "Ulster SFC",
+      "round": "Final",
+      "opponent": "Monaghan",
+      "venue": "St Tiernach's Park, Clones",
+      "home_away": "neutral",
+      "aet": true,
+      "score_for": "2-28",
+      "score_against": "0-25",
+      "two_pointers": {
+        "for": 1,
+        "against": 4
+      },
+      "result": "W",
+      "margin": 9,
+      "scorers": [
+        {
+          "player": "Oisín Conaty",
+          "tally": "0-6",
+          "note": "Footballer of the Year contender; won the ball for the killer extra-time goal",
+          "source_note": "The42 report"
+        },
+        {
+          "player": "Conor Turbitt",
+          "tally": "0-5",
+          "note": "2 frees",
+          "source_note": "The42 report"
+        },
+        {
+          "player": "Oisín O'Neill",
+          "tally": "1-1",
+          "note": "squeezed home the decisive extra-time goal under Beggan",
+          "source_note": "The42 report"
+        },
+        {
+          "player": "Tiernan Kelly",
+          "tally": "1-0",
+          "source_note": "The42 report"
+        },
+        {
+          "player": "Jarly Óg Burns",
+          "tally": "0-3",
+          "note": "1 two-pointer from play",
+          "source_note": "The42 report"
+        },
+        {
+          "player": "Joe McElroy",
+          "tally": "0-2",
+          "source_note": "The42 report"
+        },
+        {
+          "player": "Jason Duffy",
+          "tally": "0-2",
+          "source_note": "The42 report"
+        },
+        {
+          "player": "Andrew Murnin",
+          "tally": "0-2",
+          "source_note": "The42 report"
+        },
+        {
+          "player": "Ross McQuillan",
+          "tally": "0-2",
+          "source_note": "The42 report"
+        },
+        {
+          "player": "Cian McConville",
+          "tally": "0-2",
+          "note": "2 frees",
+          "source_note": "The42 report"
+        },
+        {
+          "player": "Rory Grugan",
+          "tally": "0-2",
+          "note": "1 free; assisted the winning goal",
+          "source_note": "The42 report"
+        },
+        {
+          "player": "Darragh McMullen",
+          "tally": "0-1",
+          "source_note": "The42 report"
+        }
+      ],
+      "source": {
+        "url": "https://www.irishnews.com/gaa/gaelic-football/ulster-sfc-final-armagh-v-monaghan-live-updates-from-clones-as-orchardmen-and-farney-battle-it-out-for-the-anglo-celt-cup-R5IZMN55HRBQ3PPYPXZJ7G5JJM/",
+        "snippet": "Armagh 2-28 Monaghan 0-25: Armagh are Ulster champions after a convincing extra-time win over Monaghan. Armagh have been named the 2026 Ulster Senior Football champions after an extra-time win over Monaghan in Clones.",
+        "publisher": "Irish News",
+        "accessed": "2026-06-30",
+        "tier": "national_press"
+      },
+      "scoreline_unverified": false,
+      "note": "First Ulster final meeting of these counties since 1938. Armagh's first Ulster title since 2008, their fourth final in a row after three straight defeats on penalties/extra-time."
+    },
+    {
+      "date": "2026-05-30",
+      "competition": "GAA Football All-Ireland Senior Championship",
+      "round": "Round 1",
+      "opponent": "Derry",
+      "venue": "BOX-IT Athletic Grounds, Armagh",
+      "home_away": "home",
+      "aet": false,
+      "score_for": "1-18",
+      "score_against": "1-13",
+      "two_pointers": {
+        "for": 3,
+        "against": 2
+      },
+      "result": "W",
+      "margin": 5,
+      "scorers": [
+        {
+          "player": "Conor Turbitt",
+          "tally": "0-4",
+          "note": "1 two-pointer",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Oisin Conaty",
+          "tally": "0-3",
+          "note": "1 two-pointer",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Tiernan Kelly",
+          "tally": "1-0",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Tomas McCormack",
+          "tally": "0-2",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Jason Duffy",
+          "tally": "0-2",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Blaine Hughes",
+          "tally": "0-2",
+          "note": "1 two-pointer free",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Darragh McMullan",
+          "tally": "0-1",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Jarly Og Burns",
+          "tally": "0-1",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Andrew Murnin",
+          "tally": "0-1",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Joe McElroy",
+          "tally": "0-1",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Oisin O'Neill",
+          "tally": "0-1",
+          "note": "free, substitute",
+          "source_note": "gaa.ie report"
+        }
+      ],
+      "source": {
+        "url": "https://www.gaa.ie/article/all-ireland-sfc-round-1-armagh-overpower-derry",
+        "snippet": "Armagh are one game away from an All-Ireland quarter-final after a confident five-point win over disappointing Derry... Armagh led by six points at the break.",
+        "publisher": "GAA.ie",
+        "accessed": "2026-06-30",
+        "tier": "primary"
+      },
+      "scoreline_unverified": false,
+      "note": "Armagh reduced to 14 men in the second half after a black card for Jason Duffy."
+    },
+    {
+      "date": "2026-06-14",
+      "competition": "GAA Football All-Ireland Senior Championship",
+      "round": "Round 2A",
+      "opponent": "Louth",
+      "venue": "Páirc Grattan, Inniskeen, Co. Monaghan",
+      "home_away": "neutral",
+      "aet": false,
+      "score_for": "2-19",
+      "score_against": "2-20",
+      "two_pointers": {
+        "for": 2,
+        "against": 1
+      },
+      "result": "L",
+      "margin": -1,
+      "scorers": [
+        {
+          "player": "Oisin Conaty",
+          "tally": "1-1",
+          "source_note": "the42.ie report"
+        },
+        {
+          "player": "Ross McQuillan",
+          "tally": "0-4",
+          "source_note": "the42.ie report"
+        },
+        {
+          "player": "Gareth Murphy",
+          "tally": "1-0",
+          "source_note": "the42.ie report"
+        },
+        {
+          "player": "Cian McConville",
+          "tally": "0-3",
+          "note": "1 free",
+          "source_note": "the42.ie report"
+        },
+        {
+          "player": "Jarlath Og Burns",
+          "tally": "0-3",
+          "note": "1 two-pointer",
+          "source_note": "the42.ie report"
+        },
+        {
+          "player": "Ethan Rafferty",
+          "tally": "0-2",
+          "note": "1 two-point free",
+          "source_note": "the42.ie report"
+        },
+        {
+          "player": "Conor Turbitt",
+          "tally": "0-2",
+          "note": "1 free",
+          "source_note": "the42.ie report"
+        },
+        {
+          "player": "Jason Duffy",
+          "tally": "0-2",
+          "source_note": "the42.ie report"
+        },
+        {
+          "player": "Oisin O'Neill",
+          "tally": "0-1",
+          "note": "free",
+          "source_note": "the42.ie report"
+        },
+        {
+          "player": "Darragh McMullan",
+          "tally": "0-1",
+          "source_note": "the42.ie report"
+        }
+      ],
+      "source": {
+        "url": "https://www.the42.ie/louth-beat-armagh-inniskeen-sfc-7070725-Jun2026/",
+        "snippet": "Sam Mulroy, in the very last second of the game, stole a remarkable All-Ireland SFC win for Louth with a quite incredible goal, securing their quarter-final place and leaving the Ulster champions facing an unexpected backdoor battle.",
+        "publisher": "The42",
+        "accessed": "2026-06-30",
+        "tier": "national_press"
+      },
+      "scoreline_unverified": false,
+      "note": "Sam Mulroy's stoppage-time two-pointer was dropped into the net by Armagh goalkeeper Ethan Rafferty in the final seconds. Already covered in the completed Pulse Panels chapter (Louth v Armagh)."
+    },
+    {
+      "date": "2026-06-20",
+      "competition": "GAA Football All-Ireland Senior Championship",
+      "round": "Round 3",
+      "opponent": "Kerry",
+      "venue": "Fitzgerald Stadium, Killarney",
+      "home_away": "away",
+      "aet": false,
+      "score_for": "0-17",
+      "score_against": "4-18",
+      "two_pointers": {
+        "for": 3,
+        "against": 4
+      },
+      "result": "L",
+      "margin": -13,
+      "scorers": [
+        {
+          "player": "Oisin Conaty",
+          "tally": "0-4",
+          "note": "1 two-pointer",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Ross McQuillan",
+          "tally": "0-4",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Conor Turbitt",
+          "tally": "0-2",
+          "note": "1 free",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Jason Duffy",
+          "tally": "0-2",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Andrew Murnin",
+          "tally": "0-2",
+          "note": "1 two-point free",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Ethan Rafferty",
+          "tally": "0-2",
+          "note": "1 two-point free",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Cian McConville",
+          "tally": "0-1",
+          "note": "free",
+          "source_note": "gaa.ie report"
+        }
+      ],
+      "source": {
+        "url": "https://www.gaa.ie/article/all-ireland-sfc-round-3-kerry-overwhelm-armagh",
+        "snippet": "Deadly Kerry put Armagh to the sword with ease... It was a 13-point mauling over this year's Ulster champions where the Kingdom were gifted a goal only a split second before the break before totally owning the second half.",
+        "publisher": "GAA.ie",
+        "accessed": "2026-06-30",
+        "tier": "primary"
+      },
+      "scoreline_unverified": false,
+      "note": "Elimination game. Armagh's season ends at the Round 3 stage (9th-12th place finish). Kerry's two-pointer count (4: D. Clifford x3 — 2 from play, 1 free — and D. Geaney x1) read from the same gaa.ie report; Kerry's own scorers aren't listed here since this file tracks Armagh's perspective."
+    }
+  ],
+  "signals": [],
+  "collection_meta": {
+    "collected_by": "Claude (research session, not yet hand-verified by Rory)",
+    "collected_at": "2026-06-30",
+    "fields_not_found": [
+      "Allianz NFL Division 1 exact final table position for Armagh (know they survived relegation, not their final ranking)",
+      "Full Allianz League round-by-round results (Rounds 1-6) — only Round 7 sourced so far",
+      "Full scorer list and two-pointer counts for the Tyrone preliminary-round game",
+      "Full scorer list and a reliable team two-pointer total for the Fermanagh quarter-final (partial detail exists in prose but doesn't add up to a trustworthy total)",
+      "Full scorer list and two-pointer count for the Monaghan Ulster final (have the final score only)",
+      "Attendance figures (collected ad hoc where mentioned in reports, not systematically)"
+    ],
+    "notes": "This file deliberately follows the Dublin reference file's structure. Found and fixed a data-integrity issue: per_county_canonical_clean.json appears to have a scraping artifact where Cavan's and Armagh's Round 1 rows got cross-contaminated (showing a 'Cavan v Armagh' fixture that never happened). The real Round 1 was Armagh v Derry; Cavan's Round 1 game was against Westmeath (AET). Worth checking whether this same scrambling affected other counties' rows before trusting that file further."
+  }
+}

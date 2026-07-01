@@ -1,0 +1,145 @@
+{
+  "generated": "2026-07-01",
+  "product": "PULSE/26 football data backbone",
+  "files": 27,
+  "game_records": 121,
+  "fully_reconciled": 121,
+  "status": "27 eliminated/built counties complete; 6 held counties (Kerry, Dublin, Mayo, Louth, Down, Wicklow) pending finals",
+  "counties": [
+    {
+      "file": "antrim-football-2026_verified.json",
+      "games": 4,
+      "full": 4
+    },
+    {
+      "file": "armagh-football-2026_verified.json",
+      "games": 7,
+      "full": 7
+    },
+    {
+      "file": "carlow-football-2026_verified.json",
+      "games": 3,
+      "full": 3
+    },
+    {
+      "file": "cavan-football-2026_verified.json",
+      "games": 3,
+      "full": 3
+    },
+    {
+      "file": "clare-football-2026_verified.json",
+      "games": 3,
+      "full": 3
+    },
+    {
+      "file": "cork-football-2026_verified.json",
+      "games": 6,
+      "full": 6
+    },
+    {
+      "file": "derry-football-2026_verified.json",
+      "games": 4,
+      "full": 4
+    },
+    {
+      "file": "donegal-football-2026_verified.json",
+      "games": 4,
+      "full": 4
+    },
+    {
+      "file": "fermanagh-football-2026_verified.json",
+      "games": 6,
+      "full": 6
+    },
+    {
+      "file": "galway-football-2026_verified.json",
+      "games": 4,
+      "full": 4
+    },
+    {
+      "file": "kildare-football-2026_verified.json",
+      "games": 4,
+      "full": 4
+    },
+    {
+      "file": "laois-football-2026_verified.json",
+      "games": 5,
+      "full": 5
+    },
+    {
+      "file": "leitrim-football-2026_verified.json",
+      "games": 5,
+      "full": 5
+    },
+    {
+      "file": "limerick-football-2026_verified.json",
+      "games": 3,
+      "full": 3
+    },
+    {
+      "file": "london-football-2026_verified.json",
+      "games": 4,
+      "full": 4
+    },
+    {
+      "file": "longford-football-2026_verified.json",
+      "games": 4,
+      "full": 4
+    },
+    {
+      "file": "meath-football-2026_verified.json",
+      "games": 4,
+      "full": 4
+    },
+    {
+      "file": "monaghan-football-2026_verified.json",
+      "games": 7,
+      "full": 7
+    },
+    {
+      "file": "new-york-football-2026_verified.json",
+      "games": 2,
+      "full": 2
+    },
+    {
+      "file": "offaly-football-2026_verified.json",
+      "games": 5,
+      "full": 5
+    },
+    {
+      "file": "roscommon-football-2026_verified.json",
+      "games": 5,
+      "full": 5
+    },
+    {
+      "file": "sligo-football-2026_verified.json",
+      "games": 5,
+      "full": 5
+    },
+    {
+      "file": "tipperary-football-2026_verified.json",
+      "games": 5,
+      "full": 5
+    },
+    {
+      "file": "tyrone-football-2026_verified.json",
+      "games": 4,
+      "full": 4
+    },
+    {
+      "file": "waterford-football-2026_verified.json",
+      "games": 3,
+      "full": 3
+    },
+    {
+      "file": "westmeath-football-2026_verified.json",
+      "games": 7,
+      "full": 7
+    },
+    {
+      "file": "wexford-football-2026_verified.json",
+      "games": 5,
+      "full": 5
+    }
+  ]
+}

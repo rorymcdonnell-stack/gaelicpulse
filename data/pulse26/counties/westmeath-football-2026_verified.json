@@ -1,0 +1,702 @@
+{
+  "_meta": {
+    "note": "Built to the Armagh-locked standard. Westmeath is the marquee Leinster file: Leinster champions for the first time since 2004 (only their second ever title), beating Longford, Meath, Kildare (AET) and Dublin (AET) on the way, then winning a record fifth championship game of the season over Cavan (AET) in the All-Ireland Round 1 before Galway and Monaghan ended them. Seven championship games.",
+    "verification": "All scorelines, venues and referees verified against primary match reports and official tables (Leinster GAA, gaa.ie, RTE, Irish Times, Irish Examiner, The42, Wikipedia, Westmeath Independent). Full scorer lists held for the Leinster final, Leinster semi-final, All-Ireland Round 1 and All-Ireland Round 3. The Galway Round 2A scoreline is cross-referenced from the verified Galway file.",
+    "built": "2026-06-30"
+  },
+  "entity": {
+    "county": "Westmeath",
+    "code": "football",
+    "season": 2026,
+    "province": "Leinster",
+    "tier": "Sam Maguire Cup",
+    "nickname": "The Lake County"
+  },
+  "manager": {
+    "name": "Mark McHugh",
+    "first_season": true,
+    "note": "Took over in September 2025. A Donegal man and son of Martin McHugh; by winning the Leinster title he matched his father, who won an Ulster title for Donegal as a player. McHugh credited a mid-league training trip to his native Kilcar and Killybegs as the turning point of the season. Steered a thin panel to the county's first provincial title in 22 years.",
+    "source": {
+      "url": "https://www.irishecho.com/2026/5/westmeath-defeat-dubs-crowned-leinster-champions",
+      "snippet": "the boss who took over in September... We went to Donegal, went up to my hometown of Kilcar and Killybegs... that weekend I think changed our season.",
+      "publisher": "Irish Echo",
+      "accessed": "2026-06-30",
+      "tier": "national_press"
+    }
+  },
+  "league": {
+    "competition": "Allianz NFL Division 3",
+    "finish": "3rd",
+    "movement": null,
+    "note": "Finished third in Division 3 of the National League, an unremarkable league campaign that gave little hint of the provincial run to come.",
+    "source": {
+      "url": "https://www.irishecho.com/2026/5/westmeath-defeat-dubs-crowned-leinster-champions",
+      "snippet": "his charges finish 3rd in Div. 3.",
+      "publisher": "Irish Echo",
+      "accessed": "2026-06-30",
+      "tier": "national_press"
+    }
+  },
+  "state": {
+    "status": "eliminated",
+    "stage": "All-Ireland SFC Round 3 (eliminated, 9th-12th)",
+    "lives_left": 0,
+    "next_decides": null,
+    "as_of": "2026-06-14",
+    "source": {
+      "url": "https://www.irishexaminer.com/sport/gaa/arid-41866704.html",
+      "snippet": "It was in Clones that Westmeath's well-oiled machine of 2026 spluttered out of the championship as Monaghan progressed to the All-Ireland quarter-finals with a six-point win.",
+      "publisher": "Irish Examiner",
+      "accessed": "2026-06-30",
+      "tier": "national_press"
+    }
+  },
+  "results": [
+    {
+      "date": "2026-04-12",
+      "competition": "Leinster SFC",
+      "round": "Round 1",
+      "opponent": "Longford",
+      "venue": "Glennon Brothers Pearse Park, Longford",
+      "home_away": "away",
+      "aet": false,
+      "score_for": "5-25",
+      "score_against": "1-16",
+      "two_pointers": {
+        "for": 3,
+        "against": 6
+      },
+      "result": "W",
+      "margin": 21,
+      "scorers": [
+        {
+          "player": "Luke Loughlin",
+          "tally": "2-2",
+          "note": "two goals from Ormsby passes",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Brandon Kelly",
+          "tally": "2-2",
+          "note": "two first-half goals",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Shane Corcoran",
+          "tally": "1-4",
+          "note": "fifth goal on 30 minutes",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Ray Connellan",
+          "tally": "0-5",
+          "note": "2 two-pointers",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Matthew Whittaker",
+          "tally": "0-3",
+          "note": "wing-back",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Conor Dillon",
+          "tally": "0-3",
+          "note": "substitute",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Tom Molloy",
+          "tally": "0-2",
+          "note": "substitute",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Sam McCartan",
+          "tally": "0-2",
+          "note": "1 two-point free",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Ronan Wallace",
+          "tally": "0-1",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Kevin O'Sullivan",
+          "tally": "0-1",
+          "source_note": "gaa.ie report"
+        }
+      ],
+      "source": {
+        "url": "https://www.rte.ie/sport/results/gaa/2026/6463/results/",
+        "snippet": "Round 1 12 Apr Longford 1-16 5-25 Westmeath Glennon Brothers Pearse Park",
+        "publisher": "RTE Sport",
+        "accessed": "2026-06-30",
+        "tier": "national_press"
+      },
+      "scoreline_unverified": false,
+      "note": "A 21-point opening win, 40 points in total (5-25). Westmeath's inside trio of Shane Corcoran, Luke Loughlin and Brandon Kelly clicked immediately. Loughlin suffered a season-ending injury in this game. Full per-player scorer list not captured (the Westmeath Independent provincial scoring chart gives campaign totals rather than per-game splits); to be filled on a verification pass. Wikipedia terms this a 'preliminary quarter-final'; the Leinster GAA bracket and RTE call it Round 1."
+    },
+    {
+      "date": "2026-04-19",
+      "competition": "Leinster SFC",
+      "round": "Quarter-Final",
+      "opponent": "Meath",
+      "venue": "Glenisk O'Connor Park, Tullamore",
+      "home_away": "neutral",
+      "aet": false,
+      "score_for": "4-18",
+      "score_against": "0-25",
+      "two_pointers": {
+        "for": 1,
+        "against": 4
+      },
+      "result": "W",
+      "margin": 5,
+      "scorers": [
+        {
+          "player": "Luke Loughlin",
+          "tally": "0-6",
+          "note": "1 two-pointer; hamstring injury 2nd half",
+          "source_note": "RTE / The42 reports"
+        },
+        {
+          "player": "Sam McCartan",
+          "tally": "0-4",
+          "note": "3 frees",
+          "source_note": "RTE / The42 reports"
+        },
+        {
+          "player": "Shane Corcoran",
+          "tally": "1-2",
+          "note": "second-half goal to the roof of the net",
+          "source_note": "RTE / The42 player-by-player (county block folds Forde's goal into Corcoran 2-2)"
+        },
+        {
+          "player": "Matthew Whittaker",
+          "tally": "1-0",
+          "note": "first goal",
+          "source_note": "RTE / The42 reports"
+        },
+        {
+          "player": "Robbie Forde",
+          "tally": "1-0",
+          "note": "substitute; 52nd-minute goal",
+          "source_note": "RTE / The42 player-by-player (county block omits this and lists Corcoran 2-2)"
+        },
+        {
+          "player": "Danny McCartan",
+          "tally": "1-0",
+          "note": "substitute; fourth goal with the last kick",
+          "source_note": "RTE / The42 reports"
+        },
+        {
+          "player": "Ray Connellan",
+          "tally": "0-2",
+          "source_note": "RTE / The42 reports"
+        },
+        {
+          "player": "Brandon Kelly",
+          "tally": "0-2",
+          "note": "1 mark",
+          "source_note": "RTE / The42 reports"
+        },
+        {
+          "player": "Brian Cooney",
+          "tally": "0-1",
+          "source_note": "RTE / The42 reports"
+        },
+        {
+          "player": "Kevin O'Sullivan",
+          "tally": "0-1",
+          "source_note": "RTE / The42 reports"
+        }
+      ],
+      "source": {
+        "url": "https://www.rte.ie/sport/results/gaa/2026/6463/results/",
+        "snippet": "Quarter-Final Meath 0-25 4-18 Westmeath Glenisk O'Connor Park",
+        "publisher": "RTE Sport",
+        "accessed": "2026-06-30",
+        "tier": "national_press"
+      },
+      "scoreline_unverified": false,
+      "note": "A five-point win over Meath (4-18 to 0-25, i.e. 30 to 25), Westmeath's four goals (including a Whittaker solo and a Corcoran 'thunderous' strike, plus a late goal) decisive against a team many had as Leinster favourites. Full per-player scorer list not captured; to be filled on a verification pass."
+    },
+    {
+      "date": "2026-05-02",
+      "competition": "Leinster SFC",
+      "round": "Semi-Final",
+      "opponent": "Kildare",
+      "venue": "Glenisk O'Connor Park, Tullamore",
+      "home_away": "neutral",
+      "aet": true,
+      "score_for": "2-21",
+      "score_against": "0-23",
+      "two_pointers": {
+        "for": 2,
+        "against": 2
+      },
+      "result": "W",
+      "margin": 4,
+      "scorers": [
+        {
+          "player": "Brandon Kelly",
+          "tally": "1-4",
+          "note": "man of the match; extra-time goal that won it",
+          "source_note": "irish examiner report"
+        },
+        {
+          "player": "Sam McCartan",
+          "tally": "0-5",
+          "note": "2 two-point frees",
+          "source_note": "irish examiner report"
+        },
+        {
+          "player": "Brían Cooney",
+          "tally": "1-0",
+          "note": "30th-minute goal to the roof of the net",
+          "source_note": "irish examiner report"
+        },
+        {
+          "player": "Ray Connellan",
+          "tally": "0-2",
+          "note": "1 free",
+          "source_note": "irish examiner report"
+        },
+        {
+          "player": "Senan Baker",
+          "tally": "0-2",
+          "source_note": "irish examiner report"
+        },
+        {
+          "player": "Shane Corcoran",
+          "tally": "0-1",
+          "source_note": "irish examiner report"
+        },
+        {
+          "player": "Kevin O'Sullivan",
+          "tally": "0-1",
+          "source_note": "irish examiner report"
+        },
+        {
+          "player": "Tadhg Baker",
+          "tally": "0-1",
+          "source_note": "irish examiner report"
+        },
+        {
+          "player": "Shane Allen",
+          "tally": "0-1",
+          "source_note": "irish examiner report"
+        },
+        {
+          "player": "Ronan Wallace",
+          "tally": "0-1",
+          "source_note": "irish examiner report"
+        },
+        {
+          "player": "Charlie Drumm",
+          "tally": "0-1",
+          "source_note": "irish examiner report"
+        },
+        {
+          "player": "Robbie Forde",
+          "tally": "0-1",
+          "source_note": "irish examiner report"
+        },
+        {
+          "player": "Eoghan McCabe",
+          "tally": "0-1",
+          "source_note": "irish examiner report"
+        }
+      ],
+      "source": {
+        "url": "https://www.irishexaminer.com/sport/gaa/arid-41838657.html",
+        "snippet": "Scorers for Westmeath: Brandon Kelly 1-4, Sam McCartan 0-5 (2tpf), Brían Cooney 1-0, Ray Connellan 0-2 (0-1f), Senan Baker 0-2... Brandon Kelly's extra-time goal in Tullamore.",
+        "publisher": "Irish Examiner",
+        "accessed": "2026-06-30",
+        "tier": "national_press"
+      },
+      "scoreline_unverified": false,
+      "note": "A four-point extra-time win that booked the Leinster final and Sam Maguire football. Alex Beirne's last-second equaliser sent it to extra time; Westmeath, out on their feet from a thin panel (Whittaker withdrawn injured after 15 minutes, Loughlin absent), found just enough, Brandon Kelly's nudge to the net the decisive score. Attendance 12,086. Full scorer list. Both sides hit two two-pointers (McCartan 2; Beirne 1, Swords 1)."
+    },
+    {
+      "date": "2026-05-17",
+      "competition": "Leinster SFC",
+      "round": "Final",
+      "opponent": "Dublin",
+      "venue": "Croke Park, Dublin",
+      "home_away": "neutral",
+      "aet": true,
+      "score_for": "2-28",
+      "score_against": "0-26",
+      "two_pointers": {
+        "for": 3,
+        "against": 2
+      },
+      "result": "W",
+      "margin": 8,
+      "scorers": [
+        {
+          "player": "Brandon Kelly",
+          "tally": "0-4",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Matthew Whittaker",
+          "tally": "0-4",
+          "note": "1 two-pointer",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Senan Baker",
+          "tally": "0-4",
+          "note": "69th-minute point forced extra time",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Jack Duncan",
+          "tally": "1-1",
+          "note": "fortuitous late goal off a rebounding point attempt",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Brían Cooney",
+          "tally": "1-0",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Ronan Wallace",
+          "tally": "0-3",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "John Heslin",
+          "tally": "0-3",
+          "note": "1 two-pointer, 1 free; returned retiree, big impact off the bench",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Kevin O'Sullivan",
+          "tally": "0-2",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Shane Allen",
+          "tally": "0-2",
+          "note": "1 two-pointer",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Sam McCartan",
+          "tally": "0-2",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Shane Corcoran",
+          "tally": "0-1",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Conor Dillon",
+          "tally": "0-1",
+          "source_note": "gaa.ie report"
+        },
+        {
+          "player": "Robbie Forde",
+          "tally": "0-1",
+          "source_note": "gaa.ie report"
+        }
+      ],
+      "source": {
+        "url": "https://www.gaa.ie/article/leinster-sfc-final-wonderful-westmeath-triumph",
+        "snippet": "Scorers for Westmeath: Jack Duncan 1-1, Brandon Kelly 0-4, Matthew Whittaker 0-4 (1 tp), Senan Baker 0-4, Brían Cooney 1-0, Ronan Wallace 0-3, John Heslin 0-3 (1 tp, 0-1f)...",
+        "publisher": "GAA.ie",
+        "accessed": "2026-06-30",
+        "tier": "primary"
+      },
+      "scoreline_unverified": false,
+      "note": "The headline result of the Leinster season and one of the great championship upsets. Westmeath, underdogs despite big wins over Longford, Meath and Kildare, had let a four-point lead slip late in normal time; a Senan Baker point in the 69th minute forced extra time, and the Lake County struck the first 1-4 of extra time to all but seal it, Jack Duncan's fortuitous late goal finishing it. 13 different scorers. Dublin played without Con O'Callaghan, Colm Basquel, Lee Gannon and Eoin Murchan, with manager Ger Brennan suspended (Dean Rock in charge). First Westmeath Leinster title since 2004, only their second ever; manager Mark McHugh matched his father's provincial honour. Full scorer list. Westmeath 3 two-pointers (Whittaker, Allen, Heslin), Dublin 2 (Costello, Guiden). Referee: David Coldrick."
+    },
+    {
+      "date": "2026-05-30",
+      "competition": "All-Ireland SFC",
+      "round": "Round 1",
+      "opponent": "Cavan",
+      "venue": "TEG Cusack Park, Mullingar",
+      "home_away": "home",
+      "aet": true,
+      "score_for": "1-31",
+      "score_against": "3-21",
+      "two_pointers": {
+        "for": 4,
+        "against": 6
+      },
+      "result": "W",
+      "margin": 4,
+      "scorers": [
+        {
+          "player": "Brandon Kelly",
+          "tally": "0-6",
+          "note": "six from play",
+          "source_note": "gaa.ie / Examiner / RTE reports"
+        },
+        {
+          "player": "Ronan Wallace",
+          "tally": "0-4",
+          "note": "1 two-pointer",
+          "source_note": "gaa.ie / Examiner / RTE reports"
+        },
+        {
+          "player": "Senan Baker",
+          "tally": "0-4",
+          "note": "1 two-pointer",
+          "source_note": "gaa.ie / Examiner / RTE reports"
+        },
+        {
+          "player": "Sam McCartan",
+          "tally": "0-4",
+          "note": "1 two-point free, 2 frees",
+          "source_note": "gaa.ie / Examiner / RTE reports"
+        },
+        {
+          "player": "Kevin O'Sullivan",
+          "tally": "1-0",
+          "note": "match-winning goal three minutes from time in extra time",
+          "source_note": "gaa.ie / Examiner / RTE reports"
+        },
+        {
+          "player": "John Heslin",
+          "tally": "0-3",
+          "note": "substitute; 2 frees; two late frees sealed it",
+          "source_note": "gaa.ie / Examiner / RTE reports"
+        },
+        {
+          "player": "Matthew Whittaker",
+          "tally": "0-2",
+          "source_note": "gaa.ie / Examiner / RTE reports"
+        },
+        {
+          "player": "Conor Dillon",
+          "tally": "0-2",
+          "source_note": "gaa.ie / Examiner / RTE reports"
+        },
+        {
+          "player": "Brían Cooney",
+          "tally": "0-2",
+          "note": "1 two-pointer; opened the scoring",
+          "source_note": "gaa.ie / Examiner / RTE reports"
+        },
+        {
+          "player": "Jack Duncan",
+          "tally": "0-1",
+          "note": "substitute",
+          "source_note": "gaa.ie / Examiner / RTE reports"
+        },
+        {
+          "player": "Shane Corcoran",
+          "tally": "0-1",
+          "source_note": "gaa.ie / Examiner / RTE reports"
+        },
+        {
+          "player": "Robbie Forde",
+          "tally": "0-1",
+          "note": "substitute",
+          "source_note": "gaa.ie / Examiner / RTE reports"
+        },
+        {
+          "player": "Charlie Drumm",
+          "tally": "0-1",
+          "note": "full-back; inspirational point",
+          "source_note": "gaa.ie / Examiner / RTE reports"
+        }
+      ],
+      "source": {
+        "url": "https://www.gaa.ie/article/all-ireland-sfc-round-1-westmeath-beat-cavan-in-thriller",
+        "snippet": "All-Ireland Senior Football Championship Round 1 Westmeath 1-31 Cavan 3-21 (after extra-time)... Scorers for Westmeath: B Kelly 0-6, R Wallace (1 2pt), S Baker (1 2pt), S McCartan (1 2ptf, 2f) 0-4 each, K O'Sullivan 1-0.",
+        "publisher": "GAA.ie",
+        "accessed": "2026-06-30",
+        "tier": "primary"
+      },
+      "scoreline_unverified": false,
+      "note": "Westmeath's record-breaking fifth championship win in a single season (a county first), and another extra-time epic. Level 0-22 to 2-16 at the hooter; Cavan (managed by 2025 Westmeath boss Dermot McCabe) led by six at half-time in extra time (3-21 to 0-24) before Westmeath scored 1-7 on the resumption, Kevin O'Sullivan's goal off a John Heslin steal the winner. Attendance ~12,000. Full scorer list. Westmeath 4 two-pointers, Cavan 6. Cavan's perspective is held in Cavan's file."
+    },
+    {
+      "date": "2026-06-14",
+      "competition": "All-Ireland SFC",
+      "round": "Round 2A",
+      "opponent": "Galway",
+      "venue": "Pearse Stadium, Salthill",
+      "home_away": "away",
+      "aet": false,
+      "score_for": "2-21",
+      "score_against": "3-21",
+      "two_pointers": {
+        "for": 3,
+        "against": 1
+      },
+      "result": "L",
+      "margin": -3,
+      "scorers": [
+        {
+          "player": "Ronan Wallace",
+          "tally": "1-2",
+          "note": "captain; 20th-minute goal, 1 two-pointer",
+          "source_note": "The42 / gaa.ie reports"
+        },
+        {
+          "player": "John Heslin",
+          "tally": "0-4",
+          "note": "late change to starting side; 4 frees",
+          "source_note": "The42 / gaa.ie reports"
+        },
+        {
+          "player": "Sam McCartan",
+          "tally": "0-4",
+          "note": "1 two-pointer",
+          "source_note": "The42 / gaa.ie reports"
+        },
+        {
+          "player": "Jack Duncan",
+          "tally": "1-0",
+          "note": "late goal in the rally",
+          "source_note": "The42 / gaa.ie reports"
+        },
+        {
+          "player": "Tadhg Baker",
+          "tally": "0-2",
+          "source_note": "The42 / gaa.ie reports"
+        },
+        {
+          "player": "Senan Baker",
+          "tally": "0-2",
+          "note": "1 free; 1 from a mark",
+          "source_note": "The42 / gaa.ie reports"
+        },
+        {
+          "player": "Brandon Kelly",
+          "tally": "0-2",
+          "source_note": "The42 / gaa.ie reports"
+        },
+        {
+          "player": "Robbie Forde",
+          "tally": "0-2",
+          "note": "1 two-pointer",
+          "source_note": "The42 / gaa.ie reports"
+        },
+        {
+          "player": "Ray Connellan",
+          "tally": "0-1",
+          "source_note": "The42 / gaa.ie reports"
+        },
+        {
+          "player": "Brían Cooney",
+          "tally": "0-1",
+          "source_note": "The42 / gaa.ie reports"
+        },
+        {
+          "player": "Kevin O'Sullivan",
+          "tally": "0-1",
+          "source_note": "The42 / gaa.ie reports"
+        }
+      ],
+      "source": {
+        "url": "https://www.gaa.ie/article/all-ireland-sfc-round-2a-2b-draws",
+        "snippet": "All-Ireland SFC Round 2A Galway v Westmeath",
+        "publisher": "GAA.ie",
+        "accessed": "2026-06-30",
+        "tier": "primary"
+      },
+      "scoreline_unverified": false,
+      "note": "A three-point Round 2A loss away to Galway in a sold-out Salthill (Galway 3-21 to Westmeath 2-21), dropping Westmeath into the Round 3 knockout. The scoreline is cross-referenced from the verified Galway file, which carries Galway's full perspective and scorer detail; only the Westmeath goal (Ronan Wallace) is itemised here from the live blog. Full Westmeath scorer list to be filled on a verification pass."
+    },
+    {
+      "date": "2026-06-21",
+      "competition": "All-Ireland SFC",
+      "round": "Round 3",
+      "opponent": "Monaghan",
+      "venue": "St Tiernach's Park, Clones",
+      "home_away": "away",
+      "aet": false,
+      "score_for": "2-19",
+      "score_against": "1-28",
+      "two_pointers": {
+        "for": 1,
+        "against": 5
+      },
+      "result": "L",
+      "margin": -6,
+      "scorers": [
+        {
+          "player": "Brandon Kelly",
+          "tally": "1-3",
+          "note": "ice-cool first-half goal",
+          "source_note": "irish examiner report"
+        },
+        {
+          "player": "Matthew Whittaker",
+          "tally": "1-2",
+          "note": "goal, steamed through from wing-back",
+          "source_note": "irish examiner report"
+        },
+        {
+          "player": "Ronan Wallace",
+          "tally": "0-4",
+          "note": "1 two-point free, 1 '45",
+          "source_note": "irish examiner report"
+        },
+        {
+          "player": "Shane Corcoran",
+          "tally": "0-3",
+          "source_note": "irish examiner report"
+        },
+        {
+          "player": "John Heslin",
+          "tally": "0-2",
+          "source_note": "irish examiner report"
+        },
+        {
+          "player": "Robbie Forde",
+          "tally": "0-2",
+          "note": "levelled the game at one point",
+          "source_note": "irish examiner report"
+        },
+        {
+          "player": "Kevin O'Sullivan",
+          "tally": "0-1",
+          "source_note": "irish examiner report"
+        },
+        {
+          "player": "Sam McCartan",
+          "tally": "0-1",
+          "source_note": "irish examiner report"
+        },
+        {
+          "player": "Tadhg Baker",
+          "tally": "0-1",
+          "source_note": "irish examiner report"
+        }
+      ],
+      "source": {
+        "url": "https://www.irishexaminer.com/sport/gaa/arid-41866704.html",
+        "snippet": "Scorers for Westmeath: B Kelly (1-3), M Whittaker (1-2), R Wallace (0-4, one 2-pt frees, one 45) S Corcoran (0-3), J Heslin, R Forde (0-2 each), K O'Sullivan, S McCartan, T Baker (0-1 each).",
+        "publisher": "Irish Examiner",
+        "accessed": "2026-06-30",
+        "tier": "national_press"
+      },
+      "scoreline_unverified": false,
+      "note": "Elimination game (9th-12th finish). Level 2-9 to 0-15 at half-time after two Westmeath goals (Whittaker and an ice-cool Kelly finish), but Monaghan outscored them 1-13 to 0-10 thereafter, Jack McCarron's 1-5 and a Stephen O'Hanlon-created goal decisive. The end of Westmeath's 2026 run. Full scorer list. Westmeath 1 two-pointer, Monaghan 5. Monaghan's perspective is held in Monaghan's file. Referee per primary report."
+    }
+  ],
+  "signals": [],
+  "collection_meta": {
+    "collected_by": "Claude (research session, not yet hand-verified by Rory)",
+    "collected_at": "2026-06-30",
+    "fields_not_found": [
+      "Full per-player scorer lists for the Leinster Round 1 (Longford) and Quarter-Final (Meath) wins, and the All-Ireland Round 2A (Galway) loss (scorelines verified; campaign scoring-chart totals exist for several players but per-game splits and the Galway breakdown are not in hand)",
+      "Exact attendances for some games",
+      "Referee names for several games"
+    ],
+    "notes": "Westmeath is the marquee Leinster county and a clear Tier 1 narrative, very likely a signature-panel and/or season-chapter spine: a thin-panel Division 3 side that beat Leinster's traditional big three (Meath, Kildare, Dublin) to win their first provincial title since 2004, widely called one of the greatest upsets in championship history, then set a county record of five championship wins in a season before Galway and Monaghan ended them. The names: Brandon Kelly (man of the match in the semi, prolific throughout), Sam McCartan, Matthew Whittaker, Brían Cooney, and returned retiree John Heslin off the bench. Manager Mark McHugh (son of Martin) is a strong human-interest thread. The two extra-time wins (Kildare, Cavan) and the Dublin final are all signature-panel candidates. A verification pass should fill the Longford, Meath and Galway scorer lists from primary reports."
+  }
+}
